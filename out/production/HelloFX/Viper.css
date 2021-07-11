@@ -17,8 +17,32 @@
     -fx-text-fill: #FFFFFF;
     -fx-background-radius: 4;
 }
+.button-blueLevel{
+    -fx-background-color: #7c1cf9;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 15;
+}
+
+.button-green{
+    -fx-background-color: #159222;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4;
+}
+.button-greenLevel{
+    -fx-background-color: #159222;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 15;
+}
+
 #m1{
     -fx-background-image: url("background_image2.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1000 600;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+#m2{
+    -fx-background-image: url("m2.jpg");
     -fx-background-repeat: stretch;
     -fx-background-size: 1000 600;
     -fx-background-position: center center;

@@ -1,0 +1,6 @@
+creatDate : Sun Jul 11 13:57:29 IRDT 2021
+username : mahdi
+
+[Info], [Sun Jul 11 13:57:29 IRDT 2021], username accepted
+[Command], [Sun Jul 11 13:57:29 IRDT 2021], password : <noroozi>
+[Replay], [Sun Jul 11 13:57:29 IRDT 2021], Signup successfully

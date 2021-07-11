@@ -2,6 +2,7 @@ package view;
 
 import controller.Logger;
 import controller.Manager;
+import javafx.stage.Stage;
 import model.Farm;
 import model.LocalDate;
 import model.Mission;
@@ -64,6 +65,11 @@ public class FarmMenu extends Menu {
                 Logger.getLogger(user).log("Invalid command in FarmMenu : <" + input + ">", Logger.LogType.Alarm);
             }
         }
+    }
+
+    @Override
+    public void show() {
+
     }
 
     private void build() {
@@ -227,35 +233,16 @@ public class FarmMenu extends Menu {
     }
 
 
-    @Override
-    void setCommands() {
-        commands.add("BUY [animal_name]");
-        commands.add("PICKUP [x y]");
-        commands.add("WELL");
-        commands.add("PLANT [x y]");
-        commands.add("WORK [workshop_name]");
-        commands.add("CAGE [x y]");
-        commands.add("TURN [n]");
-        commands.add("TRUCK LOAD [item_name]");
-        commands.add("TRUCK UNLOAD [item_name]");
-        commands.add("TRUCK GO");
-        commands.add("MENU");
-        commands.add("inquiry");
-        commands.add("commands");
-        commands.add("EXIT");
-        commands.add("Build [Workshop_name]");
-    }
-
-    private FarmMenu(Scanner scanner) {
-        this.scanner = scanner;
-        parentMenu = MainMenu.getMainMenu(scanner);
+    private FarmMenu(Stage window) {
+        this.window = window;
+        parentMenu = MainMenu.getMainMenu(window);
     }
 
     private static FarmMenu farmMenu;
 
-    public static FarmMenu getFarmMenu(Scanner scanner) {
+    public static FarmMenu getFarmMenu(Stage window) {
         if (farmMenu == null)
-            farmMenu = new FarmMenu(scanner);
+            farmMenu = new FarmMenu(window);
         return farmMenu;
     }
 

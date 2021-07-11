@@ -207,16 +207,15 @@ public class Manager {
         return managerInstance;
     }
 
-    public boolean start(int level) {
+    public void start(int level) {
         if (level > User.getCurrentUser().getOpenedLevel())
-            return false;
+            return ;
         farm.clear();
         LocalDate.getInstance().event.clear();
         LocalDate.resetTime();
         Mission.getMission().setCurrentLevel(level);
         farm.setMoney(Mission.getMission().getCoins()[Mission.getMission().getCurrentLevel() - 1] + User.getCurrentUser().savedCoin);
         Logger.getLogger(User.getCurrentUser()).log("start game ", Logger.LogType.Alarm);
-        return true;
     }
 
     public boolean check() {
