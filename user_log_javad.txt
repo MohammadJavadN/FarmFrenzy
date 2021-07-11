@@ -84,3 +84,187 @@ username : javad
 [Alarm], [Sun Jul 11 16:16:56 IRDT 2021], start game 
 [Alarm], [Sun Jul 11 16:16:56 IRDT 2021], start game 
 [Alarm], [Sun Jul 11 16:16:56 IRDT 2021], start game 
+[Info], [Sun Jul 11 16:24:33 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:24:33 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:24:33 IRDT 2021], Login successfully
+[Info], [Sun Jul 11 16:25:14 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:25:14 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:25:14 IRDT 2021], Login successfully
+[Info], [Sun Jul 11 16:25:24 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:25:24 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:25:24 IRDT 2021], Login successfully
+[Info], [Sun Jul 11 16:26:14 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:26:14 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:26:14 IRDT 2021], Login successfully
+[Info], [Sun Jul 11 16:26:50 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:26:50 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:26:50 IRDT 2021], Login successfully
+[Info], [Sun Jul 11 16:30:24 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:30:24 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:30:24 IRDT 2021], Login successfully
+[Info], [Sun Jul 11 16:30:57 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:30:57 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:30:57 IRDT 2021], Login successfully
+[Info], [Sun Jul 11 16:31:59 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:31:59 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:31:59 IRDT 2021], Login successfully
+[Info], [Sun Jul 11 16:32:26 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:32:26 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:32:26 IRDT 2021], Login successfully
+[Info], [Sun Jul 11 16:32:36 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:32:36 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:32:36 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 16:32:39 IRDT 2021], start game 
+[Alarm], [Sun Jul 11 16:32:46 IRDT 2021], start game 
+[Alarm], [Sun Jul 11 16:32:47 IRDT 2021], start game 
+[Alarm], [Sun Jul 11 16:32:48 IRDT 2021], start game 
+[Info], [Sun Jul 11 16:33:32 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:33:32 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:33:32 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 16:33:34 IRDT 2021], start game 
+[Alarm], [Sun Jul 11 16:33:35 IRDT 2021], start game 
+[Alarm], [Sun Jul 11 16:33:36 IRDT 2021], start game 
+[Info], [Sun Jul 11 16:50:42 IRDT 2021], username accepted
+[Command], [Sun Jul 11 16:50:42 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 16:50:42 IRDT 2021], Login successfully
+[Info], [Sun Jul 11 18:15:12 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:15:12 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:15:12 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:15:20 IRDT 2021], start game 
+[Info], [Sun Jul 11 18:21:46 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:21:46 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:21:46 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:21:48 IRDT 2021], start game 
+[Alarm], [Sun Jul 11 18:22:00 IRDT 2021], in check method 
+[Alarm], [Sun Jul 11 18:22:00 IRDT 2021], check result : false
+[Info], [Sun Jul 11 18:22:43 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:22:43 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:22:43 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:22:45 IRDT 2021], start game 
+[Info], [Sun Jul 11 18:24:55 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:24:55 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:24:55 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:24:56 IRDT 2021], start game 
+[Info], [Sun Jul 11 18:25:31 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:25:31 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:25:31 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:25:32 IRDT 2021], start game 
+[Info], [Sun Jul 11 18:28:24 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:28:24 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:28:24 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:28:25 IRDT 2021], start game 
+[Info], [Sun Jul 11 18:30:08 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:30:08 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:30:08 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:30:09 IRDT 2021], start game 
+[Info], [Sun Jul 11 18:30:48 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:30:48 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:30:48 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:30:51 IRDT 2021], start game 
+[Info], [Sun Jul 11 18:31:41 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:31:41 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:31:41 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:31:43 IRDT 2021], start game 
+[Alarm], [Sun Jul 11 18:31:52 IRDT 2021], start game 
+[Alarm], [Sun Jul 11 18:31:55 IRDT 2021], start game 
+[Alarm], [Sun Jul 11 18:31:57 IRDT 2021], start game 
+[Alarm], [Sun Jul 11 18:31:59 IRDT 2021], start game 
+[Info], [Sun Jul 11 18:33:45 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:33:45 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:33:45 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:33:47 IRDT 2021], start game 
+[Info], [Sun Jul 11 18:35:04 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:35:04 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:35:04 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:35:05 IRDT 2021], start game 
+[Info], [Sun Jul 11 18:37:55 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:37:55 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:37:55 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:37:57 IRDT 2021], start game 
+[Alarm], [Sun Jul 11 18:38:25 IRDT 2021], start game 
+[Info], [Sun Jul 11 18:40:10 IRDT 2021], username accepted
+[Command], [Sun Jul 11 18:40:10 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 18:40:10 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 18:40:11 IRDT 2021], start game 
+[Info], [Sun Jul 11 19:07:40 IRDT 2021], username accepted
+[Command], [Sun Jul 11 19:07:40 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 19:07:40 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 19:07:42 IRDT 2021], start game 
+[Info], [Sun Jul 11 19:12:09 IRDT 2021], username accepted
+[Command], [Sun Jul 11 19:12:09 IRDT 2021], password : < javad>
+[Replay], [Sun Jul 11 19:12:09 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 19:12:11 IRDT 2021], start game 
+[Info], [Sun Jul 11 19:40:36 IRDT 2021], username accepted
+[Command], [Sun Jul 11 19:40:36 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 19:40:36 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 19:40:37 IRDT 2021], start game 
+[Info], [Sun Jul 11 19:41:50 IRDT 2021], username accepted
+[Command], [Sun Jul 11 19:41:50 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 19:41:50 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 19:41:58 IRDT 2021], start game 
+[Info], [Sun Jul 11 19:42:39 IRDT 2021], save user
+[Command], [Sun Jul 11 19:42:39 IRDT 2021], menu command
+[Alarm], [Sun Jul 11 19:42:41 IRDT 2021], start game 
+[Info], [Sun Jul 11 19:45:04 IRDT 2021], username accepted
+[Command], [Sun Jul 11 19:45:04 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 19:45:04 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 19:45:05 IRDT 2021], start game 
+[Info], [Sun Jul 11 19:45:46 IRDT 2021], username accepted
+[Command], [Sun Jul 11 19:45:46 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 19:45:46 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 19:45:48 IRDT 2021], start game 
+[Info], [Sun Jul 11 19:50:01 IRDT 2021], username accepted
+[Command], [Sun Jul 11 19:50:01 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 19:50:01 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 19:50:03 IRDT 2021], start game 
+[Info], [Sun Jul 11 19:57:54 IRDT 2021], username accepted
+[Command], [Sun Jul 11 19:57:54 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 19:57:54 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 19:57:56 IRDT 2021], start game 
+[Info], [Sun Jul 11 19:59:35 IRDT 2021], username accepted
+[Command], [Sun Jul 11 19:59:35 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 19:59:35 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 19:59:36 IRDT 2021], start game 
+[Info], [Sun Jul 11 20:06:06 IRDT 2021], username accepted
+[Command], [Sun Jul 11 20:06:06 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 20:06:06 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 20:06:08 IRDT 2021], start game 
+[Info], [Sun Jul 11 20:07:34 IRDT 2021], username accepted
+[Command], [Sun Jul 11 20:07:34 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 20:07:34 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 20:07:35 IRDT 2021], start game 
+[Info], [Sun Jul 11 20:10:03 IRDT 2021], username accepted
+[Command], [Sun Jul 11 20:10:03 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 20:10:03 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 20:10:05 IRDT 2021], start game 
+[Info], [Sun Jul 11 20:10:05 IRDT 2021], The Well is filled
+[Info], [Sun Jul 11 20:10:08 IRDT 2021], save user
+[Command], [Sun Jul 11 20:10:08 IRDT 2021], menu command
+[Alarm], [Sun Jul 11 20:10:09 IRDT 2021], start game 
+[Info], [Sun Jul 11 20:10:09 IRDT 2021], The Well is filled
+[Info], [Sun Jul 11 20:12:20 IRDT 2021], username accepted
+[Command], [Sun Jul 11 20:12:20 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 20:12:20 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 20:12:22 IRDT 2021], start game 
+[Info], [Sun Jul 11 20:12:22 IRDT 2021], The Well is filled
+[Info], [Sun Jul 11 20:12:25 IRDT 2021], save user
+[Command], [Sun Jul 11 20:12:25 IRDT 2021], menu command
+[Alarm], [Sun Jul 11 20:12:26 IRDT 2021], start game 
+[Info], [Sun Jul 11 20:12:26 IRDT 2021], The Well is filled
+[Info], [Sun Jul 11 20:13:41 IRDT 2021], username accepted
+[Command], [Sun Jul 11 20:13:41 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 20:13:41 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 20:13:42 IRDT 2021], start game 
+[Info], [Sun Jul 11 20:14:14 IRDT 2021], username accepted
+[Command], [Sun Jul 11 20:14:14 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 20:14:14 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 20:14:15 IRDT 2021], start game 
+[Info], [Sun Jul 11 20:15:36 IRDT 2021], username accepted
+[Command], [Sun Jul 11 20:15:36 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 20:15:36 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 20:15:38 IRDT 2021], start game 
+[Info], [Sun Jul 11 20:16:23 IRDT 2021], username accepted
+[Command], [Sun Jul 11 20:16:23 IRDT 2021], password : <javad>
+[Replay], [Sun Jul 11 20:16:23 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 11 20:16:24 IRDT 2021], start game 
+[Info], [Sun Jul 11 20:16:27 IRDT 2021], The Well is filled

@@ -112,7 +112,7 @@ public class Product implements Sellable, Destroyable, Changeable {
     }
 
     public boolean collect() {
-        if (Farm.getFarm().products.contains(this) && Warehouse.getWarehouse().emptySpace >= space) {
+        if (Farm.getFarm().products.contains(this) && Warehouse.getWarehouse().emptySpace.get() >= space) {
             destroying();
             Warehouse.getWarehouse().addProduct(this);
             return true;

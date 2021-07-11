@@ -2,15 +2,21 @@ package view;
 
 import controller.Logger;
 import controller.Manager;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
-import model.Farm;
-import model.LocalDate;
-import model.Mission;
+import model.*;
 
-import java.util.Scanner;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import  model.User;
 public class FarmMenu extends Menu {
     Manager manager = Manager.getInstance();
     Farm farm = Farm.getFarm();
@@ -19,6 +25,9 @@ public class FarmMenu extends Menu {
     public void run() {
         LocalDate.resetTime();
         show();
+        mission();
+
+        /*
         while (true) {
             if (Manager.getInstance().giveAward(Manager.getInstance().check())) {
                 System.err.println("to Bordi :) & Stars: " + Manager.getInstance().getStar());
@@ -65,10 +74,136 @@ public class FarmMenu extends Menu {
                 Logger.getLogger(user).log("Invalid command in FarmMenu : <" + input + ">", Logger.LogType.Alarm);
             }
         }
+        */
     }
 
     @Override
     public void show() {
+
+        Pane root = new Pane();
+        root.setId("farm0");
+        scene = new Scene(root, 1000, 600);
+        root.setPadding(new Insets(10, 10, 10, 10));
+        scene.getStylesheets().add("Viper.css");
+        window.setScene(scene);
+
+        Button menu = new Button("menu");
+        menu.setOnAction(e -> menu());// TODO: ۱۱/۰۷/۲۰۲۱
+        menu.getStyleClass().add("button-blue");
+        menu.setLayoutX(0.14 * window.getWidth());
+        menu.setLayoutY(0.88 * window.getHeight());
+        menu.setMinWidth(50);
+        root.getChildren().add(menu);
+
+        Label wellFillPercent = new Label();
+        wellFillPercent.getStyleClass().add("label-well");
+        wellFillPercent.textProperty().bind(Well.getWell().wellFillPercent.asString());
+        wellFillPercent.setLayoutX(0.5*scene.getWidth());
+        wellFillPercent.setLayoutY(0.23*scene.getHeight());
+
+        Label warehouseCap = new Label();
+        warehouseCap.getStyleClass().add("label-well");
+        warehouseCap.textProperty().bind(Warehouse.getWarehouse().warehouseFillPercent.asString());
+        warehouseCap.setLayoutX(0.45*scene.getWidth());
+        warehouseCap.setLayoutY(0.94*scene.getHeight());
+
+        Label time = new Label();
+        time.getStyleClass().add("label-white");
+        time.textProperty().bind(LocalDate.getInstance().currentUnitTime.asString());
+        time.setLayoutX(0.76*scene.getWidth());
+        time.setLayoutY(0.94*scene.getHeight());
+
+        Label coin = new Label();
+        coin.getStyleClass().add("label-white");
+        coin.textProperty().bind(Farm.getFarm().money.asString());
+        coin.setLayoutX(0.63*scene.getWidth());
+        coin.setLayoutY(0.04*scene.getHeight());
+
+        root.getChildren().addAll(wellFillPercent,warehouseCap, coin, time);
+        window.show();
+    }
+
+    private void mission() {
+        Stage window = new Stage();
+        GridPane grid = new GridPane();
+
+        Pane root = new Pane();
+        root.setId("mission");
+        scene = new Scene(root, 500, 500);
+        // root.setPadding(new Insets(10, 10, 10, 10));
+        scene.getStylesheets().add("Viper.css");
+
+        //Block events to other windows
+        window.initModality(Modality.APPLICATION_MODAL);
+        window.setTitle("mission");
+        window.setMinWidth(500);
+
+        Button closeButton = new Button("OK");
+        closeButton.getStyleClass().add("button-blue");
+        closeButton.setOnAction(e -> window.close());
+
+        grid.setPadding(new Insets(50, 40, 10, 10));
+        grid.setVgap(20);
+        grid.setHgap(41);
+        grid.setLayoutX(40);
+        grid.setLayoutY(152);
+
+        Mission m = Mission.getMission();
+        //Name Label - constrains use (child, column, row)
+        int i = 0;
+        Label[] collect = new Label[2*m.getTasks().get(m.getCurrentLevel()).size()];
+        for (String product : m.getTasks().get(m.getCurrentLevel()).keySet()) {
+            collect[i]= new Label(product);
+            collect[i].getStyleClass().add("label-white");
+            GridPane.setConstraints(collect[i], 0, i);
+            collect[i+1] = new Label(String.valueOf(m.getTasks().get(m.getCurrentLevel()).get(product)));
+            collect[i+1].getStyleClass().add("label-white");
+            GridPane.setConstraints(collect[i+1], 1, i);
+            grid.getChildren().addAll(collect[i],collect[i+1]);
+            i++;
+        }
+
+        Label[] star = new Label[5];
+        star[0] = new Label(String.valueOf(m.getCoins()[m.getCurrentLevel() - 1] / 10));
+        star[0].getStyleClass().add("label-white");
+        GridPane.setConstraints(star[0],3,0);
+
+        star[1] = new Label(String.valueOf((m.getAwards().get(m.getCurrentLevel()).get(1)-LocalDate.getInstance().getCurrentTime())/100000000L));
+        star[1].getStyleClass().add("label-white");
+        GridPane.setConstraints(star[1],3,1);
+
+        star[2] = new Label(String.valueOf(m.getCoins()[m.getCurrentLevel() - 1] / 2));
+        star[2].getStyleClass().add("label-white");
+        GridPane.setConstraints(star[2],4,1);
+
+        star[3] = new Label(String.valueOf(((m.getAwards().get(m.getCurrentLevel()).get(2)-LocalDate.getInstance().getCurrentTime())/100000000L)));
+        star[3].getStyleClass().add("label-white");
+        GridPane.setConstraints(star[3],3,3);
+
+        star[4] = new Label(String.valueOf(m.getCoins()[m.getCurrentLevel() - 1]  * 3 / 10));
+        star[4].getStyleClass().add("label-white");
+        GridPane.setConstraints(star[4],4,3);
+
+        for (int j = 0; j < 5; j++) {
+            grid.getChildren().add(star[j]);
+        }
+//        Mission.getMission().getCoins()[Mission.getMission().getCurrentLevel() - 1] / 10
+
+
+        root.getChildren().add(grid);
+
+        VBox layout = new VBox(10);
+        layout.getChildren().addAll(closeButton);
+        layout.setAlignment(Pos.BOTTOM_CENTER);
+        layout.setLayoutX(0.45 * scene.getWidth());
+        layout.setLayoutY(0.9 * scene.getHeight());
+
+        root.getChildren().add(layout);
+
+        //Display window and wait for it to be closed before returning
+        window.setScene(scene);
+        // window.fullScreenProperty();
+        window.showAndWait();
 
     }
 
@@ -76,10 +211,10 @@ public class FarmMenu extends Menu {
         Logger.getLogger(user).log("build command", Logger.LogType.Command);
         if ("bakery icecreamshop milkpackaging mill tailoring textile".contains(matcher.group(1))) {
             int result = manager.build(matcher.group(1));
-            if (result == 0){
+            if (result == 0) {
                 System.out.println(matcher.group(1) + " has already build ");
                 Logger.getLogger(user).log(matcher.group(1) + "  has already build", Logger.LogType.Info);
-            }else if (result == 1) {
+            } else if (result == 1) {
                 System.out.println(matcher.group(1) + " add in farm");
                 Logger.getLogger(user).log(matcher.group(1) + " add in farm", Logger.LogType.Info);
             } else if (result == 2) {

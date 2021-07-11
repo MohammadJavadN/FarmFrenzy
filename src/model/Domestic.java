@@ -25,7 +25,7 @@ public class Domestic extends Animal implements Sellable, Changeable {
         live = 100;
         produceDate = LocalDate.getInstance().getCurrentTime() + processTime * 100000000L;
         LocalDate.getInstance().event.put(produceDate, this);
-        Farm.getFarm().money -= price;
+        Farm.getFarm().money.set(Farm.getFarm().money.get()-price);
         Farm.getFarm().domestics.add(this);
     }
 

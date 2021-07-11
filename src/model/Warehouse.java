@@ -1,15 +1,22 @@
 package model;
 
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+
 import java.util.ArrayList;
 
 public class Warehouse {
     final int CAPACITY;
-    int emptySpace;
+    //int emptySpace;
+    IntegerProperty emptySpace ;
+
+    public IntegerProperty warehouseFillPercent = new SimpleIntegerProperty();
+
     public ArrayList<Product> products = new ArrayList<>();
     static private Warehouse warehouse;
 
     public void clear(){
-        emptySpace = CAPACITY;
+        emptySpace.set(CAPACITY);
         products.clear();
     }
 
@@ -24,12 +31,12 @@ public class Warehouse {
 
     public void addProduct(Product product) {
         products.add(product);
-        emptySpace -= product.space;
+        emptySpace.set(emptySpace.get() - product.space);
     }
 
     public void removeProduct(Product product) {
         products.remove(product);
-        emptySpace += product.space;
+        emptySpace.set(emptySpace.get() + product.space);
     }
 
     public Product getProduct(ProductType productType) {
@@ -43,7 +50,8 @@ public class Warehouse {
 
     private Warehouse() {
         CAPACITY = 30;
-        emptySpace = CAPACITY;
+        emptySpace = new SimpleIntegerProperty(CAPACITY);
+        warehouseFillPercent.bind(emptySpace.multiply(-100).divide(CAPACITY).add(100));
     }
 
     public String toString() {

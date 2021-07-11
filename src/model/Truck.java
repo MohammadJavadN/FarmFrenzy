@@ -30,7 +30,7 @@ public class Truck implements Changeable {
     }
 
     void backHome() {
-        Farm.getFarm().money += transportPrice;
+        Farm.getFarm().money.set(Farm.getFarm().money.get()+transportPrice);
         transportPrice = 0;
         present = true;
         load = 0;

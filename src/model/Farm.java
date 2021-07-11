@@ -1,5 +1,8 @@
 package model;
 
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -14,7 +17,8 @@ public class Farm {
     int[][] grass = new int[ROW][COL];
     ArrayList<Workshop> workshops = new ArrayList<>();
     Warehouse warehouse;
-    int money;
+    //int money;
+    public IntegerProperty money = new SimpleIntegerProperty();
 
     public void clear(){
         domestics.clear();
@@ -29,11 +33,11 @@ public class Farm {
         }
         workshops.clear();
         Warehouse.getWarehouse().clear();
-        money = 0;
+        money.set(0);
     }
 
     public void setMoney(int money) {
-        this.money = money;
+        this.money.set(money);
     }
 
     public int getNumberOfDomestics(String domesticName) {
@@ -47,7 +51,7 @@ public class Farm {
     }
 
     public int getMoney() {
-        return money;
+        return money.get();
     }
 
     public Workshop getWorkshop(String name) {
@@ -146,7 +150,7 @@ public class Farm {
 
     private Farm() {
         warehouse = Warehouse.getWarehouse();
-        money = 1000;
+        money.set(1000);;
         // TODO: ۲۹/۰۵/۲۰۲۱
     }
 

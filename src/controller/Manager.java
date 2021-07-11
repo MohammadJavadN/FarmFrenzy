@@ -61,7 +61,8 @@ public class Manager {
 
     }
 
-    public int build(String name) {// "bakery icecreamshop milkpackaging mill tailoring textile"
+    public int build(String name) {
+        // "bakery icecreamshop milkpackaging mill tailoring textile"
         // return :
         // 0 --> build before
         // 1 --> add in farm
@@ -207,15 +208,16 @@ public class Manager {
         return managerInstance;
     }
 
-    public void start(int level) {
+    public boolean start(int level) {
         if (level > User.getCurrentUser().getOpenedLevel())
-            return ;
+            return false;
         farm.clear();
         LocalDate.getInstance().event.clear();
         LocalDate.resetTime();
         Mission.getMission().setCurrentLevel(level);
         farm.setMoney(Mission.getMission().getCoins()[Mission.getMission().getCurrentLevel() - 1] + User.getCurrentUser().savedCoin);
         Logger.getLogger(User.getCurrentUser()).log("start game ", Logger.LogType.Alarm);
+        return true;
     }
 
     public boolean check() {

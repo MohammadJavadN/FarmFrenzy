@@ -1,15 +1,17 @@
 package model;
 
 import controller.Logger;
-import model.User;
+import javafx.beans.property.LongProperty;
+import javafx.beans.property.SimpleLongProperty;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 
 public class LocalDate {
-    //Date date;
-    private long currentTime;
+    static private LocalDate instance;
+
+
     public HashMap<Long, Object> event = new HashMap<>();
     ArrayList<Long> eventsArrangement = new ArrayList<>();
 
@@ -41,18 +43,32 @@ public class LocalDate {
         }
         return s;
     }
+    //Date date;
+    //private long currentTime;
+    public LongProperty currentTime = new SimpleLongProperty();
+    public LongProperty currentUnitTime = new SimpleLongProperty();
+
+    private LocalDate() {
+        //date = new Date();
+        currentTime.set((new Date()).getTime());//date.getTime();
+        currentUnitTime.bind(currentTime.divide(100000000L).add(-(new Date()).getTime() / 100000000L));
+    }
+
+    static public void resetTime() {
+        getInstance().currentTime.set((new Date()).getTime());
+    }
 
     private String turn() {
         Logger.getLogger(User.getCurrentUser()).log("in turn method ", Logger.LogType.Alarm);
-        String s ;
+        String s;
         s = move();
         sortEvent();
-        currentTime /= 100000000L;
-        currentTime = currentTime *100000000L + (new Date()).getTime()%100000000L+100000000L;
+        currentTime.set(currentTime.get() / (100000000L));
+        currentTime.set(currentTime.get() * 100000000L + (new Date()).getTime() % 100000000L + 100000000L);
         while (eventsArrangement.size() > 0) {
-            if (eventsArrangement.get(0) <= currentTime) {
-                Logger.getLogger(User.getCurrentUser()).log("checkAfterChangeDate "+event.get(eventsArrangement.get(0)), Logger.LogType.Alarm);
-                s+=((Changeable) event.get(eventsArrangement.get(0))).checkAfterChangeDate();
+            if (eventsArrangement.get(0) <= currentTime.get()) {
+                Logger.getLogger(User.getCurrentUser()).log("checkAfterChangeDate " + event.get(eventsArrangement.get(0)), Logger.LogType.Alarm);
+                s += ((Changeable) event.get(eventsArrangement.get(0))).checkAfterChangeDate();
                 sortEvent();
             } else break;
         }
@@ -67,28 +83,17 @@ public class LocalDate {
         animals.addAll(Farm.getFarm().cats);
         String s = "";
         for (Animal animal : animals) {
-            s+=animal.move();
+            s += animal.move();
         }
         return s;
     }
 
+    public long getCurrentUnitTime() {
+        return currentTime.get() / (100000000L) - ((new Date()).getTime() / 100000000L);
+    }
+
     public long getCurrentTime() {
-        return (currentTime/100000000L) *100000000L + (new Date()).getTime()%100000000L;
-    }
-
-    public long getCurrentUnitTime(){
-        return (currentTime / 100000000L) -(new Date()).getTime()/100000000L;
-    }
-
-    private LocalDate() {
-        //date = new Date();
-        currentTime = (new Date()).getTime();//date.getTime();
-    }
-
-    static private LocalDate instance;
-
-    static public void resetTime() {
-        getInstance().currentTime = (new Date()).getTime();
+        return (currentTime.get() / (100000000L)) * (100000000L) + ((new Date()).getTime() % 100000000L);
     }
 
     static public LocalDate getInstance() {
