@@ -1,5 +1,6 @@
 package sample;
 
+import com.sun.javafx.geom.RectangularShape;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -11,6 +12,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import model.User;
+import view.FarmMenu;
 import view.LoginMenu;
 
 

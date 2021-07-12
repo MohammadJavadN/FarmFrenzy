@@ -83,7 +83,7 @@ public class LoginMenu extends Menu {
 
     private void login(String username, String pass) {
         Logger.getLogger().log("click login", Logger.LogType.Command);
-        if ((matcher = Commands.USERNAME.getMatcher(pass.toLowerCase())).matches()) {
+        if ((matcher = Commands.USERNAME.getMatcher(username.toLowerCase())).matches()) {
             usernameL(username, pass);
         } else {
             // TODO: ۱۱/۰۷/۲۰۲۱

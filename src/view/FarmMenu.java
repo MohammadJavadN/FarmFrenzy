@@ -14,7 +14,6 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.*;
 
-import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class FarmMenu extends Menu {
@@ -123,14 +122,11 @@ public class FarmMenu extends Menu {
         window.show();
     }
 
-    private void mission() {
+    public void mission() {
         Stage window = new Stage();
-        GridPane grid = new GridPane();
-
         Pane root = new Pane();
         root.setId("mission");
         scene = new Scene(root, 500, 500);
-        // root.setPadding(new Insets(10, 10, 10, 10));
         scene.getStylesheets().add("Viper.css");
 
         //Block events to other windows
@@ -142,55 +138,54 @@ public class FarmMenu extends Menu {
         closeButton.getStyleClass().add("button-blue");
         closeButton.setOnAction(e -> window.close());
 
-        grid.setPadding(new Insets(50, 40, 10, 10));
-        grid.setVgap(20);
-        grid.setHgap(41);
-        grid.setLayoutX(40);
-        grid.setLayoutY(152);
-
         Mission m = Mission.getMission();
         //Name Label - constrains use (child, column, row)
         int i = 0;
-        Label[] collect = new Label[2*m.getTasks().get(m.getCurrentLevel()).size()];
+        int pT = 210, pR1 = 40, vGap1 = 56, pR2 = 293, vGap2 = 72,hGap=105;
+        Label[] collect = new Label[2 * m.getTasks().get(m.getCurrentLevel()).size()];
         for (String product : m.getTasks().get(m.getCurrentLevel()).keySet()) {
-            collect[i]= new Label(product);
+            collect[i] = new Label(product);
             collect[i].getStyleClass().add("label-white");
-            GridPane.setConstraints(collect[i], 0, i);
-            collect[i+1] = new Label(String.valueOf(m.getTasks().get(m.getCurrentLevel()).get(product)));
-            collect[i+1].getStyleClass().add("label-white");
-            GridPane.setConstraints(collect[i+1], 1, i);
-            grid.getChildren().addAll(collect[i],collect[i+1]);
+            collect[i].setLayoutX(pR1);
+            collect[i].setLayoutY(pT + vGap1 * i);
+
+            collect[i + 1] = new Label(String.valueOf(m.getTasks().get(m.getCurrentLevel()).get(product)));
+            collect[i + 1].getStyleClass().add("label-white");
+            collect[i + 1].setLayoutX(1.1*pR1+collect[i].getText().length()*collect[i].getFont().getSize());
+            collect[i + 1].setLayoutY(pT + vGap1 * i);
+            root.getChildren().addAll(collect[i],collect[i+1]);
             i++;
         }
 
         Label[] star = new Label[5];
         star[0] = new Label(String.valueOf(m.getCoins()[m.getCurrentLevel() - 1] / 10));
         star[0].getStyleClass().add("label-white");
-        GridPane.setConstraints(star[0],3,0);
+        star[0].setLayoutX(pR2);
+        star[0].setLayoutY(pT);
 
         star[1] = new Label(String.valueOf((m.getAwards().get(m.getCurrentLevel()).get(1)-LocalDate.getInstance().getCurrentTime())/100000000L));
         star[1].getStyleClass().add("label-white");
-        GridPane.setConstraints(star[1],3,1);
+        star[1].setLayoutX(pR2);
+        star[1].setLayoutY(pT+ vGap2);
 
         star[2] = new Label(String.valueOf(m.getCoins()[m.getCurrentLevel() - 1] / 2));
         star[2].getStyleClass().add("label-white");
-        GridPane.setConstraints(star[2],4,1);
+        star[2].setLayoutX(pR2+hGap);
+        star[2].setLayoutY(pT+ 0.8*vGap2);
 
-        star[3] = new Label(String.valueOf(((m.getAwards().get(m.getCurrentLevel()).get(2)-LocalDate.getInstance().getCurrentTime())/100000000L)));
+        star[3] = new Label(String.valueOf(((m.getAwards().get(m.getCurrentLevel()).get(2) - LocalDate.getInstance().getCurrentTime()) / 100000000L)));
         star[3].getStyleClass().add("label-white");
-        GridPane.setConstraints(star[3],3,3);
+        star[3].setLayoutX(pR2);
+        star[3].setLayoutY(pT+2.1* vGap2);
 
-        star[4] = new Label(String.valueOf(m.getCoins()[m.getCurrentLevel() - 1]  * 3 / 10));
+        star[4] = new Label(String.valueOf(m.getCoins()[m.getCurrentLevel() - 1] * 3 / 10));
         star[4].getStyleClass().add("label-white");
-        GridPane.setConstraints(star[4],4,3);
+        star[4].setLayoutX(pR2+hGap);
+        star[4].setLayoutY(pT+1.9* vGap2);
 
         for (int j = 0; j < 5; j++) {
-            grid.getChildren().add(star[j]);
+            root.getChildren().add(star[j]);
         }
-//        Mission.getMission().getCoins()[Mission.getMission().getCurrentLevel() - 1] / 10
-
-
-        root.getChildren().add(grid);
 
         VBox layout = new VBox(10);
         layout.getChildren().addAll(closeButton);
@@ -200,9 +195,8 @@ public class FarmMenu extends Menu {
 
         root.getChildren().add(layout);
 
-        //Display window and wait for it to be closed before returning
         window.setScene(scene);
-        // window.fullScreenProperty();
+        window.setResizable(false);
         window.showAndWait();
 
     }
