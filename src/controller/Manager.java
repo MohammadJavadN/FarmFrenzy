@@ -227,14 +227,14 @@ public class Manager {
         boolean coinsBoolean = false;
         if (Mission.getMission().getTasks().get(Mission.getMission().getCurrentLevel() - 1).containsKey("coins")
                 && !coinsBoolean)
-            coinsBoolean = (Mission.getMission().getTasks().get(Mission.getMission().getCurrentLevel() - 1).get("coins")
+            coinsBoolean = (Mission.getMission().getTasks().get(Mission.getMission().getCurrentLevel() - 1).get("coins").get()
                     <= farm.getMoney());
         for (String s : Mission.getMission().getTasks().get(Mission.getMission().getCurrentLevel() - 1).keySet()) {
             if (s.equals("chicken") || s.equals("ostrich") || s.equals("cow")) {
                 dinamic = (farm.getNumberOfDomestics(s)) >= Mission.getMission().getTasks().get(Mission.getMission().
-                        getCurrentLevel() - 1).get(s);
+                        getCurrentLevel() - 1).get(s).get();
             } else if ("EGG FEATHER COW_MILK FLOUR CLOTH MILK BREAD SHIRT ICE_CREAM LION BEAR TIGER".contains(s.toUpperCase())) {
-                dinamic = Mission.getMission().getTasks().get(Mission.getMission().getCurrentLevel() - 1).get(s) <=
+                dinamic = Mission.getMission().getTasks().get(Mission.getMission().getCurrentLevel() - 1).get(s).get() <=
                         Warehouse.getWarehouse().getNumberOfProducts(s.toUpperCase());
             } else continue;
             output = (output && dinamic);

@@ -23,7 +23,8 @@ public class Workshop implements Changeable {
         this.cost = cost;
         this.processTime = processTime;
         //processDate = LocalDate.getInstance().getCurrentTime() + this.processTime*100000000L;
-        Farm.getFarm().money.set(Farm.getFarm().money.get()-cost);
+        //Farm.getFarm().money.set(Farm.getFarm().money.get()-cost);
+        Farm.getFarm().addMoney(-cost);
         Farm.getFarm().workshops.add(this);
     }
 

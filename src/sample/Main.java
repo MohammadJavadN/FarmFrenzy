@@ -1,18 +1,7 @@
 package sample;
 
-import com.sun.javafx.geom.RectangularShape;
 import javafx.application.Application;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-import model.User;
-import view.FarmMenu;
 import view.LoginMenu;
 
 
@@ -23,6 +12,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage window) throws Exception {
+
+        window.setResizable(false);
         LoginMenu.getLoginMenu(window).run();
 //        root = new GridPane();
 //        root.setId("m1");

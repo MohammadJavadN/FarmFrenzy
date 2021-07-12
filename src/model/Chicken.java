@@ -2,7 +2,7 @@ package model;
 
 public class Chicken extends Domestic {
     static int price =100;
-    private Chicken() {
+    Chicken() {
         super(ProductType.EGG, 2, 100, 1, "chicken");
     }
 

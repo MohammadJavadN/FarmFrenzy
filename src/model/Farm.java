@@ -2,9 +2,11 @@ package model;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import view.FarmMenu;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Farm {
     final int ROW = 6;
@@ -20,7 +22,20 @@ public class Farm {
     //int money;
     public IntegerProperty money = new SimpleIntegerProperty();
 
-    public void clear(){
+    public void addMoney(int count){
+        money.set(money.get()+count);
+        if (money.get()<100)
+            FarmMenu.rootId ="farm0";
+        else if (money.get()<150)
+            FarmMenu.rootId ="farm100";
+        else if (money.get()<200)
+            FarmMenu.rootId ="farm150";
+        else if (money.get()<400)
+            FarmMenu.rootId ="farm200";
+        else FarmMenu.rootId ="farm400";
+    }
+    public void clear() {
+        domesticsNum.clear();
         domestics.clear();
         wilds.clear();
         cats.clear();
@@ -33,12 +48,42 @@ public class Farm {
         }
         workshops.clear();
         Warehouse.getWarehouse().clear();
-        money.set(0);
+        //money.set(0);
+        addMoney(-money.get());
     }
 
     public void setMoney(int money) {
         this.money.set(money);
+        addMoney(0);
     }
+
+
+    HashMap<String, IntegerProperty> domesticsNum = new HashMap<>();
+    IntegerProperty getDomesticNum(String name){
+        if (domesticsNum.containsKey(name)) {
+            return domesticsNum.get(name);
+        } else {
+            domesticsNum.put(name, new SimpleIntegerProperty(0));
+            return domesticsNum.get(name);
+        }
+    }
+
+    public void addDomestic(Domestic domestic) {
+        if (domesticsNum.containsKey(domestic.NAME)) {
+            domesticsNum.get(domestic.NAME).set(domesticsNum.get(domestic.NAME).get() + 1);
+        } else {
+            domesticsNum.put(domestic.NAME, new SimpleIntegerProperty(1));
+        }
+        domestics.add(domestic);
+    }
+
+    public void remDomestics(Domestic domestic) {
+        if (domesticsNum.containsKey(domestic.NAME)) {
+            domesticsNum.get(domestic.NAME).set(domesticsNum.get(domestic.NAME).get() - 1);
+            domestics.remove(domestic);
+        }
+    }
+
 
     public int getNumberOfDomestics(String domesticName) {
         int cnt = 0;
@@ -83,7 +128,8 @@ public class Farm {
             }
         }
         if (o != null) {
-            warehouse.products.remove(o);
+            warehouse.removeProduct((Product) o);
+//            warehouse.products.remove(o);
             return;
         }
         for (Domestic domestic : domestics) {
@@ -93,13 +139,17 @@ public class Farm {
             }
         }
         if (o != null)
-            domestics.remove(o);
+            remDomestics((Domestic) o);
+            //domestics.remove(o);
     }
 
     public void truckUnload(Object o) {
         if ("cow buffalo chicken ostrich".contains(((Sellable) o).getName())) {
-            domestics.add((Domestic) o);
-        } else warehouse.products.add((Product) o);
+            addDomestic((Domestic) o);
+            //domestics.add((Domestic) o);
+        } else
+            warehouse.addProduct((Product) o);
+//            warehouse.products.add((Product) o);
     }
 
     public ArrayList<Wild> getWilds() {
@@ -150,7 +200,8 @@ public class Farm {
 
     private Farm() {
         warehouse = Warehouse.getWarehouse();
-        money.set(1000);;
+        money.set(1000);
+        addMoney(0);
         // TODO: ۲۹/۰۵/۲۰۲۱
     }
 
