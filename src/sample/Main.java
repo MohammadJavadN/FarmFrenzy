@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
@@ -31,9 +33,6 @@ public class Main extends Application {
         window = stage;
         window.setResizable(false);
         LoginMenu.getLoginMenu(window).run();
-
-
-
 
     }
 }

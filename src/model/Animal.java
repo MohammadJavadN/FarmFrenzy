@@ -18,12 +18,12 @@ abstract class Animal implements Destroyable {
     int xVelocity, yVelocity;
     Random random = new Random();
     final String NAME;
-    String imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\dog.gif";
-
-    public Animal(String name, Scene scene, Pane root) {
+    String imagePath;//= "C:\\Users\\User\\Desktop\\HelloFX\\dog.gif";
+    ImageView imageView;
+    public Animal(String name, Scene scene, Pane root,String imagePath) {
         this.xPosition.set(random.nextInt(6));
         this.yPosition.set(random.nextInt(6));
-
+        this.imagePath = imagePath;
         this.NAME = name;
         Image image = null;
         try {
@@ -32,10 +32,9 @@ abstract class Animal implements Destroyable {
             e.printStackTrace();
         }
 
-        ImageView imageView = new ImageView(image);
+        imageView = new ImageView(image);
 
         imageView.xProperty().bind(scene.widthProperty().multiply(xPosition.multiply(0.065).add(0.33)));
-//        imageView.xProperty().bind(xPosition.multiply(65));
         imageView.yProperty().bind(scene.heightProperty().multiply(yPosition.multiply(0.075).add(0.33)));
         imageView.setPreserveRatio(true);
 

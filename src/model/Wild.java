@@ -16,8 +16,8 @@ public class Wild extends Animal implements Changeable {
     long lastTrapTime;
 
     //    int sellPrice;
-    public Wild(ProductType wildType, Scene scene, Pane root) {
-        super(wildType.name().toLowerCase(Locale.ROOT), scene, root);
+    public Wild(ProductType wildType, Scene scene, Pane root, String path) {
+        super(wildType.name().toLowerCase(Locale.ROOT), scene, root, path);
         this.wildType = wildType;
     }
 
@@ -115,6 +115,7 @@ public class Wild extends Animal implements Changeable {
     @Override
     public void destroying() {
         Farm.getFarm().wilds.remove(this);
+        imageView.setVisible(false);
     }
 
     public String toString() {

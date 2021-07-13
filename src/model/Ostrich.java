@@ -7,7 +7,7 @@ public class Ostrich extends Domestic {
     static int price = 200;
 
     private Ostrich(Scene scene, Pane root) {
-        super(ProductType.FEATHER, 3, 200, 2, "ostrich", scene, root);
+        super(ProductType.FEATHER, 3, 200, 2, "ostrich", scene, root, "C:\\Users\\User\\Desktop\\HelloFX\\img\\ostrich.png");
     }
 
     public static boolean buy(Scene scene, Pane root) {

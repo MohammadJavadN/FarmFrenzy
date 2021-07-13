@@ -8,16 +8,13 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.*;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class FarmMenu extends Menu {
@@ -31,26 +28,35 @@ public class FarmMenu extends Menu {
         show();
         mission();
         Farm.getFarm().addMoney(0);
-        // System.out.println(Mission.getMission().toString1());
+        scene.setOnMousePressed(event -> {
+            handleMouseEvent(event);
+            System.out.println("mouse click detected! " + event.getSource());
+            System.out.println("x = " + event.getX());
+            System.out.println("y = " + event.getY());
+        });
     }
-    void addAnimal(Pane root){
-        Image image = null;
-        try {
-            image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\HelloFX\\dog.gif"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+
+    void handleMouseEvent(MouseEvent e) {
+        if (e.getX() > 0.129 * scene.getWidth() && e.getX() < 0.4 * scene.getWidth() && e.getY() < 0.1 * scene.getHeight())
+            buy(e);
+
+    }
+
+    void buy(MouseEvent e) {
+        if (e.getX() < 0.180 * scene.getWidth()) {
+            manager.buy("chicken", scene, (Pane) scene.getRoot());
+        }else if (e.getX() > 0.187 * scene.getWidth() && e.getX() < 0.235 * scene.getWidth()) {
+            manager.buy("ostrich", scene, (Pane) scene.getRoot());
+        }else if (e.getX() > 0.240 * scene.getWidth() && e.getX() < 0.288 * scene.getWidth()) {
+            manager.buy("cow", scene, (Pane) scene.getRoot());
+        }else if (e.getX() > 0.295 * scene.getWidth() && e.getX() < 0.343 * scene.getWidth()) {
+            manager.buy("dog", scene, (Pane) scene.getRoot());
+        }else if (e.getX() > 0.350 * scene.getWidth() && e.getX() < 0.398 * scene.getWidth()) {
+            manager.buy("cat", scene, (Pane) scene.getRoot());
         }
 
-        ImageView imageView = new ImageView(image);
-
-        imageView.setX(0.33*scene.getWidth()+5*(0.065*scene.getWidth()));
-        imageView.setY(0.33*scene.getHeight()+5*(0.075*scene.getHeight()));
-        imageView.setPreserveRatio(true);
-
-        root.getChildren().add(imageView);
-        imageView.setFitHeight(scene.getWidth()/10);
-        imageView.setFitWidth(scene.getHeight()/10);
     }
+
     @Override
     public void show() {
         Pane root = new Pane();
@@ -67,6 +73,14 @@ public class FarmMenu extends Menu {
         menu.setLayoutY(0.88 * window.getHeight());
         menu.setMinWidth(50);
         root.getChildren().add(menu);
+
+        Button turn = new Button("turn");
+        turn.setOnAction(e -> LocalDate.getInstance().turn(1));// TODO: ۱۱/۰۷/۲۰۲۱
+        turn.getStyleClass().add("button-blue");
+        turn.setLayoutX(0.47 * window.getWidth());
+        turn.setLayoutY(0.01 * window.getHeight());
+        turn.setMinWidth(50);
+        root.getChildren().add(turn);
 
         Label wellFillPercent = new Label();
         wellFillPercent.getStyleClass().add("label-well");

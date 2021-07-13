@@ -7,7 +7,7 @@ public class Chicken extends Domestic {
     static int price = 100;
 
     Chicken(Scene scene, Pane root) {
-        super(ProductType.EGG, 2, 100, 1, "chicken", scene, root);
+        super(ProductType.EGG, 2, 100, 1, "chicken", scene, root, "C:\\Users\\User\\Desktop\\HelloFX\\img\\hen.png");
     }
 
     public static boolean buy( Scene scene, Pane root) {

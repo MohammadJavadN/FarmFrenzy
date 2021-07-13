@@ -11,8 +11,8 @@ public class Cat extends Animal {
     Product product;
 
     private Cat(Scene scene, Pane root) {
-        super("cat", scene, root);
-
+        super("cat", scene, root,"C:\\Users\\User\\Desktop\\HelloFX\\img\\cat.png");
+        Farm.getFarm().addMoney(-price);
         Farm.getFarm().cats.add(this);
     }
 
@@ -50,6 +50,7 @@ public class Cat extends Animal {
         if (product != null)
             product.catComeFor = false;
         Farm.getFarm().cats.remove(this);
+        imageView.setVisible(false);
     }
 
     String move() {

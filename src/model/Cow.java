@@ -7,7 +7,7 @@ public class Cow extends Domestic {
     static int price = 400;
 
     private Cow(Scene scene, Pane root) {
-        super(ProductType.COW_MILK, 5, 400, 4, "cow", scene, root);
+        super(ProductType.COW_MILK, 5, 400, 4, "cow", scene, root, "C:\\Users\\User\\Desktop\\HelloFX\\img\\cow1.png");
     }
 
     public static boolean buy(Scene scene, Pane root) {

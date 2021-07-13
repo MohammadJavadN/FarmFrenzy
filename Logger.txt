@@ -791,3 +791,693 @@ chicken in [4,4] died of malnutrition
 [Alarm], [Tue Jul 13 13:32:47 IRDT 2021], in turn method       user : j
 [Alarm], [Tue Jul 13 13:32:47 IRDT 2021], in turn method       user : j
 [Alarm], [Tue Jul 13 13:32:47 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 13:55:12 IRDT 2021], load user file
+[Command], [Tue Jul 13 13:55:16 IRDT 2021], click login
+[Command], [Tue Jul 13 13:55:16 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 13:55:16 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 13:55:16 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 13:55:16 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 13:55:18 IRDT 2021], start game       user : j
+[Info], [Tue Jul 13 13:56:02 IRDT 2021], load user file
+[Command], [Tue Jul 13 13:56:10 IRDT 2021], click login
+[Command], [Tue Jul 13 13:56:10 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 13:56:10 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 13:56:10 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 13:56:10 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 13:56:12 IRDT 2021], start game       user : j
+[Alarm], [Tue Jul 13 13:56:18 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 13:56:21 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 13:56:21 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 13:56:24 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 13:56:25 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 13:56:26 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 13:56:26 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 13:56:27 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:11:40 IRDT 2021], load user file
+[Info], [Tue Jul 13 14:13:55 IRDT 2021], load user file
+[Command], [Tue Jul 13 14:14:00 IRDT 2021], click login
+[Command], [Tue Jul 13 14:14:00 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 14:14:00 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 14:14:00 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 14:14:00 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 14:14:01 IRDT 2021], start game       user : j
+[Info], [Tue Jul 13 14:39:36 IRDT 2021], load user file
+[Command], [Tue Jul 13 14:39:41 IRDT 2021], click login
+[Command], [Tue Jul 13 14:39:41 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 14:39:41 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 14:39:41 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 14:39:41 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 14:39:43 IRDT 2021], start game       user : j
+[Info], [Tue Jul 13 14:39:56 IRDT 2021], save user      user : j
+[Command], [Tue Jul 13 14:39:56 IRDT 2021], menu command      user : j
+[Alarm], [Tue Jul 13 14:39:57 IRDT 2021], start game       user : j
+[Info], [Tue Jul 13 14:40:28 IRDT 2021], save user      user : j
+[Command], [Tue Jul 13 14:40:28 IRDT 2021], menu command      user : j
+[Alarm], [Tue Jul 13 14:40:29 IRDT 2021], start game       user : j
+[Alarm], [Tue Jul 13 14:41:15 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:15 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:15 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:15 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 14:41:15 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:15 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:15 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:15 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:15 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:15 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:15 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:15 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:17 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:17 IRDT 2021], checkAfterChangeDate chicken 80% [1,4]
+      user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021], chicken in [1,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:17 IRDT 2021], checkAfterChangeDate chicken 80% [6,3]
+      user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021], chicken in [6,3] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:17 IRDT 2021], checkAfterChangeDate chicken 80% [5,4]
+      user : j
+[Info], [Tue Jul 13 14:41:17 IRDT 2021], chicken in [5,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:22 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:22 IRDT 2021], checkAfterChangeDate ostrich 70% [2,2]
+      user : j
+[Info], [Tue Jul 13 14:41:22 IRDT 2021], ostrich in [2,2] produce FEATHER      user : j
+[Alarm], [Tue Jul 13 14:41:27 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:27 IRDT 2021], checkAfterChangeDate chicken 60% [2,5]
+      user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021], chicken in [2,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:27 IRDT 2021], checkAfterChangeDate chicken 60% [5,4]
+      user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021], chicken in [5,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:27 IRDT 2021], checkAfterChangeDate chicken 60% [5,4]
+      user : j
+[Info], [Tue Jul 13 14:41:27 IRDT 2021], chicken in [5,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:29 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:29 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:29 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:29 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 14:41:29 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:29 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:29 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:29 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:29 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:29 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:29 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:29 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:30 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021],       user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:30 IRDT 2021], checkAfterChangeDate ostrich 40% [3,2]
+      user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], ostrich in [3,2] produce FEATHER      user : j
+[Alarm], [Tue Jul 13 14:41:30 IRDT 2021], checkAfterChangeDate chicken 40% [3,4]
+      user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], chicken in [3,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:30 IRDT 2021], checkAfterChangeDate chicken 40% [6,3]
+      user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], chicken in [6,3] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:30 IRDT 2021], checkAfterChangeDate chicken 40% [5,4]
+      user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], chicken in [5,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:30 IRDT 2021], checkAfterChangeDate EGG [6,3]
+      user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], EGG in [6,3] was destroyed      user : j
+[Alarm], [Tue Jul 13 14:41:30 IRDT 2021], checkAfterChangeDate EGG [5,4]
+      user : j
+[Info], [Tue Jul 13 14:41:30 IRDT 2021], EGG in [5,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 14:41:32 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:32 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:32 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:32 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 14:41:32 IRDT 2021], ostrich in [3,2] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:32 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:32 IRDT 2021], chicken in [3,4] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:32 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:32 IRDT 2021], chicken in [6,3] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:32 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:32 IRDT 2021], chicken in [5,4] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:32 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:33 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], ostrich in [3,3] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken in [3,3] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken in [6,2] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken in [5,5] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:33 IRDT 2021], checkAfterChangeDate chicken 20% [3,2]
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken in [3,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:33 IRDT 2021], checkAfterChangeDate chicken 20% [5,2]
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken in [5,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:33 IRDT 2021], checkAfterChangeDate chicken 20% [5,6]
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken in [5,6] produce EGG      user : j
+[Alarm], [Tue Jul 13 14:41:33 IRDT 2021], checkAfterChangeDate EGG [5,4]
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], EGG in [5,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 14:41:33 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], ostrich in [4,3] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken in [3,2] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken in [5,2] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], chicken in [5,6] looked for food 
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:33 IRDT 2021], checkAfterChangeDate ostrich 10% [4,2]
+      user : j
+[Info], [Tue Jul 13 14:41:33 IRDT 2021], ostrich in [4,2] produce FEATHER      user : j
+[Alarm], [Tue Jul 13 14:41:34 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], ostrich in [4,2] looked for food 
+ostrich in [4,2] died of malnutrition
+      user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], chicken in [4,2] looked for food 
+chicken in [4,2] died of malnutrition
+      user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], chicken in [4,2] looked for food 
+chicken in [4,2] died of malnutrition
+      user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], chicken in [5,5] looked for food 
+chicken in [5,5] died of malnutrition
+      user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:34 IRDT 2021], checkAfterChangeDate EGG [5,4]
+      user : j
+[Info], [Tue Jul 13 14:41:34 IRDT 2021], EGG in [5,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 14:41:35 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:35 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:35 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:35 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:35 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:35 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:35 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:35 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:35 IRDT 2021], checkAfterChangeDate EGG [5,2]
+      user : j
+[Info], [Tue Jul 13 14:41:35 IRDT 2021], EGG in [5,2] was destroyed      user : j
+[Alarm], [Tue Jul 13 14:41:35 IRDT 2021], checkAfterChangeDate EGG [5,6]
+      user : j
+[Info], [Tue Jul 13 14:41:35 IRDT 2021], EGG in [5,6] was destroyed      user : j
+[Alarm], [Tue Jul 13 14:41:36 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:36 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:36 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:36 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 14:41:36 IRDT 2021], checkAfterChangeDate FEATHER [4,2]
+      user : j
+[Info], [Tue Jul 13 14:41:36 IRDT 2021], FEATHER in [4,2] was destroyed      user : j
+[Alarm], [Tue Jul 13 14:41:36 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 14:41:36 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:36 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 14:41:36 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 14:45:41 IRDT 2021], load user file
+[Command], [Tue Jul 13 14:46:07 IRDT 2021], click login
+[Command], [Tue Jul 13 14:46:07 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 14:46:08 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 14:46:08 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 14:46:08 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 14:46:09 IRDT 2021], start game       user : j
+[Info], [Tue Jul 13 15:34:59 IRDT 2021], load user file
+[Command], [Tue Jul 13 15:35:03 IRDT 2021], click login
+[Command], [Tue Jul 13 15:35:03 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 15:35:03 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 15:35:03 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 15:35:03 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 15:35:04 IRDT 2021], start game       user : j
+[Info], [Tue Jul 13 15:38:59 IRDT 2021], load user file
+[Command], [Tue Jul 13 15:39:03 IRDT 2021], click login
+[Command], [Tue Jul 13 15:39:03 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 15:39:03 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 15:39:03 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 15:39:03 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 15:39:05 IRDT 2021], start game       user : j
+[Info], [Tue Jul 13 15:53:53 IRDT 2021], load user file
+[Command], [Tue Jul 13 15:54:53 IRDT 2021], click login
+[Command], [Tue Jul 13 15:54:53 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 15:54:53 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 15:54:53 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 15:54:53 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 15:54:55 IRDT 2021], start game       user : j
+[Info], [Tue Jul 13 15:59:06 IRDT 2021], load user file
+[Info], [Tue Jul 13 15:59:29 IRDT 2021], load user file
+[Command], [Tue Jul 13 15:59:33 IRDT 2021], click login
+[Command], [Tue Jul 13 15:59:33 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 15:59:33 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 15:59:33 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 15:59:33 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 15:59:35 IRDT 2021], start game       user : j
+[Alarm], [Tue Jul 13 16:00:04 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:00:04 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:00:04 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:00:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:04 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:00:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:04 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:00:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:04 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:00:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:04 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:00:10 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:00:10 IRDT 2021], checkAfterChangeDate chicken 80% [5,5]
+      user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021], chicken in [5,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:00:10 IRDT 2021], checkAfterChangeDate chicken 80% [4,1]
+      user : j
+[Info], [Tue Jul 13 16:00:10 IRDT 2021], chicken in [4,1] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:00:12 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:00:12 IRDT 2021], checkAfterChangeDate ostrich 70% [1,4]
+      user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021], ostrich in [1,4] produce FEATHER      user : j
+[Alarm], [Tue Jul 13 16:00:12 IRDT 2021], checkAfterChangeDate chicken 80% [5,1]
+      user : j
+[Info], [Tue Jul 13 16:00:12 IRDT 2021], chicken in [5,1] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:00:59 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:00:59 IRDT 2021], checkAfterChangeDate chicken 60% [4,6]
+      user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021], chicken in [4,6] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:00:59 IRDT 2021], checkAfterChangeDate chicken 60% [6,1]
+      user : j
+[Info], [Tue Jul 13 16:00:59 IRDT 2021], chicken in [6,1] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:01:04 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:04 IRDT 2021], checkAfterChangeDate cow 50% [3,2]
+      user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021], cow in [3,2] produce COW_MILK      user : j
+[Alarm], [Tue Jul 13 16:01:04 IRDT 2021], checkAfterChangeDate chicken 60% [4,2]
+      user : j
+[Info], [Tue Jul 13 16:01:04 IRDT 2021], chicken in [4,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:01:05 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:05 IRDT 2021], checkAfterChangeDate chicken 40% [3,5]
+      user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], chicken in [3,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:01:05 IRDT 2021], checkAfterChangeDate ostrich 40% [2,4]
+      user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], ostrich in [2,4] produce FEATHER      user : j
+[Alarm], [Tue Jul 13 16:01:05 IRDT 2021], checkAfterChangeDate chicken 40% [5,2]
+      user : j
+[Info], [Tue Jul 13 16:01:05 IRDT 2021], chicken in [5,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:01:08 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], chicken in [3,5] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], ostrich in [2,4] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], cow in [3,3] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], chicken in [5,2] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:08 IRDT 2021], checkAfterChangeDate chicken 40% [4,2]
+      user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], chicken in [4,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:01:08 IRDT 2021], checkAfterChangeDate FEATHER [1,4]
+      user : j
+[Info], [Tue Jul 13 16:01:08 IRDT 2021], FEATHER in [1,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 16:01:10 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], chicken in [3,4] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], ostrich in [2,5] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], cow in [2,3] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], chicken in [5,3] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], chicken in [4,2] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:10 IRDT 2021], checkAfterChangeDate chicken 20% [4,4]
+      user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], chicken in [4,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:01:10 IRDT 2021], checkAfterChangeDate chicken 20% [5,2]
+      user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], chicken in [5,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:01:10 IRDT 2021], checkAfterChangeDate EGG [4,6]
+      user : j
+[Info], [Tue Jul 13 16:01:10 IRDT 2021], EGG in [4,6] was destroyed      user : j
+[Alarm], [Tue Jul 13 16:01:11 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], chicken in [4,4] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], ostrich in [2,4] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], cow in [2,4] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], chicken in [5,2] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], chicken in [4,3] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:11 IRDT 2021], checkAfterChangeDate ostrich 10% [2,3]
+      user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], ostrich in [2,3] produce FEATHER      user : j
+[Alarm], [Tue Jul 13 16:01:11 IRDT 2021], checkAfterChangeDate chicken 20% [5,3]
+      user : j
+[Info], [Tue Jul 13 16:01:11 IRDT 2021], chicken in [5,3] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:01:12 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], chicken in [4,5] looked for food 
+chicken in [4,5] died of malnutrition
+      user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], ostrich in [2,3] looked for food 
+ostrich in [2,3] died of malnutrition
+      user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], cow in [2,3] looked for food 
+cow in [2,3] died of malnutrition
+      user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], chicken in [5,3] looked for food 
+chicken in [5,3] died of malnutrition
+      user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], chicken in [5,3] looked for food 
+      user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:12 IRDT 2021], checkAfterChangeDate FEATHER [2,4]
+      user : j
+[Info], [Tue Jul 13 16:01:12 IRDT 2021], FEATHER in [2,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 16:01:17 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:17 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:17 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:01:17 IRDT 2021], chicken in [6,3] looked for food 
+chicken in [6,3] died of malnutrition
+      user : j
+[Info], [Tue Jul 13 16:01:17 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:17 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:17 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:19 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:19 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:19 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:19 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:19 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:21 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:21 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:21 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:21 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:21 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:22 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:22 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:22 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:22 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:22 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:23 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:23 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:23 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:23 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:23 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:24 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:24 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:24 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:24 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:24 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:25 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:25 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:25 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:25 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:25 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:26 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:26 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:26 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:26 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:26 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:27 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:27 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:27 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:27 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:27 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:28 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:28 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:28 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:28 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:28 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:28 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:28 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:28 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:28 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:28 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:29 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:29 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:29 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:29 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:29 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:38 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:38 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:38 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:38 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:38 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:39 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:39 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:39 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:39 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:39 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:40 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:40 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:40 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:40 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:40 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:01:41 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:01:41 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:01:41 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:41 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:01:41 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:06:18 IRDT 2021], load user file
+[Command], [Tue Jul 13 16:06:23 IRDT 2021], click login
+[Command], [Tue Jul 13 16:06:23 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 16:06:23 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 16:06:23 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 16:06:23 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 16:06:25 IRDT 2021], start game       user : j
+[Info], [Tue Jul 13 16:08:09 IRDT 2021], load user file
+[Command], [Tue Jul 13 16:08:14 IRDT 2021], click login
+[Command], [Tue Jul 13 16:08:14 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 16:08:14 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 16:08:14 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 16:08:14 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 16:08:16 IRDT 2021], start game       user : j
+[Alarm], [Tue Jul 13 16:08:28 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:08:28 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:08:28 IRDT 2021], checkAfterChangeDate chicken 80% [3,4]
+      user : j
+[Info], [Tue Jul 13 16:08:28 IRDT 2021], chicken in [3,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:08:29 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:08:29 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:08:29 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:08:29 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:29 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:08:29 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:29 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:08:29 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:29 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:08:29 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:08:29 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:08:29 IRDT 2021], checkAfterChangeDate ostrich 70% [1,1]
+      user : j
+[Info], [Tue Jul 13 16:08:29 IRDT 2021], ostrich in [1,1] produce FEATHER      user : j
+[Alarm], [Tue Jul 13 16:08:30 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], Cat move       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], Cat move       user : j
+[Alarm], [Tue Jul 13 16:08:30 IRDT 2021], checkAfterChangeDate chicken 60% [5,4]
+      user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], chicken in [5,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 16:08:30 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:08:30 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 16:08:31 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 16:08:31 IRDT 2021], hound move       user : j
+[Info], [Tue Jul 13 16:08:31 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 16:08:31 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:31 IRDT 2021], ostrich move       user : j
+[Info], [Tue Jul 13 16:08:31 IRDT 2021],       user : j
+[Info], [Tue Jul 13 16:08:31 IRDT 2021], cow move       user : j
+[Info], [Tue Jul 13 16:08:31 IRDT 2021],       user : j

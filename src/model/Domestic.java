@@ -15,8 +15,8 @@ public class Domestic extends Animal implements Sellable, Changeable {
     static int i = 0;
     int id;
 
-    public Domestic(ProductType productType, int processTime, int price, int space, String name, Scene scene, Pane root) {
-        super(name, scene, root);
+    public Domestic(ProductType productType, int processTime, int price, int space, String name, Scene scene, Pane root, String path) {
+        super(name, scene, root, path);
         this.productType = productType;
         this.price = price;
         this.processTime = processTime;
@@ -36,6 +36,7 @@ public class Domestic extends Animal implements Sellable, Changeable {
         if (produceDate / 100000000L != LocalDate.getInstance().getCurrentTime() / 100000000L)
             LocalDate.getInstance().event.remove(produceDate, this);
         Farm.getFarm().remDomestics(this);
+        imageView.setVisible(false);
 //        Farm.getFarm().domestics.remove(this);
     }
 

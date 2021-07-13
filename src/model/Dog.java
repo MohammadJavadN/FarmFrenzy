@@ -9,7 +9,8 @@ public class Dog extends Animal {
     Wild wild;
 
     private Dog(Scene scene, Pane root) {
-        super("hound", scene, root);
+        super("hound", scene, root,"C:\\Users\\User\\Desktop\\HelloFX\\img\\hound.png");
+        Farm.getFarm().addMoney(-price);
         Farm.getFarm().dogs.add(this);
     }
 
@@ -63,6 +64,7 @@ public class Dog extends Animal {
     @Override
     public void destroying() {
         Farm.getFarm().dogs.remove(this);
+        imageView.setVisible(false);
     }
     public String toString(){
         return NAME + " [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "]\n";

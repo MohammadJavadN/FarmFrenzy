@@ -1,7 +1,9 @@
 package model;
 
 import controller.Logger;
+import javafx.scene.image.ImageView;
 import model.User;
+
 
 public class Product implements Sellable, Destroyable, Changeable {
     String name;
@@ -11,7 +13,8 @@ public class Product implements Sellable, Destroyable, Changeable {
     int expirationTime;
     long expirationDate;
     int x, y; // 0-5
-
+    ImageView imageView;
+    String imagePath;
     public Product(ProductType type, int x, int y) {
         this.x = x;
         this.y = y;
@@ -94,6 +97,7 @@ public class Product implements Sellable, Destroyable, Changeable {
         expirationDate = expirationTime*100000000L + LocalDate.getInstance().getCurrentTime();
         LocalDate.getInstance().event.put(expirationDate, this);
         Farm.getFarm().products.add(this);
+
     }
 
     public boolean checkCoordinates(int x, int y) {//1-6
@@ -129,6 +133,7 @@ public class Product implements Sellable, Destroyable, Changeable {
     public void destroying() {
         LocalDate.getInstance().event.remove(expirationDate, this);
         Farm.getFarm().products.remove(this);
+        imageView.setVisible(false);
     }
 
     public boolean equal(String name) {
