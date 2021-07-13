@@ -69,7 +69,7 @@ public class Domestic extends Animal implements Sellable, Changeable {
     }
 
     public void produce() {
-        new Product(productType, xPosition.get(), yPosition.get());
+        new Product(productType, xPosition.get(), yPosition.get(),scene);
     }
 
     public boolean equal(String name) {

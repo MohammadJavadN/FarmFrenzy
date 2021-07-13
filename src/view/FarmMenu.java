@@ -230,7 +230,7 @@ public class FarmMenu extends Menu {
     private void build() {
         Logger.getLogger(user).log("build command", Logger.LogType.Command);
         if ("bakery icecreamshop milkpackaging mill tailoring textile".contains(matcher.group(1))) {
-            int result = manager.build(matcher.group(1));
+            int result = manager.build(matcher.group(1),scene);
             if (result == 0) {
                 System.out.println(matcher.group(1) + " has already build ");
                 Logger.getLogger(user).log(matcher.group(1) + "  has already build", Logger.LogType.Info);

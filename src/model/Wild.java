@@ -34,7 +34,7 @@ public class Wild extends Animal implements Changeable {
         freedom--;
         lastTrapTime = LocalDate.getInstance().getCurrentTime();
         if (freedom == 0) {
-            new Product(wildType, xPosition.get(), yPosition.get());
+            new Product(wildType, xPosition.get(), yPosition.get(),scene);
             destroying();
             return true;
         }

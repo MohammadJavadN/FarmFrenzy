@@ -62,7 +62,7 @@ public class Manager {
 
     }
 
-    public int build(String name) {
+    public int build(String name,Scene scene) {
         // "bakery icecreamshop milkpackaging mill tailoring textile"
         // return :
         // 0 --> build before
@@ -71,17 +71,17 @@ public class Manager {
         // 3 --> invalid name
         switch (name.toLowerCase()) {
             case "bakery":
-                return Bakery.buy();
+                return Bakery.buy(scene);
             case "icecreamshop":
-                return IceCreamShop.buy();
+                return IceCreamShop.buy(scene);
             case "milkpackaging":
-                return MilkPackaging.buy();
+                return MilkPackaging.buy(scene);
             case "mill":
-                return Mill.buy();
+                return Mill.buy(scene);
             case "tailoring":
-                return Tailoring.buy();
+                return Tailoring.buy(scene);
             case "textile":
-                return Textile.buy();
+                return Textile.buy(scene);
             default:
                 return 3;
         }

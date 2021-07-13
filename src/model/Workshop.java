@@ -1,7 +1,7 @@
 package model;
 
 import controller.Logger;
-import model.User;
+import javafx.scene.Scene;
 
 import java.util.Random;
 
@@ -15,8 +15,10 @@ public class Workshop implements Changeable {
     boolean isWorking = false;
     Random random = new Random();
     int x, y;
+    Scene scene;
 
-    Workshop(String name, ProductType input, ProductType output, int cost, int processTime) {
+    Workshop(String name, ProductType input, ProductType output, int cost, int processTime, Scene scene) {
+        this.scene = scene;
         this.name = name;
         this.input = input;
         this.output = output;
@@ -60,7 +62,7 @@ public class Workshop implements Changeable {
 
     public String checkAfterChangeDate() {
         setPosition();
-        new Product(output, x, y);
+        new Product(output, x, y, scene);
         isWorking = false;
         long produceDate = 0;
         for (Long aLong : LocalDate.getInstance().event.keySet()) {

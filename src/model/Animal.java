@@ -20,7 +20,9 @@ abstract class Animal implements Destroyable {
     final String NAME;
     String imagePath;//= "C:\\Users\\User\\Desktop\\HelloFX\\dog.gif";
     ImageView imageView;
+    Scene scene;
     public Animal(String name, Scene scene, Pane root,String imagePath) {
+        this.scene = scene;
         this.xPosition.set(random.nextInt(6));
         this.yPosition.set(random.nextInt(6));
         this.imagePath = imagePath;
