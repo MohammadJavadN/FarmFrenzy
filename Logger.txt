@@ -1,0 +1,23 @@
+creatDate : Tue Jul 13 00:59:55 IRDT 2021
+
+[Info], [Tue Jul 13 00:59:55 IRDT 2021], load user file
+[Command], [Tue Jul 13 01:00:07 IRDT 2021], click Signup: <a>
+[Command], [Tue Jul 13 01:00:07 IRDT 2021], username : <a>
+[Info], [Tue Jul 13 01:00:07 IRDT 2021], creat new logger file
+[Info], [Tue Jul 13 01:00:07 IRDT 2021], username accepted      user : a
+[Command], [Tue Jul 13 01:00:07 IRDT 2021], password : <a>      user : a
+[Replay], [Tue Jul 13 01:00:07 IRDT 2021], Signup successfully      user : a
+[Info], [Tue Jul 13 01:00:07 IRDT 2021], save user file
+[Alarm], [Tue Jul 13 01:00:09 IRDT 2021], start game       user : a
+[Info], [Tue Jul 13 01:00:15 IRDT 2021], save user      user : a
+[Command], [Tue Jul 13 01:00:15 IRDT 2021], menu command      user : a
+[Info], [Tue Jul 13 01:00:41 IRDT 2021], load user file
+[Command], [Tue Jul 13 01:00:48 IRDT 2021], click login
+[Command], [Tue Jul 13 01:00:48 IRDT 2021], entered username : <a>
+[Info], [Tue Jul 13 01:00:48 IRDT 2021], username accepted      user : a
+[Command], [Tue Jul 13 01:00:48 IRDT 2021], password : <a>      user : a
+[Replay], [Tue Jul 13 01:00:48 IRDT 2021], Login successfully      user : a
+[Alarm], [Tue Jul 13 01:00:51 IRDT 2021], start game       user : a
+[Info], [Tue Jul 13 01:00:56 IRDT 2021], save user      user : a
+[Command], [Tue Jul 13 01:00:56 IRDT 2021], menu command      user : a
+[Alarm], [Tue Jul 13 01:00:57 IRDT 2021], start game       user : a
