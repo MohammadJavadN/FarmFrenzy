@@ -16,6 +16,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.*;
+import sample.AlertBox;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -33,23 +34,24 @@ public class FarmMenu extends Menu {
         mission();
         manager.setWildComing(scene, ((Pane) scene.getRoot()));
         Farm.getFarm().addMoney(0);
-        scene.setOnMousePressed(event -> {
-            handleMouseEvent(event);
-            System.out.println("mouse click detected! " + event.getSource());
-            System.out.println("x = " + event.getX());
-            System.out.println("y = " + event.getY());
-        });
+        Truck.getTruck();
+        scene.setOnMousePressed(this::handleMouseEvent);
     }
 
     void handleMouseEvent(MouseEvent e) {
-        System.out.println(inFarm(e));
         if (inBuy(e))
             buy(e);
         else if (inWell(e))
             well();
         else if (inFarm(e))
             plant(e);
-
+        if (manager.giveAward(manager.check())) {
+            if (Mission.getMission().getLevels() != User.getCurrentUser().getOpenedLevel())
+                User.getCurrentUser().setOpenedLevel(User.getCurrentUser().getOpenedLevel() + 1);
+            AlertBox.display("Victory", "Victory!!!\n Your Star = " + manager.getStar() + "\n" + "Your Award = "+
+                    User.getCurrentUser().savedCoin+ "coin.");
+            menu();
+        }
     }
 
     void buy(MouseEvent e) {
@@ -70,9 +72,6 @@ public class FarmMenu extends Menu {
     void plant(MouseEvent e) {
         int y = (int) ((e.getX() - 0.33 * scene.getWidth()) / (0.056 * scene.getWidth())) + 1;
         int x = (int) ((e.getY() - 195 * scene.getHeight()/600) / (44 * scene.getHeight() / 600)) + 1;
-
-        System.out.println("x =  " + x + " & y = " + y);
-        System.out.println(farm.insidePage(x, y));
         if (farm.insidePage(x, y))
             if (manager.plant(x, y)) {
                 Image image = null;
@@ -81,9 +80,7 @@ public class FarmMenu extends Menu {
                 } catch (FileNotFoundException event) {
                     event.printStackTrace();
                 }
-
                 ImageView imageView = new ImageView(image);
-
                 imageView.setX(e.getX() - scene.getWidth() / 40);
                 imageView.setY(e.getY() - scene.getHeight() / 20);
                 imageView.setPreserveRatio(true);
@@ -105,10 +102,6 @@ public class FarmMenu extends Menu {
     }
 
     boolean inFarm(MouseEvent e) {
-
-        System.out.println("in 108 farm menu");
-        System.out.println(e.getX() + " > " + (0.33 * scene.getWidth()) + " && " + e.getX() + " < " + (0.670 * scene.getWidth()) + " && " +
-                e.getY() + " > " + (195 * scene.getHeight() / 600) + " && " + e.getY() + " < " + (460 * scene.getHeight() / 600));
         return e.getX() > 0.33 * scene.getWidth() && e.getX() < 0.670 * scene.getWidth() &&
                 e.getY() > 195 * scene.getHeight() / 600 && e.getY() < 460 * scene.getHeight() / 600;
     }
@@ -137,7 +130,8 @@ public class FarmMenu extends Menu {
             if (manager.giveAward(manager.check())) {
                 if (Mission.getMission().getLevels() != User.getCurrentUser().getOpenedLevel())
                     User.getCurrentUser().setOpenedLevel(User.getCurrentUser().getOpenedLevel() + 1);
-
+                AlertBox.display("Victory", "Victory!!!\n your Award = " + manager.getStar() + "coin.");
+                menu();
             }
             System.out.println(Farm.getFarm().toString());
         });// TODO: ۱۱/۰۷/۲۰۲۱

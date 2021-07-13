@@ -71,6 +71,7 @@ public class Farm {
         Warehouse.getWarehouse().clear();
         //money.set(0);
         addMoney(-money.get());
+        Truck.truck = null;
     }
 
     public void setMoney(int money) {

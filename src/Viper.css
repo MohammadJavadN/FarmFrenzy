@@ -13,6 +13,12 @@
     -fx-font-size: 25;
 }
 
+.label-alert{
+    -fx-text-fill: #29156a;
+    -fx-font: 15px Arial, sans-serif;
+    -fx-font-size: 25;
+}
+
 .button{
     -fx-background-color: #AB4642;
     -fx-text-fill: #FFFFFF;
@@ -46,6 +52,13 @@
     -fx-background-radius: 15;
 }
 
+#alert{
+    -fx-background-image: url("alert.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 500 350;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
 #m1{
     -fx-background-image: url("background_image2.jpg");
     -fx-background-repeat: stretch;

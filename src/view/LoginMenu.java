@@ -12,6 +12,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.User;
+import sample.AlertBox;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -89,6 +90,7 @@ public class LoginMenu extends Menu {
             // TODO: ۱۱/۰۷/۲۰۲۱
             System.out.println("Please write in the form below :\njavad\n");
             Logger.getLogger(user).log("Invalid form username : <" + username + ">", Logger.LogType.Alarm);
+            AlertBox.display("Error","Invalid form username : < " + username + " >");
         }
     }
 
@@ -100,9 +102,12 @@ public class LoginMenu extends Menu {
 
             if ((matcher = Commands.PASSWORD.getMatcher(pass)).matches()) {
                 passwordL(pass);
+            }else {
+                AlertBox.display("Error","Invalid password");
             }
         } else {
             // TODO: ۱۱/۰۷/۲۰۲۱
+            AlertBox.display("Error","this username dose not exist!");
             System.out.println("Invalid username");
             Logger.getLogger(user).log("Invalid username : <" + username + ">", Logger.LogType.Alarm);
         }
@@ -113,6 +118,7 @@ public class LoginMenu extends Menu {
         if (user.correctPass(matcher.group(1))) {
             Logger.getLogger(user).log("Login successfully", Logger.LogType.Replay);
             // TODO: ۱۱/۰۷/۲۰۲۱
+          //  AlertBox.display("Welcome","Welcome!!!");
             System.out.println("\nLogin successfully");
             User.setCurrentUser(user);
             // TODO: ۱۱/۰۷/۲۰۲۱
@@ -122,6 +128,7 @@ public class LoginMenu extends Menu {
         } else {
             // TODO: ۱۱/۰۷/۲۰۲۱   System.out.println("Invalid password!");
             Logger.getLogger(user).log("Wrong password : <" + pass + ">", Logger.LogType.Error);
+            AlertBox.display("Error","Wrong password!");
         }
     }
 
@@ -140,10 +147,12 @@ public class LoginMenu extends Menu {
                 if ((matcher = Commands.PASSWORD.getMatcher(pass)).matches()) {
                     passwordS(pass);
                 } else {
+                    AlertBox.display("Error","Please write in the form below :\ndfv@7d8");
                     System.out.println("Please write in the form below :\ndfv@7d8\n");
                     Logger.getLogger(user).log("Invalid form password : <" + pass + ">", Logger.LogType.Alarm);
                 }
         } else {
+            AlertBox.display("Error","This username is already registered");
             System.out.println("This username is already registered");
             Logger.getLogger(user).log("username is already registered : <" + pass + ">", Logger.LogType.Replay);
         }

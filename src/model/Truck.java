@@ -1,8 +1,14 @@
 package model;
 
 import controller.Logger;
-import model.User;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+import view.FarmMenu;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class Truck implements Changeable {
@@ -13,20 +19,15 @@ public class Truck implements Changeable {
     int load = 0;
     public boolean present;
     long returningTime;
+    ImageView imageView;
+    Scene scene;
 
-    public String transport() {
-        if (!present)
-            return "The truck has not yet returned from the previous trip";
-        if (objects.isEmpty())
-            return "You must first load the truck";
-        transportPrice = 0;
-        for (Object object : objects) {
-            transportPrice += ((Sellable) object).sell();
-        }
-        returningTime = LocalDate.getInstance().getCurrentTime() + TRANSPORT_TIME*100000000L;
-        LocalDate.getInstance().event.put(returningTime, this);
-        present = false;
-        return "The truck started its journey";
+    private Truck() {
+        transportPrice = 0;//
+        capacity = 15;
+        present = true;
+        scene = FarmMenu.r.getScene();
+        creatImage();
     }
 
     void backHome() {
@@ -36,10 +37,7 @@ public class Truck implements Changeable {
         present = true;
         load = 0;
         objects.clear();
-    }
-
-    public void upgrade() {
-
+        setImage();
     }
 
     public boolean load(Object object) {
@@ -63,13 +61,49 @@ public class Truck implements Changeable {
         return false;
     }
 
+    public String transport() {
+        if (!present)
+            return "The truck has not yet returned from the previous trip";
+        if (objects.isEmpty())
+            return "You must first load the truck";
+        transportPrice = 0;
+        for (Object object : objects) {
+            transportPrice += ((Sellable) object).sell();
+        }
+        returningTime = LocalDate.getInstance().getCurrentTime() + TRANSPORT_TIME * 100000000L;
+        LocalDate.getInstance().event.put(returningTime, this);
+        present = false;
+        setImage();
+        return "The truck started its journey";
+    }
 
     static Truck truck;
 
-    private Truck() {
-        transportPrice = 0;//
-        capacity = 15;
-        present = true;
+    private void setImage() {
+        if (present) {
+            imageView.setX(0.26 * scene.getWidth());
+            imageView.setY(0.86 * scene.getHeight());
+        } else {
+            imageView.setX(0.75 * scene.getWidth());
+            imageView.setY(0.1 * scene.getHeight());
+        }
+    }
+    private void creatImage() {
+        Image image = null;
+        try {
+            image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\HelloFX\\img\\truck1.gif"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        imageView = new ImageView(image);
+        setImage();
+        imageView.setPreserveRatio(true);
+
+        ((Pane) scene.getRoot()).getChildren().add(imageView);
+        imageView.setFitHeight(scene.getWidth() / 5);
+        imageView.setFitWidth(scene.getHeight() / 5);
+
     }
 
     public static Truck getTruck() {
