@@ -1,7 +1,8 @@
 package controller;
 
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import model.*;
-import model.User;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -86,20 +87,20 @@ public class Manager {
         }
     }
 
-    public boolean buy(String name) {
+    public boolean buy(String name, Scene scene, Pane root) {
         switch (name.toLowerCase()) {
             case "cat":
-                return Cat.buy();
+                return Cat.buy(scene, root);
             case "dog":
             case "hound":
-                return Dog.buy();
+                return Dog.buy(scene, root);
             case "cow":
             case "buffalo":
-                return Cow.buy();
+                return Cow.buy(scene, root);
             case "chicken":
-                return Chicken.buy();
+                return Chicken.buy(scene, root);
             case "ostrich":
-                return Ostrich.buy();
+                return Ostrich.buy(scene, root);
             default:
                 return false;
         }
@@ -263,24 +264,24 @@ public class Manager {
         return false;
     }
 
-    public void setWildComing() {
+    public void setWildComing(Scene scene, Pane root) {
         Logger.getLogger(User.getCurrentUser()).log("in setWildComing method ", Logger.LogType.Alarm);
         for (String s : Mission.getMission().getWildComing().get(Mission.getMission().getCurrentLevel() - 1).keySet()) {
             if (s.toUpperCase().equals(ProductType.BEAR.name())) {
                 Logger.getLogger(User.getCurrentUser()).log(" set Bear coming ", Logger.LogType.Alarm);
                 LocalDate.getInstance().event.put(Mission.getMission().getWildComing()
                         .get(Mission.getMission().getCurrentLevel() - 1).get(s) + LocalDate.getInstance()
-                        .getCurrentTime(), new Bear());
+                        .getCurrentTime(), new Bear(scene, root));
             } else if (s.toUpperCase().equals(ProductType.TIGER.name())) {
                 Logger.getLogger(User.getCurrentUser()).log(" set Tiger coming ", Logger.LogType.Alarm);
                 LocalDate.getInstance().event.put(Mission.getMission().getWildComing()
                         .get(Mission.getMission().getCurrentLevel() - 1).get(s) + LocalDate.getInstance()
-                        .getCurrentTime(), new Tiger());
+                        .getCurrentTime(), new Tiger(scene, root));
             } else if (s.toUpperCase().equals(ProductType.LION.name())) {
                 Logger.getLogger(User.getCurrentUser()).log(" set Lion coming ", Logger.LogType.Alarm);
                 LocalDate.getInstance().event.put(Mission.getMission().getWildComing()
                         .get(Mission.getMission().getCurrentLevel() - 1).get(s) + LocalDate.getInstance()
-                        .getCurrentTime(), new Lion());
+                        .getCurrentTime(), new Lion(scene, root));
             }
         }
     }

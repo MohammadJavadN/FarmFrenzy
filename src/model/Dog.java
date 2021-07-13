@@ -1,20 +1,21 @@
 package model;
 
 import controller.Logger;
-import model.User;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 
 public class Dog extends Animal {
     final static int price = 100;
     Wild wild;
 
-    private Dog() {
-        super("hound");
+    private Dog(Scene scene, Pane root) {
+        super("hound", scene, root);
         Farm.getFarm().dogs.add(this);
     }
 
-    public static boolean buy() {
+    public static boolean buy(Scene scene, Pane root) {
         if (Farm.getFarm().getMoney() >= price) {
-            new Dog();
+            new Dog(scene, root);
             return true;
         }
         return false;
@@ -22,13 +23,13 @@ public class Dog extends Animal {
 
     String move() {
         setVelocity();
-        xPosition += xVelocity;
-        yPosition += yVelocity;
+        addXP(xVelocity);
+        addYP(yVelocity);
         Logger.getLogger(User.getCurrentUser()).log("hound move ", Logger.LogType.Info);
 
         if (wild == null)
             return "";
-        System.out.println("The hound followed the wild animal in [" + (wild.xPosition + 1) + "," + (wild.yPosition + 1) + "] \n");
+        System.out.println("The hound followed the wild animal in [" + (wild.xPosition.get() + 1) + "," + (wild.yPosition.get() + 1) + "] \n");
         return "";
         //return "The hound followed the wild animal in [" + (wild.xPosition + 1) + "," + (wild.yPosition + 1) + "] \n";
     }
@@ -37,8 +38,8 @@ public class Dog extends Animal {
         int distance = -1;
         if (wild == null) {
             for (Wild wildF : Farm.getFarm().wilds) {
-                if ((distance == -1 || distance > (Math.abs(xPosition - wildF.xPosition) + Math.abs(yPosition - wildF.yPosition)))) {
-                    distance = Math.abs(xPosition - wildF.xPosition) + Math.abs(yPosition - wildF.yPosition);
+                if ((distance == -1 || distance > (Math.abs(xPosition.get() - wildF.xPosition.get()) + Math.abs(yPosition.get() - wildF.yPosition.get())))) {
+                    distance = Math.abs(xPosition.get() - wildF.xPosition.get()) + Math.abs(yPosition.get() - wildF.yPosition.get());
                     wild = wildF;
                 }
             }
@@ -49,11 +50,11 @@ public class Dog extends Animal {
             if (distance > 3)
                 velocity = 2;
 
-            if (Math.abs(xPosition - wild.xPosition) > Math.abs(yPosition - wild.yPosition)) {
-                xVelocity = velocity * Integer.signum(wild.xPosition - xPosition);
+            if (Math.abs(xPosition.get() - wild.xPosition.get()) > Math.abs(yPosition.get() - wild.yPosition.get())) {
+                xVelocity = velocity * Integer.signum(wild.xPosition.get() - xPosition.get());
                 yVelocity = 0;
             } else {
-                yVelocity = velocity * Integer.signum(wild.yPosition - yPosition);
+                yVelocity = velocity * Integer.signum(wild.yPosition.get() - yPosition.get());
                 xVelocity = 0;
             }
         } else setVelocity(1);
@@ -64,6 +65,6 @@ public class Dog extends Animal {
         Farm.getFarm().dogs.remove(this);
     }
     public String toString(){
-        return NAME + " [" + (xPosition + 1) + "," + (yPosition + 1) + "]\n";
+        return NAME + " [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "]\n";
     }
 }

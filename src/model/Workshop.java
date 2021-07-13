@@ -46,7 +46,7 @@ public class Workshop implements Changeable {
             y = random.nextInt(6);
             isExistWild = false;
             for (Wild wild : Farm.getFarm().wilds) {
-                if (wild.xPosition == x && wild.yPosition == y) {
+                if (wild.xPosition.get() == x && wild.yPosition.get() == y) {
                     isExistWild = true;
                     break;
                 }

@@ -1,7 +1,8 @@
 package model;
 
 import controller.Logger;
-import model.User;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 
 import java.util.ArrayList;
 
@@ -9,15 +10,15 @@ public class Cat extends Animal {
     static final int price = 150;
     Product product;
 
-    private Cat() {
-        super("cat");
+    private Cat(Scene scene, Pane root) {
+        super("cat", scene, root);
 
         Farm.getFarm().cats.add(this);
     }
 
-    public static boolean buy() {
+    public static boolean buy(Scene scene, Pane root) {
         if (Farm.getFarm().getMoney() >= price) {
-            new Cat();
+            new Cat(scene, root);
             return true;
         }
         return false;
@@ -26,12 +27,12 @@ public class Cat extends Animal {
     public String collectProduct() {
         String s = "";
         ArrayList<Product> collectedProducts = new ArrayList<>();
-        if (product.x == xPosition + xVelocity && product.y == yPosition + yVelocity) {
+        if (product.x == xPosition.get() + xVelocity && product.y == yPosition.get() + yVelocity) {
             if (Farm.getFarm().products.contains(product))
                 collectedProducts.add(product);
             product = null;
             for (Product productF : Farm.getFarm().products) {
-                if (productF.y == yPosition + yVelocity && productF.x == xPosition + xVelocity) {
+                if (productF.y == yPosition.get() + yVelocity && productF.x == xPosition.get() + xVelocity) {
                     if (!productF.catComeFor)
                         collectedProducts.add(productF);
                 }
@@ -55,12 +56,12 @@ public class Cat extends Animal {
         String s = "";
         setVelocity();
         if (product != null) s += collectProduct();
-        xPosition += xVelocity;
-        yPosition += yVelocity;
-        Logger.getLogger(User.getCurrentUser()).log("Cat move ", Logger.LogType.Info );
+        addXP(xVelocity);
+        addYP(yVelocity);
+        Logger.getLogger(User.getCurrentUser()).log("Cat move ", Logger.LogType.Info);
         if (s.length() > 0) {
             s = s.substring(0, s.length() - 2);
-            System.out.println( "cat collect this product : [" + s + "]\n");
+            System.out.println("cat collect this product : [" + s + "]\n");
             //return "cat collect this product : [" + s + "]\n";
         }
         return "";
@@ -70,8 +71,8 @@ public class Cat extends Animal {
         int distance = -1;
         if (product == null) {
             for (Product productF : Farm.getFarm().products) {
-                if ((distance == -1 || distance > (Math.abs(xPosition - productF.x) + Math.abs(yPosition - productF.y)))) {
-                    distance = Math.abs(xPosition - productF.x) + Math.abs(yPosition - productF.y);
+                if ((distance == -1 || distance > (Math.abs(xPosition.get() - productF.x) + Math.abs(yPosition.get() - productF.y)))) {
+                    distance = Math.abs(xPosition.get() - productF.x) + Math.abs(yPosition.get() - productF.y);
                     product = productF;
                 }
             }
@@ -83,16 +84,16 @@ public class Cat extends Animal {
             if (distance > 3)
                 velocity = 2;
 
-            if (Math.abs(xPosition - product.x) > Math.abs(yPosition - product.y)) {
-                xVelocity = velocity * Integer.signum(product.x - xPosition);
+            if (Math.abs(xPosition.get() - product.x) > Math.abs(yPosition.get() - product.y)) {
+                xVelocity = velocity * Integer.signum(product.x - xPosition.get());
                 yVelocity = 0;
             } else {
-                yVelocity = velocity * Integer.signum(product.y - yPosition);
+                yVelocity = velocity * Integer.signum(product.y - yPosition.get());
                 xVelocity = 0;
             }
         } else setVelocity(1);
     }
     public String toString(){
-        return NAME + " [" + (xPosition + 1) + "," + (yPosition + 1) + "]\n";
+        return NAME + " [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "]\n";
     }
 }

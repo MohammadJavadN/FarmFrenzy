@@ -1,7 +1,8 @@
 package model;
 
 import controller.Logger;
-import model.User;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -15,13 +16,13 @@ public class Wild extends Animal implements Changeable {
     long lastTrapTime;
 
     //    int sellPrice;
-    public Wild(ProductType wildType) {
-        super(wildType.name().toLowerCase(Locale.ROOT));
+    public Wild(ProductType wildType, Scene scene, Pane root) {
+        super(wildType.name().toLowerCase(Locale.ROOT), scene, root);
         this.wildType = wildType;
     }
 
     public boolean checkCoordinates(int x, int y) {//1-6
-        return x - 1 == this.xPosition && y - 1 == this.yPosition;
+        return x - 1 == this.xPosition.get() && y - 1 == this.yPosition.get();
     }
 
     public boolean trap() {
@@ -33,7 +34,7 @@ public class Wild extends Animal implements Changeable {
         freedom--;
         lastTrapTime = LocalDate.getInstance().getCurrentTime();
         if (freedom == 0) {
-            new Product(wildType, xPosition, yPosition);
+            new Product(wildType, xPosition.get(), yPosition.get());
             destroying();
             return true;
         }
@@ -44,7 +45,7 @@ public class Wild extends Animal implements Changeable {
         String s = "";
         for (int i = 0; i <= xVelocity; i++) {
             for (int j = 0; j <= yVelocity; j++) {
-                if ((s += kill(xPosition + i, yPosition + j)).contains("hound"))
+                if ((s += kill(xPosition.get() + i, yPosition.get() + j)).contains("hound"))
                     return s;
             }
         }
@@ -55,10 +56,10 @@ public class Wild extends Animal implements Changeable {
         String s = "";
         ArrayList<Dog> dogs = new ArrayList<>();
         for (Dog dog : Farm.getFarm().dogs) {
-            if (dog.xPosition == x && dog.yPosition == y) {
+            if (dog.xPosition.get() == x && dog.yPosition.get() == y) {
                 dogs.add(dog);
                 this.destroying();
-                s += "The wild animal got involved with a hound in [" + (dog.xPosition + 1) + "," + (dog.yPosition + 1) + "] \n";
+                s += "The wild animal got involved with a hound in [" + (dog.xPosition.get() + 1) + "," + (dog.yPosition.get() + 1) + "] \n";
                 return s;
             }
         }
@@ -67,9 +68,9 @@ public class Wild extends Animal implements Changeable {
         }
         ArrayList<Cat> cats = new ArrayList<>();
         for (Cat cat : Farm.getFarm().cats) {
-            if (cat.xPosition == x && cat.yPosition == y) {
+            if (cat.xPosition.get() == x && cat.yPosition.get() == y) {
                 cats.add(cat);
-                s += "The wild animal killed cat in [" + (cat.xPosition + 1) + "," + (cat.yPosition + 1) + "] \n";
+                s += "The wild animal killed cat in [" + (cat.xPosition.get() + 1) + "," + (cat.yPosition.get() + 1) + "] \n";
             }
         }
         for (Cat cat : cats) {
@@ -87,9 +88,9 @@ public class Wild extends Animal implements Changeable {
         }
         ArrayList<Domestic> domestics = new ArrayList<>();
         for (Domestic domestic : Farm.getFarm().domestics) {
-            if (domestic.xPosition == x && domestic.yPosition == y) {
+            if (domestic.xPosition.get() == x && domestic.yPosition.get() == y) {
                 domestics.add(domestic);
-                s += "The wild animal killed " + domestic.NAME + "in [" + (domestic.xPosition + 1) + "," + (domestic.yPosition + 1) + "] \n";
+                s += "The wild animal killed " + domestic.NAME + "in [" + (domestic.xPosition.get() + 1) + "," + (domestic.yPosition.get() + 1) + "] \n";
             }
         }
         for (Domestic domestic : domestics) {
@@ -102,13 +103,13 @@ public class Wild extends Animal implements Changeable {
         String s = "";
         setVelocity(velocity);
         s += kill();
-        xPosition += xVelocity;
-        yPosition += yVelocity;
+        addXP(xVelocity);
+        addYP(yVelocity);
         Logger.getLogger(User.getCurrentUser()).log(wildType.name() + " move ", Logger.LogType.Info);
-        Logger.getLogger(User.getCurrentUser()).log(s, Logger.LogType.Info );
+        Logger.getLogger(User.getCurrentUser()).log(s, Logger.LogType.Info);
         System.out.println(s);
         return "";
-       // return s;
+        // return s;
     }
 
     @Override
@@ -117,7 +118,7 @@ public class Wild extends Animal implements Changeable {
     }
 
     public String toString() {
-        return NAME + " " + freedom + " [" + (xPosition + 1) + "," + (yPosition + 1) + "]\n";
+        return NAME + " " + freedom + " [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "]\n";
     }
 
     @Override

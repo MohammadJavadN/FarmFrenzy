@@ -1,16 +1,55 @@
 package model;
 
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Random;
 
 abstract class Animal implements Destroyable {
-    int xPosition, yPosition;
+    //    int xPosition, yPosition;
+    IntegerProperty xPosition = new SimpleIntegerProperty();
+    IntegerProperty yPosition = new SimpleIntegerProperty();
     int xVelocity, yVelocity;
     Random random = new Random();
     final String NAME;
-    public Animal(String name) {
-        this.xPosition = random.nextInt(6);
-        this.yPosition = random.nextInt(6);
+    String imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\dog.gif";
+
+    public Animal(String name, Scene scene, Pane root) {
+        this.xPosition.set(random.nextInt(6));
+        this.yPosition.set(random.nextInt(6));
+
         this.NAME = name;
+        Image image = null;
+        try {
+            image = new Image(new FileInputStream(imagePath));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        ImageView imageView = new ImageView(image);
+
+        imageView.xProperty().bind(scene.widthProperty().multiply(xPosition.multiply(0.065).add(0.33)));
+//        imageView.xProperty().bind(xPosition.multiply(65));
+        imageView.yProperty().bind(scene.heightProperty().multiply(yPosition.multiply(0.075).add(0.33)));
+        imageView.setPreserveRatio(true);
+
+        root.getChildren().add(imageView);
+        imageView.setFitHeight(scene.getWidth() / 10);
+        imageView.setFitWidth(scene.getHeight() / 10);
+
+    }
+
+    void addXP(int count){
+        xPosition.set(xPosition.get()+count);
+    }
+    void addYP(int count){
+        yPosition.set(yPosition.get()+count);
     }
 
     abstract String move();
@@ -22,9 +61,9 @@ abstract class Animal implements Destroyable {
             xVelocity = 0;
             yVelocity = velocity - (2 * (random.nextInt(2))) * velocity;
         }
-        if ((xPosition + xVelocity) < 0 || (xPosition + xVelocity) >= Farm.getFarm().COL)
+        if ((xPosition.get() + xVelocity) < 0 || (xPosition.get() + xVelocity) >= Farm.getFarm().COL)
             xVelocity *= -1;
-        if ((yPosition + yVelocity) < 0 || (yPosition + yVelocity) >= Farm.getFarm().ROW)
+        if ((yPosition.get() + yVelocity) < 0 || (yPosition.get() + yVelocity) >= Farm.getFarm().ROW)
             yVelocity *= -1;
     }
 }

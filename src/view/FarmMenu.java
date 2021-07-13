@@ -8,12 +8,16 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.*;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class FarmMenu extends Menu {
@@ -28,56 +32,25 @@ public class FarmMenu extends Menu {
         mission();
         Farm.getFarm().addMoney(0);
         // System.out.println(Mission.getMission().toString1());
-        /*
-        while (true) {
-            if (Manager.getInstance().giveAward(Manager.getInstance().check())) {
-                System.err.println("to Bordi :) & Stars: " + Manager.getInstance().getStar());
-                if (Mission.getMission().getLevels() != User.getCurrentUser().getOpenedLevel())
-                    User.getCurrentUser().setOpenedLevel(User.getCurrentUser().getOpenedLevel() + 1);
-
-                menu();
-            }
-            input = scanner.nextLine();
-            if ((matcher = Commands.BUY.getMatcher(input.toLowerCase())).matches()) {
-                buy();
-            } else if ((matcher = Commands.BUILD.getMatcher(input.toLowerCase())).matches()) {
-                build();
-            } else if ((matcher = Commands.PICKUP.getMatcher(input.toLowerCase())).matches()) {
-                pickup();
-            } else if (Commands.WELL.getMatcher(input.toLowerCase()).matches()) {
-                well();
-            } else if ((matcher = Commands.PLANT.getMatcher(input.toLowerCase())).matches()) {
-                plant();
-            } else if ((matcher = Commands.WORK.getMatcher(input.toLowerCase())).matches()) {
-                work();
-            } else if ((matcher = Commands.CAGE.getMatcher(input.toLowerCase())).matches()) {
-                cage();
-            } else if ((matcher = Commands.TURN.getMatcher(input.toLowerCase())).matches()) {
-                turn();
-            } else if ((matcher = Commands.TRUCK_LOAD.getMatcher(input.toLowerCase())).matches()) {
-                truckLoad();
-            } else if ((matcher = Commands.TRUCK_UNLOAD.getMatcher(input.toLowerCase())).matches()) {
-                truckUnload();
-            } else if (Commands.TRUCK_GO.getMatcher(input.toLowerCase()).matches()) {
-                truckGo();
-            } else if (Commands.MENU.getMatcher(input.toLowerCase()).matches()) {
-                menu();
-            } else if (Commands.INQUIRY.getMatcher(input.toLowerCase()).matches()) {
-                inquiry();
-            } else if (Commands.COMMANDS.getMatcher(input.toLowerCase()).matches()) {
-                Logger.getLogger(user).log("commands : <" + input + ">", Logger.LogType.Command);
-                show();
-            } else if (FarmMenu.Commands.EXIT.getMatcher(input.toLowerCase()).matches()) {
-                Logger.getLogger(user).log("EXIT : <" + input + ">", Logger.LogType.Command);
-                System.exit(-1);
-            } else {
-                System.out.println("please try again!");
-                Logger.getLogger(user).log("Invalid command in FarmMenu : <" + input + ">", Logger.LogType.Alarm);
-            }
-        }
-        */
     }
+    void addAnimal(Pane root){
+        Image image = null;
+        try {
+            image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\HelloFX\\dog.gif"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
+        ImageView imageView = new ImageView(image);
+
+        imageView.setX(0.33*scene.getWidth()+5*(0.065*scene.getWidth()));
+        imageView.setY(0.33*scene.getHeight()+5*(0.075*scene.getHeight()));
+        imageView.setPreserveRatio(true);
+
+        root.getChildren().add(imageView);
+        imageView.setFitHeight(scene.getWidth()/10);
+        imageView.setFitWidth(scene.getHeight()/10);
+    }
     @Override
     public void show() {
         Pane root = new Pane();
@@ -124,6 +97,7 @@ public class FarmMenu extends Menu {
             root.getChildren().add(label);
         }
         root.getChildren().addAll(wellFillPercent, warehouseCap, coin, time);
+      //  addAnimal(root);
         window.show();
     }
 
@@ -266,7 +240,7 @@ public class FarmMenu extends Menu {
     private void buy() {
         Logger.getLogger(user).log("buy command", Logger.LogType.Command);
         if ("cat dog hound cow buffalo chicken ostrich".contains(matcher.group(1))) {
-            if (manager.buy(matcher.group(1))) {
+            if (manager.buy(matcher.group(1),scene, (Pane) scene.getRoot())) {
                 System.out.println(matcher.group(1) + " add in farm");
                 Logger.getLogger(user).log(matcher.group(1) + " add in farm", Logger.LogType.Info);
             } else {

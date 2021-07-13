@@ -1,7 +1,8 @@
 package model;
 
 import controller.Logger;
-import model.User;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 
 public class Domestic extends Animal implements Sellable, Changeable {
     // Farm farm;
@@ -11,16 +12,16 @@ public class Domestic extends Animal implements Sellable, Changeable {
     int processTime;
     long produceDate;
     int space;
-    static int i=0;
+    static int i = 0;
     int id;
 
-    public Domestic(ProductType productType, int processTime, int price, int space, String name) {
-        super(name);
+    public Domestic(ProductType productType, int processTime, int price, int space, String name, Scene scene, Pane root) {
+        super(name, scene, root);
         this.productType = productType;
         this.price = price;
         this.processTime = processTime;
         this.space = space;
-        id=i;
+        id = i;
         i++;
         live = 100;
         produceDate = LocalDate.getInstance().getCurrentTime() + processTime * 100000000L;
@@ -56,17 +57,18 @@ public class Domestic extends Animal implements Sellable, Changeable {
 
     String move() {
         String s = setVelocity();
-        xPosition += xVelocity;
-        yPosition += yVelocity;
+        addXP(xVelocity);
+        addYP(yVelocity);
         Logger.getLogger(User.getCurrentUser()).log(NAME + " move ", Logger.LogType.Info);
         Logger.getLogger(User.getCurrentUser()).log(s, Logger.LogType.Info);
         System.out.println(s);
+        System.out.println("65 domestic "+ xPosition.get() + " " + yPosition.get());
         return "";
         //return s;
     }
 
     public void produce() {
-        new Product(productType, xPosition, yPosition);
+        new Product(productType, xPosition.get(), yPosition.get());
     }
 
     public boolean equal(String name) {
@@ -78,11 +80,11 @@ public class Domestic extends Animal implements Sellable, Changeable {
         int I = random.nextInt(6), J = random.nextInt(6);
         int distance = -1;
         if (live < 50) {
-            s += NAME + " in [" + (xPosition + 1) + "," + (yPosition + 1) + "] looked for food \n";
+            s += NAME + " in [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "] looked for food \n";
             for (int i = 0; i < Farm.getFarm().ROW; i++) {
                 for (int j = 0; j < Farm.getFarm().COL; j++) {
-                    if (Farm.getFarm().grass[i][j] > 0 && (distance == -1 || distance > (Math.abs(xPosition - j) + Math.abs(yPosition - i)))) {
-                        distance = Math.abs(xPosition - j) + Math.abs(yPosition - i);
+                    if (Farm.getFarm().grass[i][j] > 0 && (distance == -1 || distance > (Math.abs(xPosition.get() - j) + Math.abs(yPosition.get() - i)))) {
+                        distance = Math.abs(xPosition.get() - j) + Math.abs(yPosition.get() - i);
                         I = i;
                         J = j;
                     }
@@ -98,18 +100,18 @@ public class Domestic extends Animal implements Sellable, Changeable {
             if (distance > 3)
                 velocity = 2;
 
-            if (Math.abs(xPosition - J) > Math.abs(yPosition - I)) {
-                xVelocity = velocity * Integer.signum(J - xPosition);
+            if (Math.abs(xPosition.get() - J) > Math.abs(yPosition.get() - I)) {
+                xVelocity = velocity * Integer.signum(J - xPosition.get());
                 yVelocity = 0;
             } else {
-                yVelocity = velocity * Integer.signum(I - yPosition);
+                yVelocity = velocity * Integer.signum(I - yPosition.get());
                 xVelocity = 0;
             }
         } else setVelocity(1);
         live -= 10;
         if (live <= 0) {
             destroying();
-            s += NAME + " in [" + (xPosition + 1) + "," + (yPosition + 1) + "] died of malnutrition\n";
+            s += NAME + " in [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "] died of malnutrition\n";
         }
         return s;
     }
@@ -125,13 +127,13 @@ public class Domestic extends Animal implements Sellable, Changeable {
         produce();
         produceDate += processTime * 100000000L;
         LocalDate.getInstance().event.put(produceDate, this);
-        Logger.getLogger(User.getCurrentUser()).log(NAME + " in [" + (xPosition + 1) + "," + (yPosition + 1) + "] produce " + productType.name(), Logger.LogType.Info);
-        System.out.println(NAME + " in [" + (xPosition + 1) + "," + (yPosition + 1) + "] produce " + productType.name());
+        Logger.getLogger(User.getCurrentUser()).log(NAME + " in [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "] produce " + productType.name(), Logger.LogType.Info);
+        System.out.println(NAME + " in [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "] produce " + productType.name());
         return "";
         //return NAME + " in [" + (xPosition + 1) + "," + (yPosition + 1) + "] produce " + productType.name() + "\n";
     }
 
     public String toString() {
-        return NAME + " " + live + "% [" + (xPosition + 1) + "," + (yPosition + 1) + "]\n";
+        return NAME + " " + live + "% [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "]\n";
     }
 }
