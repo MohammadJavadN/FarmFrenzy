@@ -118,7 +118,7 @@ public class Domestic extends Animal implements Sellable, Changeable {
     }
 
     private void eat(int i, int j) {
-        Farm.getFarm().grass[i][j]--;
+        Farm.getFarm().remGrass(i,j);
         live = 100;
     }
 

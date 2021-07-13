@@ -36,8 +36,8 @@ abstract class Animal implements Destroyable {
 
         imageView = new ImageView(image);
 
-        imageView.xProperty().bind(scene.widthProperty().multiply(xPosition.multiply(0.065).add(0.33)));
-        imageView.yProperty().bind(scene.heightProperty().multiply(yPosition.multiply(0.075).add(0.33)));
+        imageView.xProperty().bind(scene.widthProperty().multiply(xPosition.multiply(0.063).add(0.33)));
+        imageView.yProperty().bind(scene.heightProperty().multiply(yPosition.multiply(0.072).add(0.33)));
         imageView.setPreserveRatio(true);
 
         root.getChildren().add(imageView);

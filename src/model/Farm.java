@@ -2,6 +2,7 @@ package model;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.scene.image.ImageView;
 import view.FarmMenu;
 
 import java.util.ArrayList;
@@ -16,23 +17,43 @@ public class Farm {
     ArrayList<Cat> cats = new ArrayList<>();
     ArrayList<Dog> dogs = new ArrayList<>();
     ArrayList<Product> products = new ArrayList<>();
-    int[][] grass = new int[ROW][COL];
+    public int[][] grass = new int[ROW][COL];
     ArrayList<Workshop> workshops = new ArrayList<>();
+    public HashMap<Integer, ImageView> grassImage = new HashMap<>();
+    public void remGrass(int i,int j){
+        grassImage.get(10 * (i + 1) + (j + 1) +grass[i][j] * 100).setVisible(false);
+        grassImage.remove(10 * (i + 1) + (j + 1) +grass[i][j] * 100);
+        grass[i][j]--;
+    }
     Warehouse warehouse;
     //int money;
     public IntegerProperty money = new SimpleIntegerProperty();
 
-    public void addMoney(int count){
-        money.set(money.get()+count);
-        if (money.get()<100)
+    public void addMoney(int count) {
+        money.set(money.get() + count);
+        if (FarmMenu.r != null) {
+            if (money.get() < 100)
+                FarmMenu.r.setId("farm0");
+            else if (money.get() < 150)
+                FarmMenu.r.setId("farm100");
+            else if (money.get() < 200)
+                FarmMenu.r.setId("farm150");
+            else if (money.get() < 400)
+                FarmMenu.r.setId("farm200");
+            else
+                FarmMenu.r.setId("farm400");
+        }else {
+            if (money.get() < 100)
             FarmMenu.rootId ="farm0";
-        else if (money.get()<150)
+            else if (money.get() < 150)
             FarmMenu.rootId ="farm100";
-        else if (money.get()<200)
+            else if (money.get() < 200)
             FarmMenu.rootId ="farm150";
-        else if (money.get()<400)
+            else if (money.get() < 400)
             FarmMenu.rootId ="farm200";
-        else FarmMenu.rootId ="farm400";
+            else
+            FarmMenu.rootId ="farm400";
+        }
     }
     public void clear() {
         domesticsNum.clear();

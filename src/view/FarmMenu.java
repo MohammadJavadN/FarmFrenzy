@@ -8,6 +8,8 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
@@ -15,6 +17,8 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.*;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class FarmMenu extends Menu {
@@ -37,8 +41,13 @@ public class FarmMenu extends Menu {
     }
 
     void handleMouseEvent(MouseEvent e) {
-        if (e.getX() > 0.129 * scene.getWidth() && e.getX() < 0.4 * scene.getWidth() && e.getY() < 0.1 * scene.getHeight())
+        System.out.println(inFarm(e));
+        if (inBuy(e))
             buy(e);
+        else if (inWell(e))
+            well();
+        else if (inFarm(e))
+            plant(e);
 
     }
 
@@ -47,19 +56,66 @@ public class FarmMenu extends Menu {
             manager.buy("chicken", scene, (Pane) scene.getRoot());
         }else if (e.getX() > 0.187 * scene.getWidth() && e.getX() < 0.235 * scene.getWidth()) {
             manager.buy("ostrich", scene, (Pane) scene.getRoot());
-        }else if (e.getX() > 0.240 * scene.getWidth() && e.getX() < 0.288 * scene.getWidth()) {
+        } else if (e.getX() > 0.240 * scene.getWidth() && e.getX() < 0.288 * scene.getWidth()) {
             manager.buy("cow", scene, (Pane) scene.getRoot());
-        }else if (e.getX() > 0.295 * scene.getWidth() && e.getX() < 0.343 * scene.getWidth()) {
+        } else if (e.getX() > 0.295 * scene.getWidth() && e.getX() < 0.343 * scene.getWidth()) {
             manager.buy("dog", scene, (Pane) scene.getRoot());
-        }else if (e.getX() > 0.350 * scene.getWidth() && e.getX() < 0.398 * scene.getWidth()) {
+        } else if (e.getX() > 0.350 * scene.getWidth() && e.getX() < 0.398 * scene.getWidth()) {
             manager.buy("cat", scene, (Pane) scene.getRoot());
         }
 
     }
 
+    void plant(MouseEvent e) {
+        int y = (int) ((e.getX() - 0.33 * scene.getWidth()) / (0.056 * scene.getWidth())) + 1;
+        int x = (int) ((e.getY() - 195 * scene.getHeight()/600) / (44 * scene.getHeight() / 600)) + 1;
+
+        System.out.println("x =  " + x + " & y = " + y);
+        System.out.println(farm.insidePage(x, y));
+        if (farm.insidePage(x, y))
+            if (manager.plant(x, y)) {
+                Image image = null;
+                try {
+                    image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\HelloFX\\img\\grase.png"));
+                } catch (FileNotFoundException event) {
+                    event.printStackTrace();
+                }
+
+                ImageView imageView = new ImageView(image);
+
+                imageView.setX(e.getX() - scene.getWidth() / 40);
+                imageView.setY(e.getY() - scene.getHeight() / 20);
+                imageView.setPreserveRatio(true);
+
+                ((Pane) scene.getRoot()).getChildren().add(imageView);
+                imageView.setFitHeight(scene.getWidth() / 10);
+                imageView.setFitWidth(scene.getHeight() / 10);
+                farm.grassImage.put(10*x+y+farm.grass[x-1][y-1]*100,imageView);
+            }
+    }
+
+    boolean inBuy(MouseEvent e) {
+        return e.getX() > 0.129 * scene.getWidth() && e.getX() < 0.4 * scene.getWidth() && e.getY() < 0.1 * scene.getHeight();
+    }
+
+    boolean inWell(MouseEvent e) {
+        return e.getY() > 92 * scene.getHeight() / 600 && e.getY() < 15 * scene.getHeight() / 60
+                && e.getX() > 0.468 * scene.getWidth() && e.getX() < 0.552 * scene.getWidth();
+    }
+
+    boolean inFarm(MouseEvent e) {
+
+        System.out.println("in 108 farm menu");
+        System.out.println(e.getX() + " > " + (0.33 * scene.getWidth()) + " && " + e.getX() + " < " + (0.670 * scene.getWidth()) + " && " +
+                e.getY() + " > " + (195 * scene.getHeight() / 600) + " && " + e.getY() + " < " + (460 * scene.getHeight() / 600));
+        return e.getX() > 0.33 * scene.getWidth() && e.getX() < 0.670 * scene.getWidth() &&
+                e.getY() > 195 * scene.getHeight() / 600 && e.getY() < 460 * scene.getHeight() / 600;
+    }
+    public static Pane r;
     @Override
     public void show() {
         Pane root = new Pane();
+        r = root;
         root.setId(rootId);
         root.setPadding(new Insets(10, 10, 10, 10));
         scene = new Scene(root, 1000, 600);
@@ -75,7 +131,10 @@ public class FarmMenu extends Menu {
         root.getChildren().add(menu);
 
         Button turn = new Button("turn");
-        turn.setOnAction(e -> LocalDate.getInstance().turn(1));// TODO: ۱۱/۰۷/۲۰۲۱
+        turn.setOnAction(e -> {
+            LocalDate.getInstance().turn(1);
+            System.out.println(Farm.getFarm().toString());
+        });// TODO: ۱۱/۰۷/۲۰۲۱
         turn.getStyleClass().add("button-blue");
         turn.setLayoutX(0.47 * window.getWidth());
         turn.setLayoutY(0.01 * window.getHeight());
