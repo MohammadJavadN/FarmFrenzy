@@ -2,8 +2,12 @@ package model;
 
 import controller.Logger;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -14,12 +18,14 @@ public class Wild extends Animal implements Changeable {
     int strength;
     int freedom;
     long lastTrapTime;
+    ImageView[] cage;
 
     //    int sellPrice;
     public Wild(ProductType wildType, Scene scene, Pane root, String path) {
         super(wildType.name().toLowerCase(Locale.ROOT), scene, root, path);
         imageView.setVisible(false);
         this.wildType = wildType;
+        cage = new ImageView[5];
     }
 
     public boolean checkCoordinates(int x, int y) {//1-6
@@ -27,19 +33,51 @@ public class Wild extends Animal implements Changeable {
     }
 
     public boolean trap() {
-        if (freedom != strength) {
-            if ((LocalDate.getInstance().getCurrentTime() - lastTrapTime) / 100000000L - 1 > 0)
+        /*if (freedom != strength) {
+            if ((LocalDate.getInstance().getCurrentTime() - lastTrapTime) / 100000000L - 1 > 0) {
                 freedom += (LocalDate.getInstance().getCurrentTime() - lastTrapTime) / 100000000L - 1;
+            }
             freedom = Math.min(freedom, strength);
-        }
+        }*/
+        cage();
         freedom--;
         lastTrapTime = LocalDate.getInstance().getCurrentTime();
         if (freedom == 0) {
-            new Product(wildType, xPosition.get(), yPosition.get(),scene);
+            new Product(wildType, xPosition.get(), yPosition.get(), scene);
             destroying();
             return true;
         }
         return false;
+    }
+
+    void unCage() {
+        if ((LocalDate.getInstance().getCurrentTime() - lastTrapTime) / 100000000L - 1 > 0)
+            if (freedom < strength) {
+                freedom++;
+                cage[strength - freedom].setVisible(false);
+            }
+    }
+
+    void cage() {
+        Image image = null;
+        try {
+            image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\HelloFX\\img\\cage.png"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        cage[strength - freedom] = new ImageView(image);
+
+        cage[strength - freedom].xProperty().bind(scene.widthProperty().multiply(xPosition.multiply(0.063).add(0.33)).add(3 * (strength - freedom)));
+        cage[strength - freedom].yProperty().bind(scene.heightProperty().multiply(yPosition.multiply(0.072).add(0.33)));
+        cage[strength - freedom].setPreserveRatio(true);
+        cage[strength - freedom].setOnMouseClicked(e->trap());
+        ((Pane) scene.getRoot()).getChildren().add(cage[strength - freedom]);
+        cage[strength - freedom].setFitHeight(scene.getWidth() / 10);
+        cage[strength - freedom].setFitWidth(scene.getHeight() / 10);
+        cage[strength - freedom].setVisible(true);
+
+
     }
 
     public String kill() {//this method must call after check [if (free)]
@@ -61,11 +99,12 @@ public class Wild extends Animal implements Changeable {
                 dogs.add(dog);
                 this.destroying();
                 s += "The wild animal got involved with a hound in [" + (dog.xPosition.get() + 1) + "," + (dog.yPosition.get() + 1) + "] \n";
-                return s;
+                break;
             }
         }
         for (Dog dog : dogs) {
             dog.destroying();
+            return s;
         }
         ArrayList<Cat> cats = new ArrayList<>();
         for (Cat cat : Farm.getFarm().cats) {
@@ -117,6 +156,9 @@ public class Wild extends Animal implements Changeable {
     public void destroying() {
         Farm.getFarm().wilds.remove(this);
         imageView.setVisible(false);
+        for (ImageView cage : this.cage) {
+            if (cage!=null)cage.setVisible(false);
+        }
     }
 
     public String toString() {

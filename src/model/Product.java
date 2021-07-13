@@ -93,21 +93,21 @@ public class Product implements Sellable, Destroyable, Changeable {
                 space = 15;
                 expirationTime = 5;
                 name = "LION";
-                imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\img\\lion.png";
+                imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\img\\cage_lion.png";
                 break;
             case BEAR:
                 price = 400;
                 space = 15;
                 expirationTime = 5;
                 name = "BEAR";
-                imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\img\\bear.png";
+                imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\img\\cage_bear.png";
                 break;
             case TIGER:
                 price = 500;
                 space = 15;
                 expirationTime = 5;
                 name = "TIGER";
-                imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\img\\tiger.png";
+                imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\img\\cage_tiger.png";
                 break;
             default:
                 break;
@@ -135,7 +135,10 @@ public class Product implements Sellable, Destroyable, Changeable {
         ((Pane) scene.getRoot()).getChildren().add(imageView);
         imageView.setFitHeight(scene.getWidth() / 30);
         imageView.setFitWidth(scene.getHeight() / 30);
-
+        if (name.equals("LION")||name.equals("BEAR")||name.equals("TIGER")){
+            imageView.setFitHeight(scene.getWidth() / 10);
+            imageView.setFitWidth(scene.getHeight() / 10);
+        }
     }
 
     public boolean checkCoordinates(int x, int y) {//1-6

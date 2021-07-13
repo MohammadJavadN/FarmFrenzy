@@ -65,6 +65,9 @@ public class LocalDate {
         sortEvent();
         currentTime.set(currentTime.get() / (100000000L));
         currentTime.set(currentTime.get() * 100000000L + (new Date()).getTime() % 100000000L + 100000000L);
+        for (Wild wild : Farm.getFarm().wilds) {
+            wild.unCage();
+        }
         while (eventsArrangement.size() > 0) {
             if (eventsArrangement.get(0) <= currentTime.get()) {
                 Logger.getLogger(User.getCurrentUser()).log("checkAfterChangeDate " + event.get(eventsArrangement.get(0)), Logger.LogType.Alarm);
