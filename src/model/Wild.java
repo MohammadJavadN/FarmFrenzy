@@ -18,6 +18,7 @@ public class Wild extends Animal implements Changeable {
     //    int sellPrice;
     public Wild(ProductType wildType, Scene scene, Pane root, String path) {
         super(wildType.name().toLowerCase(Locale.ROOT), scene, root, path);
+        imageView.setVisible(false);
         this.wildType = wildType;
     }
 
@@ -125,6 +126,8 @@ public class Wild extends Animal implements Changeable {
     @Override
     public String checkAfterChangeDate() {
         Farm.getFarm().wilds.add(this);
+        imageView.setVisible(true);
+        imageView.setOnMouseClicked(e->trap());
         long comingDate = 0;
         for (Long aLong : LocalDate.getInstance().event.keySet()) {
             if (LocalDate.getInstance().event.get(aLong) == this)

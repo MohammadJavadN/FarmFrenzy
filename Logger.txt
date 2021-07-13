@@ -3545,3 +3545,1866 @@ chicken eat grass in [5,6]
 [Info], [Tue Jul 13 19:42:36 IRDT 2021], chicken move       user : j
 [Info], [Tue Jul 13 19:42:36 IRDT 2021], chicken in [4,2] looked for food 
       user : j
+[Command], [Tue Jul 13 19:44:01 IRDT 2021], well command      user : j
+[Replay], [Tue Jul 13 19:44:01 IRDT 2021], The well began to drain      user : j
+[Info], [Tue Jul 13 19:44:36 IRDT 2021], load user file
+[Info], [Tue Jul 13 19:53:28 IRDT 2021], load user file
+[Command], [Tue Jul 13 19:53:33 IRDT 2021], click login
+[Command], [Tue Jul 13 19:53:33 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 19:53:34 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 19:53:34 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 19:53:34 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 19:54:08 IRDT 2021], start game       user : j
+[Alarm], [Tue Jul 13 19:54:09 IRDT 2021], in setWildComing method       user : j
+[Alarm], [Tue Jul 13 19:54:09 IRDT 2021],  set Bear coming       user : j
+[Alarm], [Tue Jul 13 19:54:09 IRDT 2021],  set Lion coming       user : j
+[Alarm], [Tue Jul 13 19:54:28 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 19:54:28 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:28 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:29 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 19:54:29 IRDT 2021], checkAfterChangeDate lion 3 [3,6]
+      user : j
+[Info], [Tue Jul 13 19:54:29 IRDT 2021], The LION entered the farm       user : j
+[Alarm], [Tue Jul 13 19:54:29 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:29 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:30 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:30 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:30 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:30 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:30 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:30 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:30 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:30 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:30 IRDT 2021], checkAfterChangeDate bear 4 [4,3]
+      user : j
+[Info], [Tue Jul 13 19:54:30 IRDT 2021], The BEAR entered the farm       user : j
+[Alarm], [Tue Jul 13 19:54:30 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:30 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:31 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:31 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:31 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:31 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:31 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:31 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:31 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:31 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:31 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:31 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:31 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:31 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:31 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:31 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:32 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:32 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:32 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:32 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:32 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:32 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:32 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:32 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:32 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:32 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:32 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:32 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:32 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:32 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:33 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:33 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:33 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:33 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:33 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:33 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:33 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:33 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:33 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:33 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:33 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:33 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:33 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:33 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:34 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:34 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:34 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:34 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:34 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:34 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:34 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:34 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:34 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:34 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:34 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:34 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:34 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:34 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:35 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:35 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:35 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:35 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:35 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:35 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:35 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:35 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:35 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:35 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:35 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:35 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:35 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:35 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:36 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:36 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:36 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:36 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:36 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:36 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:36 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:36 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:36 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:36 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:37 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:37 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:37 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:37 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:37 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:37 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:37 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:37 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:37 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:37 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:37 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:37 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:37 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:37 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:38 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:38 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:38 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:38 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:38 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:38 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:38 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:38 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:38 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:38 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:38 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:38 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:38 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:38 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:39 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:39 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:39 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:39 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:39 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:39 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:39 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:39 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:39 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:39 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:40 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:40 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:40 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:40 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:40 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:40 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:40 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:40 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:40 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:40 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:40 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:40 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:40 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:40 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:41 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:41 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:41 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:41 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:41 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:41 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:41 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:41 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:41 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:41 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:41 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:41 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:41 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:41 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:42 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:42 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:42 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:42 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:42 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:42 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:42 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:42 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:42 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:42 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:43 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:43 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:43 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:43 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:43 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:43 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:43 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:43 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:43 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:43 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:43 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:43 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:43 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:43 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:44 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:44 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:44 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:44 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:44 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:44 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:44 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:44 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:44 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:44 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:45 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:45 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:45 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:45 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:45 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:45 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:45 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:45 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:45 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:45 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:45 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:45 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:45 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:45 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:46 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:46 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:46 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:46 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:46 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:46 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:46 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:46 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:46 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:46 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:46 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:46 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:46 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:46 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:47 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:47 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:47 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:47 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:47 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:47 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:47 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:47 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:47 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:47 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:47 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:47 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:48 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:48 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:48 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:48 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:48 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:48 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:48 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:48 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:48 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:48 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:49 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:49 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:49 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:49 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:49 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:49 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:49 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:49 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:49 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:49 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:49 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:49 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:49 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:49 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:50 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:50 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:50 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:50 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:50 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:50 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:50 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:50 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:50 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:50 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:51 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:51 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:51 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:51 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:51 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:51 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:51 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:51 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:51 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:51 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:51 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:51 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:51 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:51 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:52 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:52 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:52 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:52 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:52 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:52 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:52 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:52 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:52 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:52 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:52 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:52 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:52 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:52 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:53 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:53 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:53 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:53 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:53 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:53 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:53 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:53 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:53 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:53 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:53 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:53 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:53 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:53 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:54 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:54 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:54 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:54 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:54 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:54 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:54 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:54 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:54 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:54 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:55 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:55 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:55 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:55 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:55 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:55 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:55 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:55 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:55 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:55 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:55 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:55 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:55 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:55 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:56 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:56 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:56 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:56 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:56 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:56 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:56 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:56 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:56 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:56 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:57 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:57 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:57 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:57 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:57 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:57 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:57 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:57 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:57 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:57 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:57 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:57 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:57 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:57 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:58 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:58 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:58 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:58 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:58 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:58 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:58 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:58 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:58 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:58 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:59 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:59 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:59 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:59 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:59 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:59 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:59 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:54:59 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:54:59 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:54:59 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:54:59 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:54:59 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:54:59 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:54:59 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:00 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:00 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:00 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:00 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:00 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:00 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:00 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:20 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:20 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:20 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:20 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:20 IRDT 2021], checkAfterChangeDate chicken 80% [3,5]
+      user : j
+[Info], [Tue Jul 13 19:55:20 IRDT 2021], chicken in [3,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:20 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:20 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:21 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:21 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:21 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:21 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:21 IRDT 2021], checkAfterChangeDate chicken 60% [3,5]
+      user : j
+[Info], [Tue Jul 13 19:55:21 IRDT 2021], chicken in [3,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:21 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:21 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:22 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:22 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:22 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:22 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:22 IRDT 2021], checkAfterChangeDate chicken 40% [3,5]
+      user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021], chicken in [3,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:22 IRDT 2021], checkAfterChangeDate EGG [3,5]
+      user : j
+[Info], [Tue Jul 13 19:55:22 IRDT 2021], EGG in [3,5] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:22 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:22 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:23 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:23 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:23 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:23 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:23 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:23 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:23 IRDT 2021], chicken in [3,5] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:55:23 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:23 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:24 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021], chicken in [3,4] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:55:24 IRDT 2021], checkAfterChangeDate chicken 20% [3,3]
+      user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021], chicken in [3,3] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:24 IRDT 2021], checkAfterChangeDate EGG [3,5]
+      user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021], EGG in [3,5] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:24 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:24 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:24 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:24 IRDT 2021], chicken in [3,3] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:55:24 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:24 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:25 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:25 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:25 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:25 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:25 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:25 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:25 IRDT 2021], chicken in [4,3] looked for food 
+chicken in [4,3] died of malnutrition
+      user : j
+[Alarm], [Tue Jul 13 19:55:25 IRDT 2021], checkAfterChangeDate EGG [3,5]
+      user : j
+[Info], [Tue Jul 13 19:55:25 IRDT 2021], EGG in [3,5] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:25 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:25 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:27 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:27 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:27 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:27 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:27 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:27 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:27 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:28 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:28 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:28 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:28 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:28 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:28 IRDT 2021], checkAfterChangeDate EGG [3,3]
+      user : j
+[Info], [Tue Jul 13 19:55:28 IRDT 2021], EGG in [3,3] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:28 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:28 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:28 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:28 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:28 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:28 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:28 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:28 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:28 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:29 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:29 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:29 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:29 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:29 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:29 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:29 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:29 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:29 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:29 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:29 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:29 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:29 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:29 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:30 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:30 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:30 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:30 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:30 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:30 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:30 IRDT 2021], check result : false      user : j
+[Command], [Tue Jul 13 19:55:36 IRDT 2021], well command      user : j
+[Replay], [Tue Jul 13 19:55:36 IRDT 2021], The well began to drain      user : j
+[Alarm], [Tue Jul 13 19:55:37 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:37 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:37 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:37 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:38 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:38 IRDT 2021], checkAfterChangeDate chicken 80% [2,4]
+      user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021], chicken in [2,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:38 IRDT 2021], checkAfterChangeDate chicken 80% [2,6]
+      user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021], chicken in [2,6] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:38 IRDT 2021], checkAfterChangeDate chicken 80% [3,4]
+      user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021], chicken in [3,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:38 IRDT 2021], checkAfterChangeDate chicken 80% [6,2]
+      user : j
+[Info], [Tue Jul 13 19:55:38 IRDT 2021], chicken in [6,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:38 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:38 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:39 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:39 IRDT 2021], checkAfterChangeDate model.Well@3e99cad2      user : j
+[Info], [Tue Jul 13 19:55:39 IRDT 2021], The Well is filled      user : j
+[Alarm], [Tue Jul 13 19:55:39 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:39 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:45 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:45 IRDT 2021], checkAfterChangeDate chicken 60% [3,5]
+      user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021], chicken in [3,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:45 IRDT 2021], checkAfterChangeDate chicken 60% [1,5]
+      user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021], chicken in [1,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:45 IRDT 2021], checkAfterChangeDate chicken 60% [4,5]
+      user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021], chicken in [4,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:45 IRDT 2021], checkAfterChangeDate chicken 60% [4,2]
+      user : j
+[Info], [Tue Jul 13 19:55:45 IRDT 2021], chicken in [4,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:45 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:45 IRDT 2021], check result : false      user : j
+[Command], [Tue Jul 13 19:55:46 IRDT 2021], well command      user : j
+[Replay], [Tue Jul 13 19:55:46 IRDT 2021], The well began to drain      user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], checkAfterChangeDate chicken 40% [3,5]
+      user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken in [3,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], checkAfterChangeDate chicken 40% [2,6]
+      user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken in [2,6] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], checkAfterChangeDate chicken 40% [5,6]
+      user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken in [5,6] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], checkAfterChangeDate chicken 40% [5,1]
+      user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], chicken in [5,1] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], checkAfterChangeDate EGG [2,4]
+      user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], EGG in [2,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], checkAfterChangeDate EGG [2,6]
+      user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], EGG in [2,6] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], checkAfterChangeDate EGG [3,4]
+      user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], EGG in [3,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], checkAfterChangeDate EGG [6,2]
+      user : j
+[Info], [Tue Jul 13 19:55:47 IRDT 2021], EGG in [6,2] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:47 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:48 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021], chicken in [3,5] looked for food 
+      user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021], chicken in [2,6] looked for food 
+      user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021], chicken in [5,6] looked for food 
+      user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021], chicken in [5,1] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:55:48 IRDT 2021], checkAfterChangeDate model.Well@3e99cad2      user : j
+[Info], [Tue Jul 13 19:55:48 IRDT 2021], The Well is filled      user : j
+[Alarm], [Tue Jul 13 19:55:48 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:48 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:51 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken in [3,3] looked for food 
+      user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken in [2,4] looked for food 
+      user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken in [5,5] looked for food 
+      user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken in [4,1] looked for food 
+chicken eat grass in [1,4]
+      user : j
+[Alarm], [Tue Jul 13 19:55:51 IRDT 2021], checkAfterChangeDate chicken 20% [3,2]
+      user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken in [3,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:51 IRDT 2021], checkAfterChangeDate chicken 20% [2,3]
+      user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken in [2,3] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:51 IRDT 2021], checkAfterChangeDate chicken 20% [5,4]
+      user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken in [5,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:51 IRDT 2021], checkAfterChangeDate chicken 100% [3,1]
+      user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], chicken in [3,1] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:51 IRDT 2021], checkAfterChangeDate EGG [3,5]
+      user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], EGG in [3,5] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:51 IRDT 2021], checkAfterChangeDate EGG [1,5]
+      user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], EGG in [1,5] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:51 IRDT 2021], checkAfterChangeDate EGG [4,5]
+      user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], EGG in [4,5] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:51 IRDT 2021], checkAfterChangeDate EGG [4,2]
+      user : j
+[Info], [Tue Jul 13 19:55:51 IRDT 2021], EGG in [4,2] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:51 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:51 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:52 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021], The wild animal destroyed EGG in [2,3] 
+The wild animal killed chickenin [2,3] 
+      user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021], chicken in [3,2] looked for food 
+      user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021], chicken in [2,3] looked for food 
+      user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021], chicken in [5,4] looked for food 
+      user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:52 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:52 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:52 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:53 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], The wild animal destroyed EGG in [3,1] 
+The wild animal destroyed EGG in [3,2] 
+The wild animal killed chickenin [3,2] 
+      user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], chicken in [2,2] looked for food 
+chicken eat grass in [2,2]
+      user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], chicken in [6,4] looked for food 
+chicken eat grass in [4,6]
+      user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:53 IRDT 2021], checkAfterChangeDate chicken 100% [1,2]
+      user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], chicken in [1,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:53 IRDT 2021], checkAfterChangeDate chicken 100% [7,4]
+      user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], chicken in [7,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:53 IRDT 2021], checkAfterChangeDate EGG [3,5]
+      user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], EGG in [3,5] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:53 IRDT 2021], checkAfterChangeDate EGG [2,6]
+      user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], EGG in [2,6] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:53 IRDT 2021], checkAfterChangeDate EGG [5,6]
+      user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], EGG in [5,6] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:53 IRDT 2021], checkAfterChangeDate EGG [5,1]
+      user : j
+[Info], [Tue Jul 13 19:55:53 IRDT 2021], EGG in [5,1] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:53 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:53 IRDT 2021], check result : false      user : j
+[Command], [Tue Jul 13 19:55:55 IRDT 2021], well command      user : j
+[Replay], [Tue Jul 13 19:55:55 IRDT 2021], The well began to drain      user : j
+[Alarm], [Tue Jul 13 19:55:56 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:56 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:56 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:56 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:56 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:56 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:56 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:56 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:56 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:56 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:56 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:57 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021], The wild animal killed chickenin [2,2] 
+      user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:57 IRDT 2021], checkAfterChangeDate chicken 80% [5,4]
+      user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021], chicken in [5,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:57 IRDT 2021], checkAfterChangeDate EGG [5,4]
+      user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021], EGG in [5,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:57 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:57 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:57 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:57 IRDT 2021], checkAfterChangeDate model.Well@3e99cad2      user : j
+[Info], [Tue Jul 13 19:55:57 IRDT 2021], The Well is filled      user : j
+[Alarm], [Tue Jul 13 19:55:57 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:57 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:58 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:58 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:58 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:58 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:58 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:58 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:58 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:58 IRDT 2021], checkAfterChangeDate chicken 60% [6,5]
+      user : j
+[Info], [Tue Jul 13 19:55:58 IRDT 2021], chicken in [6,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:58 IRDT 2021], checkAfterChangeDate EGG [1,2]
+      user : j
+[Info], [Tue Jul 13 19:55:58 IRDT 2021], EGG in [1,2] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:58 IRDT 2021], checkAfterChangeDate EGG [7,4]
+      user : j
+[Info], [Tue Jul 13 19:55:58 IRDT 2021], EGG in [7,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:58 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:58 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:59 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:59 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:59 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:55:59 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:55:59 IRDT 2021], checkAfterChangeDate chicken 40% [6,3]
+      user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021], chicken in [6,3] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:55:59 IRDT 2021], checkAfterChangeDate EGG [5,4]
+      user : j
+[Info], [Tue Jul 13 19:55:59 IRDT 2021], EGG in [5,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:55:59 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:55:59 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:02 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:02 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:02 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:02 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:02 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:02 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:02 IRDT 2021], chicken in [6,3] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:56:02 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:02 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:04 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021], chicken in [6,2] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:56:04 IRDT 2021], checkAfterChangeDate chicken 20% [5,2]
+      user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021], chicken in [5,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:04 IRDT 2021], checkAfterChangeDate EGG [6,5]
+      user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021], EGG in [6,5] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:04 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:04 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:04 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:04 IRDT 2021], chicken in [5,2] looked for food 
+chicken eat grass in [2,5]
+      user : j
+[Alarm], [Tue Jul 13 19:56:04 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:04 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:05 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:05 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:05 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:05 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:05 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:05 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:05 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:05 IRDT 2021], checkAfterChangeDate chicken 90% [3,2]
+      user : j
+[Info], [Tue Jul 13 19:56:05 IRDT 2021], chicken in [3,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:05 IRDT 2021], checkAfterChangeDate EGG [6,3]
+      user : j
+[Info], [Tue Jul 13 19:56:05 IRDT 2021], EGG in [6,3] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:05 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:05 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:06 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:06 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:06 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:06 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:06 IRDT 2021], checkAfterChangeDate chicken 70% [4,1]
+      user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021], chicken in [4,1] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:06 IRDT 2021], checkAfterChangeDate EGG [5,2]
+      user : j
+[Info], [Tue Jul 13 19:56:06 IRDT 2021], EGG in [5,2] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:06 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:06 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:07 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:07 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:07 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:07 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:07 IRDT 2021], checkAfterChangeDate chicken 50% [4,3]
+      user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021], chicken in [4,3] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:07 IRDT 2021], checkAfterChangeDate EGG [3,2]
+      user : j
+[Info], [Tue Jul 13 19:56:07 IRDT 2021], EGG in [3,2] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:07 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:07 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:08 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:08 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:08 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:08 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021], chicken in [4,2] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:56:08 IRDT 2021], checkAfterChangeDate chicken 30% [4,1]
+      user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021], chicken in [4,1] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:08 IRDT 2021], checkAfterChangeDate EGG [4,1]
+      user : j
+[Info], [Tue Jul 13 19:56:08 IRDT 2021], EGG in [4,1] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:08 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:08 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:09 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021], chicken in [4,1] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:56:09 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:09 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:09 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021], The wild animal destroyed EGG in [4,3] 
+      user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021], chicken in [5,1] looked for food 
+chicken eat grass in [1,5]
+      user : j
+[Alarm], [Tue Jul 13 19:56:09 IRDT 2021], checkAfterChangeDate chicken 100% [6,1]
+      user : j
+[Info], [Tue Jul 13 19:56:09 IRDT 2021], chicken in [6,1] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:09 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:09 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:10 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:10 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:10 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:10 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:10 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:10 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:10 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:10 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:10 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:11 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:11 IRDT 2021], checkAfterChangeDate chicken 80% [6,3]
+      user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021], chicken in [6,3] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:11 IRDT 2021], checkAfterChangeDate EGG [4,1]
+      user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021], EGG in [4,1] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:11 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:11 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:11 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:11 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:11 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:11 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:12 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:12 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:12 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:12 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:12 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:12 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:12 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:12 IRDT 2021], checkAfterChangeDate chicken 60% [6,1]
+      user : j
+[Info], [Tue Jul 13 19:56:12 IRDT 2021], chicken in [6,1] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:12 IRDT 2021], checkAfterChangeDate EGG [6,1]
+      user : j
+[Info], [Tue Jul 13 19:56:12 IRDT 2021], EGG in [6,1] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:12 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:12 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:13 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:13 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:13 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:13 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:13 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:13 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:13 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:13 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:13 IRDT 2021], check result : false      user : j
+[Command], [Tue Jul 13 19:56:13 IRDT 2021], well command      user : j
+[Replay], [Tue Jul 13 19:56:13 IRDT 2021], The well began to drain      user : j
+[Alarm], [Tue Jul 13 19:56:14 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:14 IRDT 2021], checkAfterChangeDate chicken 40% [6,3]
+      user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021], chicken in [6,3] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:14 IRDT 2021], checkAfterChangeDate EGG [6,3]
+      user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021], EGG in [6,3] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:14 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:14 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:14 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:14 IRDT 2021], chicken in [6,3] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:56:14 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:14 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:15 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021], chicken in [6,4] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:56:15 IRDT 2021], checkAfterChangeDate chicken 20% [6,5]
+      user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021], chicken in [6,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:15 IRDT 2021], checkAfterChangeDate EGG [6,1]
+      user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021], EGG in [6,1] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:15 IRDT 2021], checkAfterChangeDate model.Well@3e99cad2      user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021], The Well is filled      user : j
+[Alarm], [Tue Jul 13 19:56:15 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:15 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:15 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:15 IRDT 2021], chicken in [6,5] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:56:15 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:15 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:16 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021], chicken in [5,5] looked for food 
+chicken eat grass in [5,5]
+      user : j
+[Alarm], [Tue Jul 13 19:56:16 IRDT 2021], checkAfterChangeDate chicken 100% [4,5]
+      user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021], chicken in [4,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:16 IRDT 2021], checkAfterChangeDate EGG [6,3]
+      user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021], EGG in [6,3] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:16 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:16 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:16 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:16 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:16 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:16 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:17 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:17 IRDT 2021], checkAfterChangeDate chicken 80% [4,5]
+      user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021], chicken in [4,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:17 IRDT 2021], checkAfterChangeDate EGG [6,5]
+      user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021], EGG in [6,5] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:17 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:17 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:17 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:17 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:17 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:17 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:18 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:18 IRDT 2021], checkAfterChangeDate chicken 60% [4,5]
+      user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021], chicken in [4,5] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:18 IRDT 2021], checkAfterChangeDate EGG [4,5]
+      user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021], EGG in [4,5] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:18 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:18 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:18 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:18 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:18 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:18 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:19 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:19 IRDT 2021], checkAfterChangeDate chicken 40% [3,4]
+      user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021], chicken in [3,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:19 IRDT 2021], checkAfterChangeDate EGG [4,5]
+      user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021], EGG in [4,5] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:19 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:19 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:19 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:19 IRDT 2021], chicken in [3,4] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:56:19 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:19 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:20 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021], The wild animal destroyed EGG in [4,5] 
+      user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021], chicken in [2,4] looked for food 
+chicken eat grass in [4,2]
+      user : j
+[Alarm], [Tue Jul 13 19:56:20 IRDT 2021], checkAfterChangeDate chicken 100% [1,4]
+      user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021], chicken in [1,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:20 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:20 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:20 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:20 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:20 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:20 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:21 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:21 IRDT 2021], checkAfterChangeDate chicken 80% [2,3]
+      user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021], chicken in [2,3] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:21 IRDT 2021], checkAfterChangeDate EGG [3,4]
+      user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021], EGG in [3,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:21 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:21 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:21 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:21 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:21 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:21 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:22 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021], The wild animal destroyed EGG in [2,3] 
+      user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:22 IRDT 2021], checkAfterChangeDate chicken 60% [3,4]
+      user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021], chicken in [3,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:22 IRDT 2021], checkAfterChangeDate EGG [1,4]
+      user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021], EGG in [1,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:22 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:22 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:22 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:22 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:22 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:22 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:23 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:23 IRDT 2021], checkAfterChangeDate chicken 40% [3,4]
+      user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021], chicken in [3,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:23 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:23 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:23 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:23 IRDT 2021], chicken in [3,4] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 19:56:23 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:23 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:24 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021], chicken in [3,5] looked for food 
+chicken eat grass in [5,3]
+      user : j
+[Alarm], [Tue Jul 13 19:56:24 IRDT 2021], checkAfterChangeDate chicken 100% [3,6]
+      user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021], chicken in [3,6] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:24 IRDT 2021], checkAfterChangeDate EGG [3,4]
+      user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021], EGG in [3,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:24 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:24 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:24 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:24 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:24 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:24 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:25 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021], The wild animal destroyed EGG in [3,6] 
+      user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:25 IRDT 2021], checkAfterChangeDate chicken 80% [3,6]
+      user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021], chicken in [3,6] produce EGG      user : j
+[Alarm], [Tue Jul 13 19:56:25 IRDT 2021], checkAfterChangeDate EGG [3,4]
+      user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021], EGG in [3,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:25 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:25 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:25 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:25 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:25 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:25 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:26 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:26 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:26 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:26 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:26 IRDT 2021], The wild animal killed chickenin [3,5] 
+      user : j
+[Info], [Tue Jul 13 19:56:26 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 19:56:26 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:26 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:26 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:26 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:26 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:26 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:26 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:26 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:26 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:26 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:27 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:27 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:27 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:27 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:27 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:27 IRDT 2021], checkAfterChangeDate EGG [3,6]
+      user : j
+[Info], [Tue Jul 13 19:56:27 IRDT 2021], EGG in [3,6] was destroyed      user : j
+[Alarm], [Tue Jul 13 19:56:27 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:27 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:27 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:27 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:27 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:27 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:27 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:27 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:27 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:31 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:31 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:31 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:31 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:31 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:31 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:31 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:31 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:31 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:31 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:31 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:31 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:31 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:31 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:32 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:32 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:32 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:32 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:32 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:32 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:32 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:32 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:32 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:32 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:32 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:32 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:32 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:32 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 19:56:33 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 19:56:33 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 19:56:33 IRDT 2021],       user : j
+[Info], [Tue Jul 13 19:56:33 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 19:56:33 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 19:56:33 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 19:56:33 IRDT 2021], check result : false      user : j
+[Info], [Tue Jul 13 20:00:01 IRDT 2021], load user file
+[Command], [Tue Jul 13 20:00:05 IRDT 2021], click login
+[Command], [Tue Jul 13 20:00:05 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 20:00:07 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 20:00:07 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 20:00:07 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 20:00:08 IRDT 2021], start game       user : j
+[Alarm], [Tue Jul 13 20:00:09 IRDT 2021], in setWildComing method       user : j
+[Alarm], [Tue Jul 13 20:00:09 IRDT 2021],  set Bear coming       user : j
+[Alarm], [Tue Jul 13 20:00:09 IRDT 2021],  set Lion coming       user : j
+[Alarm], [Tue Jul 13 20:00:11 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 20:00:11 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:11 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:12 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 20:00:12 IRDT 2021], checkAfterChangeDate lion 3 [2,2]
+      user : j
+[Info], [Tue Jul 13 20:00:12 IRDT 2021], The LION entered the farm       user : j
+[Alarm], [Tue Jul 13 20:00:12 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:12 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:12 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:12 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:12 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:00:12 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:12 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:13 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:13 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:13 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:00:13 IRDT 2021], checkAfterChangeDate bear 4 [6,4]
+      user : j
+[Info], [Tue Jul 13 20:00:13 IRDT 2021], The BEAR entered the farm       user : j
+[Alarm], [Tue Jul 13 20:00:13 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:13 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:14 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:14 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:14 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:14 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:14 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:00:14 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:14 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:14 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:14 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:14 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:14 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:14 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:00:14 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:14 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:15 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:15 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:15 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:15 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:15 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:00:15 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:15 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:37 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:00:37 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:37 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:37 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:00:37 IRDT 2021], checkAfterChangeDate chicken 80% [5,6]
+      user : j
+[Info], [Tue Jul 13 20:00:37 IRDT 2021], chicken in [5,6] produce EGG      user : j
+[Alarm], [Tue Jul 13 20:00:37 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:37 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:38 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:00:38 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:38 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:38 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:00:38 IRDT 2021], checkAfterChangeDate chicken 60% [5,4]
+      user : j
+[Info], [Tue Jul 13 20:00:38 IRDT 2021], chicken in [5,4] produce EGG      user : j
+[Alarm], [Tue Jul 13 20:00:38 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:38 IRDT 2021], check result : false      user : j
+[Command], [Tue Jul 13 20:00:40 IRDT 2021], well command      user : j
+[Replay], [Tue Jul 13 20:00:40 IRDT 2021], The well began to drain      user : j
+[Alarm], [Tue Jul 13 20:00:41 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:00:41 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:41 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:41 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:00:41 IRDT 2021], checkAfterChangeDate chicken 40% [4,3]
+      user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021], chicken in [4,3] produce EGG      user : j
+[Alarm], [Tue Jul 13 20:00:41 IRDT 2021], checkAfterChangeDate EGG [5,6]
+      user : j
+[Info], [Tue Jul 13 20:00:41 IRDT 2021], EGG in [5,6] was destroyed      user : j
+[Alarm], [Tue Jul 13 20:00:41 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:41 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:42 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:42 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:42 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:42 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:42 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:42 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 20:00:42 IRDT 2021], chicken in [4,3] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 20:00:42 IRDT 2021], checkAfterChangeDate model.Well@5653a40c      user : j
+[Info], [Tue Jul 13 20:00:42 IRDT 2021], The Well is filled      user : j
+[Alarm], [Tue Jul 13 20:00:42 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:42 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:46 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021], chicken in [4,2] looked for food 
+      user : j
+[Alarm], [Tue Jul 13 20:00:46 IRDT 2021], checkAfterChangeDate chicken 20% [3,2]
+      user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021], chicken in [3,2] produce EGG      user : j
+[Alarm], [Tue Jul 13 20:00:46 IRDT 2021], checkAfterChangeDate EGG [5,4]
+      user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021], EGG in [5,4] was destroyed      user : j
+[Alarm], [Tue Jul 13 20:00:46 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:46 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:00:46 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021], The wild animal destroyed EGG in [3,2] 
+The wild animal killed chickenin [3,2] 
+      user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021], chicken move       user : j
+[Info], [Tue Jul 13 20:00:46 IRDT 2021], chicken in [3,2] looked for food 
+chicken eat grass in [2,3]
+      user : j
+[Alarm], [Tue Jul 13 20:00:46 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:00:46 IRDT 2021], check result : false      user : j
+[Info], [Tue Jul 13 20:02:16 IRDT 2021], load user file
+[Command], [Tue Jul 13 20:07:33 IRDT 2021], click login
+[Command], [Tue Jul 13 20:07:33 IRDT 2021], entered username : <j>
+[Info], [Tue Jul 13 20:07:34 IRDT 2021], username accepted      user : j
+[Command], [Tue Jul 13 20:07:34 IRDT 2021], password : <j>      user : j
+[Replay], [Tue Jul 13 20:07:34 IRDT 2021], Login successfully      user : j
+[Alarm], [Tue Jul 13 20:07:36 IRDT 2021], start game       user : j
+[Alarm], [Tue Jul 13 20:07:38 IRDT 2021], in setWildComing method       user : j
+[Alarm], [Tue Jul 13 20:07:38 IRDT 2021],  set Bear coming       user : j
+[Alarm], [Tue Jul 13 20:07:38 IRDT 2021],  set Lion coming       user : j
+[Command], [Tue Jul 13 20:07:42 IRDT 2021], well command      user : j
+[Replay], [Tue Jul 13 20:07:42 IRDT 2021], The well began to drain      user : j
+[Alarm], [Tue Jul 13 20:07:43 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 20:07:43 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:07:43 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:07:43 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 20:07:43 IRDT 2021], checkAfterChangeDate lion 3 [6,2]
+      user : j
+[Info], [Tue Jul 13 20:07:43 IRDT 2021], The LION entered the farm       user : j
+[Alarm], [Tue Jul 13 20:07:43 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:07:43 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:07:44 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:07:44 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:07:44 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:07:44 IRDT 2021], checkAfterChangeDate model.Well@1954ee0e      user : j
+[Info], [Tue Jul 13 20:07:44 IRDT 2021], The Well is filled      user : j
+[Alarm], [Tue Jul 13 20:07:44 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:07:44 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:07:44 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:07:44 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:07:44 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:07:44 IRDT 2021], checkAfterChangeDate bear 4 [3,5]
+      user : j
+[Info], [Tue Jul 13 20:07:44 IRDT 2021], The BEAR entered the farm       user : j
+[Alarm], [Tue Jul 13 20:07:44 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:07:44 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:07:44 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:07:44 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:07:44 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:07:44 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:07:44 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:07:44 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:07:44 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:07:48 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:07:48 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:07:48 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:07:48 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:07:48 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:07:48 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:07:48 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:07:49 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:07:49 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:07:49 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:07:49 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:07:49 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:07:49 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:07:49 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:07:52 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:07:52 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:07:52 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:07:52 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:07:52 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:07:52 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:07:52 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:07:54 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:07:54 IRDT 2021], LION move       user : j
+[Info], [Tue Jul 13 20:07:54 IRDT 2021],       user : j
+[Info], [Tue Jul 13 20:07:54 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:07:54 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:07:54 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:07:54 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:08:10 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:08:10 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:08:10 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:08:10 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:08:10 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:08:12 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:08:12 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:08:12 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:08:12 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:08:12 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:08:14 IRDT 2021], in turn method       user : j
+[Info], [Tue Jul 13 20:08:14 IRDT 2021], BEAR move       user : j
+[Info], [Tue Jul 13 20:08:14 IRDT 2021],       user : j
+[Alarm], [Tue Jul 13 20:08:14 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:08:14 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:08:22 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 20:08:22 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:08:22 IRDT 2021], check result : false      user : j
+[Command], [Tue Jul 13 20:08:22 IRDT 2021], well command      user : j
+[Replay], [Tue Jul 13 20:08:22 IRDT 2021], The well began to drain      user : j
+[Alarm], [Tue Jul 13 20:08:23 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 20:08:23 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:08:23 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:08:25 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 20:08:25 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:08:25 IRDT 2021], check result : false      user : j
+[Alarm], [Tue Jul 13 20:08:25 IRDT 2021], in turn method       user : j
+[Alarm], [Tue Jul 13 20:08:25 IRDT 2021], checkAfterChangeDate model.Well@1954ee0e      user : j
+[Info], [Tue Jul 13 20:08:25 IRDT 2021], The Well is filled      user : j
+[Alarm], [Tue Jul 13 20:08:25 IRDT 2021], in check method       user : j
+[Alarm], [Tue Jul 13 20:08:25 IRDT 2021], check result : false      user : j

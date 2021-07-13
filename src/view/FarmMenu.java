@@ -31,6 +31,7 @@ public class FarmMenu extends Menu {
         LocalDate.resetTime();
         show();
         mission();
+        manager.setWildComing(scene, ((Pane) scene.getRoot()));
         Farm.getFarm().addMoney(0);
         scene.setOnMousePressed(event -> {
             handleMouseEvent(event);
@@ -133,6 +134,11 @@ public class FarmMenu extends Menu {
         Button turn = new Button("turn");
         turn.setOnAction(e -> {
             LocalDate.getInstance().turn(1);
+            if (manager.giveAward(manager.check())) {
+                if (Mission.getMission().getLevels() != User.getCurrentUser().getOpenedLevel())
+                    User.getCurrentUser().setOpenedLevel(User.getCurrentUser().getOpenedLevel() + 1);
+
+            }
             System.out.println(Farm.getFarm().toString());
         });// TODO: ۱۱/۰۷/۲۰۲۱
         turn.getStyleClass().add("button-blue");
