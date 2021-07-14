@@ -4,7 +4,10 @@ import controller.Logger;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.scene.control.Label;
+import javafx.scene.media.AudioClip;
 import view.FarmMenu;
+
+import java.io.File;
 
 public class Well implements Changeable {
     Label fillingLabel = new Label("filling...");
@@ -47,6 +50,9 @@ public class Well implements Changeable {
     }
 
     public String checkAfterChangeDate() {
+        String menuS = "sounds\\well.wav";     // For example
+        AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
+        audioClip.play();
         remaining.set(CAPACITY.get());
         isFilling = false;
         fillingLabel.setVisible(false);

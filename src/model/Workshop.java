@@ -2,7 +2,12 @@ package model;
 
 import controller.Logger;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Random;
 
 public class Workshop implements Changeable {
@@ -16,8 +21,10 @@ public class Workshop implements Changeable {
     Random random = new Random();
     int x, y;
     Scene scene;
+    String imagePath;//= "C:\\Users\\User\\Desktop\\HelloFX\\dog.gif";
+    ImageView imageView;
 
-    Workshop(String name, ProductType input, ProductType output, int cost, int processTime, Scene scene) {
+    Workshop(String name, ProductType input, ProductType output, int cost, int processTime, Scene scene,String imagePath) {
         this.scene = scene;
         this.name = name;
         this.input = input;
@@ -28,6 +35,21 @@ public class Workshop implements Changeable {
         //Farm.getFarm().money.set(Farm.getFarm().money.get()-cost);
         Farm.getFarm().addMoney(-cost);
         Farm.getFarm().workshops.add(this);
+        this.imagePath = imagePath;
+        Image image = null;
+        try {
+            image = new Image(new FileInputStream(imagePath));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        imageView = new ImageView(image);
+
+        imageView.setPreserveRatio(true);
+        ((Pane) scene.getRoot()).getChildren().add(imageView);
+        imageView.setFitHeight(scene.getWidth() / 4);
+        imageView.setFitWidth(scene.getHeight() / 4);
+        imageView.setOnMouseClicked(e -> Work());
     }
 
     public boolean Work() {

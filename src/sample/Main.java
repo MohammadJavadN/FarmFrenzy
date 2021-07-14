@@ -36,6 +36,5 @@ public class Main extends Application {
         window.setResizable(false);
 //        AlertBox.display("title","message");
         LoginMenu.getLoginMenu(window).run();
-
     }
 }

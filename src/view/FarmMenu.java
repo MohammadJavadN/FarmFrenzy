@@ -13,20 +13,26 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.AudioClip;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.*;
 import sample.AlertBox;
 import sample.ConfirmBox;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.nio.file.Paths;
+
 public class FarmMenu extends Menu {
     Manager manager = Manager.getInstance();
     Farm farm = Farm.getFarm();
     public static String rootId = "farm0";
+    String menuS = "sounds\\menu1.wav";
+    AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
 
     @Override
     public void run() {
@@ -37,6 +43,12 @@ public class FarmMenu extends Menu {
         manager.setWildComing(scene, ((Pane) scene.getRoot()));
         Farm.getFarm().addMoney(0);
         scene.setOnMousePressed(this::handleMouseEvent);
+        Mill.buy(scene);
+        Bakery.buy(scene);
+        Textile.buy(scene);
+        Tailoring.buy(scene);
+        MilkPackaging.buy(scene);
+        IceCreamShop.buy(scene);
     }
 
     void handleMouseEvent(MouseEvent e) {
@@ -75,6 +87,9 @@ public class FarmMenu extends Menu {
         int x = (int) ((e.getY() - 195 * scene.getHeight()/600) / (44 * scene.getHeight() / 600)) + 1;
         if (farm.insidePage(x, y))
             if (manager.plant(x, y)) {
+                String menuS = "sounds\\plant.wav";
+                AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
+                audioClip.play();
                 Image image = null;
                 try {
                     image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\HelloFX\\img\\grase.png"));
@@ -118,7 +133,10 @@ public class FarmMenu extends Menu {
         window.setScene(scene);
 
         Button menu = new Button("menu");
-        menu.setOnAction(e -> menu());// TODO: ۱۱/۰۷/۲۰۲۱
+        menu.setOnAction(e ->{
+            audioClip.play();
+            menu();
+        });// TODO: ۱۱/۰۷/۲۰۲۱
         menu.getStyleClass().add("button-blue");
         menu.setLayoutX(0.14 * window.getWidth());
         menu.setLayoutY(0.88 * window.getHeight());
@@ -314,6 +332,9 @@ public class FarmMenu extends Menu {
     private void well() {
         Logger.getLogger(user).log("well command", Logger.LogType.Command);
         if (manager.well()) {
+            String menuS = "sounds\\well.wav";
+            AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
+            audioClip.play();
             System.out.println("The well began to drain");
             Logger.getLogger(user).log("The well began to drain", Logger.LogType.Replay);
         } else {
@@ -334,6 +355,7 @@ public class FarmMenu extends Menu {
     }
 
     private void menu() {
+        if (!manager.check())
         if (!ConfirmBox.display("Alarm","Are you sure to back to menu?"))
             return;
         manager.saveUsers();
