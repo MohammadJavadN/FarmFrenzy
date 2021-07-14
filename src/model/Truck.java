@@ -2,18 +2,25 @@ package model;
 
 import controller.Logger;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import view.FarmMenu;
+import view.ShipProductMenu;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Truck implements Changeable {
+    public HashMap<String, Integer> productCount = new HashMap<>();
+
     int transportPrice;
     final int TRANSPORT_TIME = 10;
+    Label tPrice = new Label();
+
     ArrayList<Object> objects = new ArrayList<>();
     int capacity;
     int load = 0;
@@ -28,6 +35,27 @@ public class Truck implements Changeable {
         present = true;
         scene = FarmMenu.r.getScene();
         creatImage();
+        tPrice.getStyleClass().add("label-well");
+    }
+
+    public int getTransportPrice() {
+        int c = 0;
+        for (Object object : objects) {
+            c += ((Sellable) object).getPrice();
+        }
+        return c;
+    }
+
+    public ArrayList<Object> getObjects() {
+        return objects;
+    }
+
+    public Object getObject(String name) {
+        for (Object o : objects) {
+            if (((Sellable) o).getName().equalsIgnoreCase(name))
+                return o;
+        }
+        return null;
     }
 
     void backHome() {
@@ -44,6 +72,10 @@ public class Truck implements Changeable {
         if (((Sellable) object).getSpace() > capacity - load)
             return false;
         else {
+            if (!productCount.containsKey(((Sellable) object).getName()))
+                productCount.put(((Sellable) object).getName(), 1);
+            else
+                productCount.replace(((Sellable) object).getName(), productCount.get(((Sellable) object).getName()) + 1);
             objects.add(object);
             load += ((Sellable) object).getSpace();
             Farm.getFarm().truckLoad(((Sellable) object).getName());
@@ -51,10 +83,33 @@ public class Truck implements Changeable {
         return true;
     }
 
+    public boolean unload(String name) {
+        for (Object o : objects) {
+            if (((Sellable) o).getName().equalsIgnoreCase(name)) {
+                return unload(o);
+
+            }
+        }
+        return false;
+    }
+
+    public HashMap<String, Integer> getProductCount() {
+        return productCount;
+    }
+
+    public void unload() {
+        while (objects.size() > 0)
+            unload(objects.get(0));
+    }
+
     public boolean unload(Object object) {
         if (objects.contains(object)) {
             load -= ((Sellable) object).getSpace();
             objects.remove(object);
+            if (productCount.get(((Sellable) object).getName()) < 2)
+                productCount.remove(((Sellable) object).getName());
+            else
+                productCount.replace(((Sellable) object).getName(), productCount.get(((Sellable) object).getName()) - 1);
             Farm.getFarm().truckUnload(object);
             return true;
         }
@@ -79,13 +134,26 @@ public class Truck implements Changeable {
 
     static Truck truck;
 
+    public int getLoad() {
+        return load;
+    }
+
     private void setImage() {
         if (present) {
             imageView.setX(0.26 * scene.getWidth());
             imageView.setY(0.86 * scene.getHeight());
+            tPrice.setVisible(false);
+            imageView.setOnMouseClicked(e -> (new ShipProductMenu()).run());
         } else {
             imageView.setX(0.75 * scene.getWidth());
-            imageView.setY(0.1 * scene.getHeight());
+            imageView.setY(0.02 * scene.getHeight());
+            tPrice.setText("$ " + transportPrice);
+            tPrice.setVisible(true);
+            tPrice.setLayoutX(imageView.getX());
+            tPrice.setLayoutY(imageView.getY());
+            if (!((Pane) scene.getRoot()).getChildren().contains(tPrice))
+                ((Pane) scene.getRoot()).getChildren().add(tPrice);
+            imageView.setOnMouseClicked(e -> System.out.print(""));
         }
     }
     private void creatImage() {

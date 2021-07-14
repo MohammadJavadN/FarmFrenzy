@@ -12,6 +12,11 @@ import java.util.HashMap;
 public class Farm {
     final int ROW = 6;
     final int COL = 6;
+
+    public ArrayList<Domestic> getDomestics() {
+        return domestics;
+    }
+
     ArrayList<Domestic> domestics = new ArrayList<>();
     ArrayList<Wild> wilds = new ArrayList<>();
     ArrayList<Cat> cats = new ArrayList<>();
@@ -79,6 +84,10 @@ public class Farm {
         addMoney(0);
     }
 
+
+    public HashMap<String, IntegerProperty> getDomesticsNum() {
+        return domesticsNum;
+    }
 
     HashMap<String, IntegerProperty> domesticsNum = new HashMap<>();
     IntegerProperty getDomesticNum(String name){

@@ -17,6 +17,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.*;
 import sample.AlertBox;
+import sample.ConfirmBox;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -31,10 +32,10 @@ public class FarmMenu extends Menu {
     public void run() {
         LocalDate.resetTime();
         show();
+        Truck.getTruck();
         mission();
         manager.setWildComing(scene, ((Pane) scene.getRoot()));
         Farm.getFarm().addMoney(0);
-        Truck.getTruck();
         scene.setOnMousePressed(this::handleMouseEvent);
     }
 
@@ -310,38 +311,6 @@ public class FarmMenu extends Menu {
 
     }
 
-    private void buy() {
-        Logger.getLogger(user).log("buy command", Logger.LogType.Command);
-        if ("cat dog hound cow buffalo chicken ostrich".contains(matcher.group(1))) {
-            if (manager.buy(matcher.group(1),scene, (Pane) scene.getRoot())) {
-                System.out.println(matcher.group(1) + " add in farm");
-                Logger.getLogger(user).log(matcher.group(1) + " add in farm", Logger.LogType.Info);
-            } else {
-                System.out.println("You do not have enough money to buy this animal!");
-                Logger.getLogger(user).log("do not have enough money to buy " + matcher.group(1), Logger.LogType.Replay);
-            }
-        } else {
-            System.out.println("Invalid animal name!");
-            Logger.getLogger(user).log("Invalid animal name <" + input + ">", Logger.LogType.Alarm);
-        }
-    }
-
-    private void pickup() {
-        Logger.getLogger(user).log("pickup command", Logger.LogType.Command);
-        if (farm.insidePage(Integer.parseInt(matcher.group(1)), Integer.parseInt(matcher.group(2)))) {
-            if (manager.pickup(Integer.parseInt(matcher.group(1)), Integer.parseInt(matcher.group(2)))) {
-                System.out.println("product in [" + matcher.group(1) + "," + matcher.group(2) + "] was pickup");
-                Logger.getLogger(user).log("product in [" + matcher.group(1) + "," + matcher.group(2) + "] was pickup", Logger.LogType.Info);
-            } else {
-                System.out.println("There are no products in this house.");
-                Logger.getLogger(user).log("There were no products in the selected house", Logger.LogType.Alarm);
-            }
-        } else {
-            System.out.println("Invalid point");
-            Logger.getLogger(user).log("Invalid point entered", Logger.LogType.Error);
-        }
-    }
-
     private void well() {
         Logger.getLogger(user).log("well command", Logger.LogType.Command);
         if (manager.well()) {
@@ -350,22 +319,6 @@ public class FarmMenu extends Menu {
         } else {
             System.out.println("The well does not need drainage at the moment");
             Logger.getLogger(user).log("The well does not need drainage at the moment", Logger.LogType.Replay);
-        }
-    }
-
-    private void plant() {
-        Logger.getLogger(user).log("plant command", Logger.LogType.Command);
-        if (farm.insidePage(Integer.parseInt(matcher.group(1)), Integer.parseInt(matcher.group(2)))) {
-            if (manager.plant(Integer.parseInt(matcher.group(1)), Integer.parseInt(matcher.group(2)))) {
-                System.out.println("plant grass in [" + matcher.group(1) + "," + matcher.group(2) + "] ");
-                Logger.getLogger(user).log("plant grass in [" + matcher.group(1) + "," + matcher.group(2) + "] ", Logger.LogType.Info);
-            } else {
-                System.out.println("The well has no water.");
-                Logger.getLogger(user).log("The well has no water", Logger.LogType.Replay);
-            }
-        } else {
-            System.out.println("Invalid point");
-            Logger.getLogger(user).log("Invalid point entered", Logger.LogType.Error);
         }
     }
 
@@ -380,70 +333,14 @@ public class FarmMenu extends Menu {
         }
     }
 
-    private void cage() {
-        Logger.getLogger(user).log("cage command", Logger.LogType.Command);
-        if (farm.insidePage(Integer.parseInt(matcher.group(1)), Integer.parseInt(matcher.group(2)))) {
-            int result = manager.trap(Integer.parseInt(matcher.group(1)), Integer.parseInt(matcher.group(2)));
-            if (result == 0) {
-                System.out.println("There are no wild animals in farm");
-                Logger.getLogger(user).log("There are no wild animals in farm", Logger.LogType.Replay);
-            } else if (result == 1) {
-                System.out.println("There are no wild animals in this house");
-                Logger.getLogger(user).log("Wrong coordinates", Logger.LogType.Error);
-            } else if (result == 2) {
-                System.out.println("The cage order was applied to the wild animal but it has not yet been trapped");
-                Logger.getLogger(user).log("The cage order was applied to the wild animal", Logger.LogType.Info);
-            } else if (result == 3) {
-                System.out.println("wild animals in [" + matcher.group(1) + "," + matcher.group(2) + "] was trapped");
-                Logger.getLogger(user).log("wild animals in [" + matcher.group(1) + "," + matcher.group(2) + "] was trapped", Logger.LogType.Info);
-            }
-        } else {
-            System.out.println("Invalid point");
-            Logger.getLogger(user).log("Invalid point entered", Logger.LogType.Error);
-        }
-    }
-
-    private void turn() {
-        Logger.getLogger(user).log("turn command", Logger.LogType.Command);
-        String s = manager.turn(Integer.parseInt(matcher.group(1)));
-        //Logger.getLogger(user).log(s, Logger.LogType.Info);
-        System.out.println(s);
-    }
-
-    private void truckLoad() {
-        Logger.getLogger(user).log("truck load command", Logger.LogType.Command);
-        String s = manager.truckLoad(matcher.group(1));
-        System.out.println(s);
-        Logger.getLogger(user).log(s, Logger.LogType.Info);
-    }
-
-    private void truckUnload() {
-        Logger.getLogger(user).log("truck unload command", Logger.LogType.Command);
-        String s = manager.truckUnload(matcher.group(1));
-        System.out.println(s);
-        Logger.getLogger(user).log(s, Logger.LogType.Info);
-    }
-
-    private void truckGo() {
-        Logger.getLogger(user).log("truck go command", Logger.LogType.Command);
-        String s = manager.truckGo();
-        System.out.println(s);
-        Logger.getLogger(user).log(s, Logger.LogType.Info);
-    }
-
     private void menu() {
+        if (!ConfirmBox.display("Alarm","Are you sure to back to menu?"))
+            return;
         manager.saveUsers();
         Logger.getLogger(user).log("save user", Logger.LogType.Info);
         Logger.getLogger(user).log("menu command", Logger.LogType.Command);
         // TODO: ۰۴/۰۶/۲۰۲۱ check tasks
         parentMenu.run();
-    }
-
-    private void inquiry() {
-        Logger.getLogger(user).log("inquiry command", Logger.LogType.Command);
-        String s = manager.inquiry();
-        System.out.println(s);
-        //Logger.getLogger(user).log(s, Logger.LogType.Info);
     }
 
 
@@ -458,34 +355,5 @@ public class FarmMenu extends Menu {
         if (farmMenu == null)
             farmMenu = new FarmMenu(window);
         return farmMenu;
-    }
-
-    enum Commands {
-        BUY("\\s*^buy\\s+(\\w+)\\s*$"),
-        PICKUP("\\s*^pickup\\s+(\\d)\\s+(\\d)\\s*$"),
-        WELL("\\s*^well\\s*$"),
-        PLANT("\\s*^plant\\s+(\\d)\\s+(\\d)\\s*$"),
-        WORK("\\s*^work\\s+(\\w+)\\s*$"),
-        CAGE("\\s*^cage\\s+(\\d)\\s+(\\d)\\s*$"),
-        TURN("\\s*^turn\\s+(\\d+)\\s*$"),
-        TRUCK_LOAD("\\s*^truck\\s*load\\s+(\\w+)\\s*$"),
-        TRUCK_UNLOAD("\\s*^truck\\s*unload\\s+(\\w+)\\s*$"),
-        TRUCK_GO("\\s*^truck\\s*go\\s*$"),
-        MENU("\\s*^menu\\s*$"),
-        INQUIRY("\\s*^inquiry\\s*$"),
-        COMMANDS("\\s*^commands\\s*$"),
-        EXIT("\\s*^exit\\s*$"),
-        BUILD("\\s*^build\\s+(\\w+)\\s*$");
-
-        Pattern commandPattern;
-
-        Commands(String s) {
-            this.commandPattern = java.util.regex.Pattern.compile(s);
-        }
-
-        public Matcher getMatcher(String input) {
-            return this.commandPattern.matcher(input);
-        }
-
     }
 }

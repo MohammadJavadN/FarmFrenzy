@@ -1,10 +1,13 @@
 package model;
 
 import controller.Logger;
+import controller.Manager;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import view.ShipProductMenu;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -14,12 +17,8 @@ public class Product implements Sellable, Destroyable, Changeable {
     String name;
     int space;
     int price;
-    boolean catComeFor = false;
-    int expirationTime;
-    long expirationDate;
-    int x, y; // 0-5
-    ImageView imageView;
-    String imagePath;
+    Button addButton = new Button("Add");
+    Button removeButton = new Button("Remove");
 
     public Product(ProductType type, int x, int y, Scene scene) {
         this.x = x;
@@ -116,6 +115,54 @@ public class Product implements Sellable, Destroyable, Changeable {
         LocalDate.getInstance().event.put(expirationDate, this);
         Farm.getFarm().products.add(this);
         creatProductImage(scene);
+        addButton.setOnAction(e -> {
+                    Manager.getInstance().truckLoad(name);
+                    addButton.setVisible(false);
+                    removeButton.setVisible(true);
+                }
+        );
+        removeButton.setOnAction(e -> {
+            Manager.getInstance().truckUnload(name);
+            addButton.setVisible(true);
+            removeButton.setVisible(false);
+        });
+        removeButton.setVisible(false);
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    boolean catComeFor = false;
+    int expirationTime;
+    long expirationDate;
+    int x, y; // 0-5
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public ImageView getImageView() {
+        return imageView;
+    }
+
+    ImageView imageView;
+    String imagePath;
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public Button getRemoveButton() {
+        return removeButton;
+    }
+
+    public Button getAddButton() {
+        return addButton;
     }
 
     private void creatProductImage(Scene scene) {
@@ -147,7 +194,7 @@ public class Product implements Sellable, Destroyable, Changeable {
 
     @Override
     public int sell() {
-        Warehouse.getWarehouse().removeProduct(this);
+       // Warehouse.getWarehouse().removeProduct(this);
         return price;
     }
 

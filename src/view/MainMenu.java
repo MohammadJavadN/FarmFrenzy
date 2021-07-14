@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import sample.ConfirmBox;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -85,16 +86,19 @@ public class MainMenu extends Menu {
         Button logout = new Button("Logout");
         logout.setOnAction(e -> parentMenu.run());
         logout.getStyleClass().add("button-blue");
-        logout.setLayoutX(0.8*window.getWidth());
-        logout.setLayoutY(0.88*window.getHeight());
+        logout.setLayoutX(0.8 * window.getWidth());
+        logout.setLayoutY(0.88 * window.getHeight());
         logout.setMinWidth(50);
         root.getChildren().add(logout);
 
         Button exit = new Button("exit");
-        exit.setOnAction(e -> System.exit(-1));
+        exit.setOnAction(e -> {
+            if (ConfirmBox.display("Alarm", "Are you sure you want to exit?"))
+                System.exit(-1);
+        });
         exit.getStyleClass().add("button-red");
-        exit.setLayoutX(0.14*window.getWidth());
-        exit.setLayoutY(0.88*window.getHeight());
+        exit.setLayoutX(0.14 * window.getWidth());
+        exit.setLayoutY(0.88 * window.getHeight());
         exit.setMinWidth(50);
         root.getChildren().add(exit);
 

@@ -1,6 +1,0 @@
-creatDate : Tue Jul 13 23:20:59 IRDT 2021
-username : f
-
-[Info], [Tue Jul 13 23:20:59 IRDT 2021], username accepted
-[Alarm], [Tue Jul 13 23:21:34 IRDT 2021], Invalid form password : <k d>
-[Alarm], [Tue Jul 13 23:21:59 IRDT 2021], Invalid username : <amir>

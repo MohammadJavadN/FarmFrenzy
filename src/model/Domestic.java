@@ -8,12 +8,23 @@ public class Domestic extends Animal implements Sellable, Changeable {
     // Farm farm;
     ProductType productType;
     int live;
+
+    public int getPrice() {
+        return price;
+    }
+
     int price;
     int processTime;
     long produceDate;
     int space;
     static int i = 0;
     int id;
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    String imagePath;
 
     public Domestic(ProductType productType, int processTime, int price, int space, String name, Scene scene, Pane root, String path) {
         super(name, scene, root, path);
@@ -30,6 +41,7 @@ public class Domestic extends Animal implements Sellable, Changeable {
         Farm.getFarm().addMoney(-price);
         Farm.getFarm().addDomestic(this);
         //Farm.getFarm().domestics.add(this);
+        this.imagePath = path;
     }
 
     public void destroying() {

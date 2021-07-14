@@ -189,7 +189,7 @@ public class Manager {
     public String truckUnload(String name) {
         if (!Truck.getTruck().present)
             return "The truck has not yet returned from the previous trip";
-        if (Truck.getTruck().unload(Farm.getFarm().getObject(name)))
+        if (Truck.getTruck().unload(name))
             return " unload successfully";
         return "item dos not exist";
     }
