@@ -7,7 +7,6 @@ import model.*;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -62,31 +61,6 @@ public class Manager {
 
     }
 
-    public int build(String name,Scene scene) {
-        // "bakery icecreamshop milkpackaging mill tailoring textile"
-        // return :
-        // 0 --> build before
-        // 1 --> add in farm
-        // 2 --> not enough money
-        // 3 --> invalid name
-        switch (name.toLowerCase()) {
-            case "bakery":
-                return Bakery.buy(scene);
-            case "icecreamshop":
-                return IceCreamShop.buy(scene);
-            case "milkpackaging":
-                return MilkPackaging.buy(scene);
-            case "mill":
-                return Mill.buy(scene);
-            case "tailoring":
-                return Tailoring.buy(scene);
-            case "textile":
-                return Textile.buy(scene);
-            default:
-                return 3;
-        }
-    }
-
     public boolean buy(String name, Scene scene, Pane root) {
         switch (name.toLowerCase()) {
             case "cat":
@@ -106,20 +80,6 @@ public class Manager {
         }
     }
 
-    public boolean pickup(int x, int y) {//1-6
-        ArrayList<Product> collectedProduct = new ArrayList<>();
-        for (Product product : farm.getProducts()) {
-            if (product.checkCoordinates(x, y))
-                collectedProduct.add(product);
-        }
-        if (collectedProduct.isEmpty())
-            return false;
-        for (Product product : collectedProduct) {
-            product.collect();
-        }
-        return true;
-    }
-
     public boolean well() {
         return Well.getWell().fill();
     }
@@ -128,74 +88,23 @@ public class Manager {
         return Well.getWell().plantingGrass(x - 1, y - 1);
     }
 
-    public boolean work(String name) {
-        Workshop workshop = Farm.getFarm().getWorkshop(name);
-        if (workshop == null)
-            return false;
-        return workshop.Work();
-        // TODO: ۰۴/۰۶/۲۰۲۱
-    }
-
-    public int trap(int x, int y) {
-        // 0 -> not exist in farm
-        // 1 -> not exist in this point
-        // 2 -> exist but not trapped
-        // 3 -> exist and trapped
-        if (farm.getWilds().isEmpty())
-            return 0;
-        for (Wild wild : farm.getWilds()) {
-            if (wild.checkCoordinates(x, y)) {
-                if (wild.trap()) {
-                    return 3;
-                } else return 2;
-            }
-        }
-        return 1;
-    }
-
-    public String inquiry() {
-        String s = "The number of units of time elapsed since the beginning of the stage: " + LocalDate.getInstance().getCurrentUnitTime() + "\n";
-        s += Mission.getMission().toString();
-        s+=Truck.getTruck().toString();
-        if (Warehouse.getWarehouse().products!=null)
-            if (!Warehouse.getWarehouse().products.isEmpty())
-                s+="Inventory : \n";
-        s += Warehouse.getWarehouse().toString();
-        s += Farm.getFarm().toString();
-        // TODO: ۰۴/۰۶/۲۰۲۱ tasks
-        s += "coin : $" + Farm.getFarm().getMoney() + " \n";
-        return s;
-    }
-
-    public String turn(int n) {
-        String s = inquiry();
-        s += LocalDate.getInstance().turn(n);
-        s += inquiry();
-        return s;
-    }
-
-    public String truckLoad(String name) {
+    public void truckLoad(String name) {
         if (!Truck.getTruck().present)
-            return "The truck has not yet returned from the previous trip";
+            return;
         Object o = Farm.getFarm().getObject(name);
         if (o == null)
-            return "item dos not exist";
-        if (Truck.getTruck().load(o)) {
-            return name + " load successfully";
-        }
-        return "The truck does not have enough space";
+            return;
+        Truck.getTruck().load(o);
     }
 
-    public String truckUnload(String name) {
+    public void truckUnload(String name) {
         if (!Truck.getTruck().present)
-            return "The truck has not yet returned from the previous trip";
-        if (Truck.getTruck().unload(name))
-            return " unload successfully";
-        return "item dos not exist";
+            return;
+        Truck.getTruck().unload(name);
     }
 
-    public String truckGo() {
-        return Truck.getTruck().transport();
+    public void truckGo() {
+        Truck.getTruck().transport();
     }
 
     private Manager() {
@@ -226,8 +135,7 @@ public class Manager {
         boolean output = true;
         boolean dinamic;
         boolean coinsBoolean = false;
-        if (Mission.getMission().getTasks().get(Mission.getMission().getCurrentLevel() - 1).containsKey("coins")
-                && !coinsBoolean)
+        if (Mission.getMission().getTasks().get(Mission.getMission().getCurrentLevel() - 1).containsKey("coins"))
             coinsBoolean = (Mission.getMission().getTasks().get(Mission.getMission().getCurrentLevel() - 1).get("coins").get()
                     <= farm.getMoney());
         for (String s : Mission.getMission().getTasks().get(Mission.getMission().getCurrentLevel() - 1).keySet()) {

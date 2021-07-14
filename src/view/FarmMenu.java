@@ -14,8 +14,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.media.AudioClip;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.*;
@@ -25,7 +23,6 @@ import sample.ConfirmBox;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.nio.file.Paths;
 
 public class FarmMenu extends Menu {
     Manager manager = Manager.getInstance();
@@ -43,12 +40,12 @@ public class FarmMenu extends Menu {
         manager.setWildComing(scene, ((Pane) scene.getRoot()));
         Farm.getFarm().addMoney(0);
         scene.setOnMousePressed(this::handleMouseEvent);
-        Mill.buy(scene);
-        Bakery.buy(scene);
-        Textile.buy(scene);
-        Tailoring.buy(scene);
-        MilkPackaging.buy(scene);
-        IceCreamShop.buy(scene);
+        Mill.setBuy(scene);
+        Bakery.setBuy(scene);
+        Textile.setBuy(scene);
+        Tailoring.setBuy(scene);
+        IceCreamShop.setBuy(scene);
+        MilkPackaging.setBuy(scene);
     }
 
     void handleMouseEvent(MouseEvent e) {
@@ -305,30 +302,6 @@ public class FarmMenu extends Menu {
         window1.showAndWait();
     }
 
-    private void build() {
-        Logger.getLogger(user).log("build command", Logger.LogType.Command);
-        if ("bakery icecreamshop milkpackaging mill tailoring textile".contains(matcher.group(1))) {
-            int result = manager.build(matcher.group(1),scene);
-            if (result == 0) {
-                System.out.println(matcher.group(1) + " has already build ");
-                Logger.getLogger(user).log(matcher.group(1) + "  has already build", Logger.LogType.Info);
-            } else if (result == 1) {
-                System.out.println(matcher.group(1) + " add in farm");
-                Logger.getLogger(user).log(matcher.group(1) + " add in farm", Logger.LogType.Info);
-            } else if (result == 2) {
-                System.out.println("You do not have enough money to build this workshop!");
-                Logger.getLogger(user).log("do not have enough money to buy " + matcher.group(1), Logger.LogType.Replay);
-            } else if (result == 3) {
-                System.out.println("Invalid workshop name!");
-                Logger.getLogger(user).log("Invalid workshop name <" + input + ">", Logger.LogType.Alarm);
-            }
-        } else {
-            System.out.println("Invalid workshop name!");
-            Logger.getLogger(user).log("Invalid workshop name <" + input + ">", Logger.LogType.Alarm);
-        }
-
-    }
-
     private void well() {
         Logger.getLogger(user).log("well command", Logger.LogType.Command);
         if (manager.well()) {
@@ -340,17 +313,6 @@ public class FarmMenu extends Menu {
         } else {
             System.out.println("The well does not need drainage at the moment");
             Logger.getLogger(user).log("The well does not need drainage at the moment", Logger.LogType.Replay);
-        }
-    }
-
-    private void work() {
-        Logger.getLogger(user).log("work command", Logger.LogType.Command);
-        if (manager.work(matcher.group(1))) {
-            System.out.println("The " + matcher.group(1) + " started working");
-            Logger.getLogger(user).log("The " + matcher.group(1) + " started working", Logger.LogType.Info);
-        } else {
-            System.out.println("Necessary materials are not available");
-            Logger.getLogger(user).log("Necessary materials are not available", Logger.LogType.Replay);
         }
     }
 

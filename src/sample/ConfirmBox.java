@@ -16,7 +16,7 @@ public class ConfirmBox {
         Stage window = new Stage();
         Pane root = new Pane();
         root.setId("alert");
-        Scene scene = new Scene(root, 500, 350);
+        Scene scene = new Scene(root, 500, 300);
         scene.getStylesheets().add("Viper.css");
 
         //Block events to other windows

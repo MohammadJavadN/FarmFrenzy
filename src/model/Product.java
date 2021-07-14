@@ -1,13 +1,10 @@
 package model;
 
 import controller.Logger;
-import controller.Manager;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import view.ShipProductMenu;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,8 +14,6 @@ public class Product implements Sellable, Destroyable, Changeable {
     String name;
     int space;
     int price;
-    Button addButton = new Button("Add");
-    Button removeButton = new Button("Remove");
 
     public Product(ProductType type, int x, int y, Scene scene) {
         this.x = x;
@@ -115,18 +110,6 @@ public class Product implements Sellable, Destroyable, Changeable {
         LocalDate.getInstance().event.put(expirationDate, this);
         Farm.getFarm().products.add(this);
         creatProductImage(scene);
-        addButton.setOnAction(e -> {
-                    Manager.getInstance().truckLoad(name);
-                    addButton.setVisible(false);
-                    removeButton.setVisible(true);
-                }
-        );
-        removeButton.setOnAction(e -> {
-            Manager.getInstance().truckUnload(name);
-            addButton.setVisible(true);
-            removeButton.setVisible(false);
-        });
-        removeButton.setVisible(false);
     }
 
     public void setName(String name) {
@@ -155,14 +138,6 @@ public class Product implements Sellable, Destroyable, Changeable {
 
     public void setPrice(int price) {
         this.price = price;
-    }
-
-    public Button getRemoveButton() {
-        return removeButton;
-    }
-
-    public Button getAddButton() {
-        return addButton;
     }
 
     private void creatProductImage(Scene scene) {

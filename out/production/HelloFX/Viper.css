@@ -12,6 +12,11 @@
     -fx-text-fill: #100009;
     -fx-font-size: 25;
 }
+.label-workBuy{
+    -fx-text-fill: #e8e8e8;
+    -fx-font-size: 25;
+    -fx-background-color: #159222;
+}
 
 .label-alert{
     -fx-text-fill: #29156a;
@@ -41,6 +46,17 @@
     -fx-background-radius: 15;
 }
 
+.button-buy{
+    -fx-background-color: #922221;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 30;
+    -fx-arc-width: 60;
+    -fx-arc-height: 100;
+    -fx-border-width: 3;
+    -fx-font-size: 13;
+    -fx-font: 13px Arial, sans-serif;
+}
+
 .button-green{
     -fx-background-color: #159222;
     -fx-text-fill: #FFFFFF;
@@ -55,7 +71,7 @@
 #alert{
     -fx-background-image: url("alert.png");
     -fx-background-repeat: stretch;
-    -fx-background-size: 500 350;
+    -fx-background-size: 500 300;
     -fx-background-position: center center;
     -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
 }

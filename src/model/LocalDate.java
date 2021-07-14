@@ -22,9 +22,7 @@ public class LocalDate {
         for (Long date : event.keySet()) {
             for (int j = 0; j <= i; j++) {
                 if (date < e[j] || e[j] == 0) {
-                    for (int k = i; k >= j; k--) {
-                        e[k + 1] = e[k];
-                    }
+                    if (i + 1 - j >= 0) System.arraycopy(e, j, e, j + 1, i + 1 - j);
                     e[j] = date;
                 }
             }

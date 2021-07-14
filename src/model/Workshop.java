@@ -2,9 +2,11 @@ package model;
 
 import controller.Logger;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import view.FarmMenu;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -23,6 +25,8 @@ public class Workshop implements Changeable {
     Scene scene;
     String imagePath;//= "C:\\Users\\User\\Desktop\\HelloFX\\dog.gif";
     ImageView imageView;
+    Label workingLabel = new Label();
+
 
     Workshop(String name, ProductType input, ProductType output, int cost, int processTime, Scene scene,String imagePath) {
         this.scene = scene;
@@ -49,7 +53,20 @@ public class Workshop implements Changeable {
         ((Pane) scene.getRoot()).getChildren().add(imageView);
         imageView.setFitHeight(scene.getWidth() / 4);
         imageView.setFitWidth(scene.getHeight() / 4);
-        imageView.setOnMouseClicked(e -> Work());
+        workingLabel.getStyleClass().add("label-well");
+        workingLabel.layoutXProperty().bind(imageView.layoutXProperty());
+        workingLabel.layoutYProperty().bind(imageView.layoutYProperty());
+        workingLabel.setText("Is Working");
+        imageView.setOnMouseClicked(e -> {
+            if (Work()){
+                if (FarmMenu.r.getChildren().contains(workingLabel))
+                    workingLabel.setVisible(true);
+                else {
+                    FarmMenu.r.getChildren().add(workingLabel);
+                    workingLabel.setVisible(true);
+                }
+            }
+        });
     }
 
     public boolean Work() {
@@ -62,7 +79,7 @@ public class Workshop implements Changeable {
         }
         return false;
     }
-
+/*
     private void setPosition() {
         boolean isExistWild = true;
         while (isExistWild) {
@@ -77,15 +94,16 @@ public class Workshop implements Changeable {
             }
         }
     }
-
+*/
     public boolean equal(String name) {
         return this.name.equalsIgnoreCase(name);
     }
 
     public String checkAfterChangeDate() {
-        setPosition();
+//        setPosition();
         new Product(output, x, y, scene);
         isWorking = false;
+        workingLabel.setVisible(false);
         long produceDate = 0;
         for (Long aLong : LocalDate.getInstance().event.keySet()) {
             if (LocalDate.getInstance().event.get(aLong) == this)
