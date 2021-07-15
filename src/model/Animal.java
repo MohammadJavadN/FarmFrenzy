@@ -18,7 +18,7 @@ abstract class Animal implements Destroyable {
     int xVelocity, yVelocity;
     Random random = new Random();
     final String NAME;
-    String imagePath;//= "C:\\Users\\User\\Desktop\\HelloFX\\dog.gif";
+    String imagePath;//= "C:\\Users\\User\\Desktop\\FarmFrenzy\\dog.gif";
     ImageView imageView;
     Scene scene;
     public Animal(String name, Scene scene, Pane root,String imagePath) {

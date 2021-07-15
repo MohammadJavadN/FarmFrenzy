@@ -29,7 +29,6 @@ public class User {
 
     public User(String username) {
         this.username = username;
-        getUserHashMap().put(username, this);
     }
 
     public String getPassword() {
@@ -48,6 +47,7 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+        getUserHashMap().put(username, this);
     }
 
     /////////////////////////////////
@@ -73,17 +73,5 @@ public class User {
 
     public boolean correctPass(String pass) {
         return getUserHashMap().get(username).password.equals(pass);
-    }
-    public static boolean correctPass(String username , String pass) {
-        return getUserHashMap().get(username).password.equals(pass);
-    }
-
-    public User getUser(String username) {
-        return getUserHashMap().get(username);
-    }
-
-    public boolean contain(String username) {
-        // TODO: ۰۳/۰۶/۲۰۲۱
-        return false;
     }
 }

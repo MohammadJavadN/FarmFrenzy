@@ -1,14 +1,17 @@
 package model;
 
 import controller.Logger;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 
 public class Domestic extends Animal implements Sellable, Changeable {
     // Farm farm;
     ProductType productType;
-    int live;
-
+    IntegerProperty live = new SimpleIntegerProperty(100);
+    Label liveL = new Label();
     public int getPrice() {
         return price;
     }
@@ -34,7 +37,7 @@ public class Domestic extends Animal implements Sellable, Changeable {
         this.space = space;
         id = i;
         i++;
-        live = 100;
+        live.set(100);
         produceDate = LocalDate.getInstance().getCurrentTime() + processTime * 100000000L;
         LocalDate.getInstance().event.put(produceDate, this);
         //Farm.getFarm().money.set(Farm.getFarm().money.get()-price);
@@ -42,13 +45,20 @@ public class Domestic extends Animal implements Sellable, Changeable {
         Farm.getFarm().addDomestic(this);
         //Farm.getFarm().domestics.add(this);
         this.imagePath = path;
+        liveL.textProperty().bind(live.asString());
+        liveL.layoutXProperty().bind(imageView.xProperty().add(10));
+        liveL.layoutYProperty().bind(imageView.yProperty().add(-10));
+        root.getChildren().add(liveL);
     }
-
+    void addLive(int count){
+        live.set(live.get()+count);
+    }
     public void destroying() {
         if (produceDate / 100000000L != LocalDate.getInstance().getCurrentTime() / 100000000L)
             LocalDate.getInstance().event.remove(produceDate, this);
         Farm.getFarm().remDomestics(this);
         imageView.setVisible(false);
+        liveL.setVisible(false);
 //        Farm.getFarm().domestics.remove(this);
     }
 
@@ -92,7 +102,7 @@ public class Domestic extends Animal implements Sellable, Changeable {
         String s ="";
         int I = random.nextInt(6), J = random.nextInt(6);
         int distance = -1;
-        if (live < 50) {
+        if (live.get() < 50) {
             s += NAME + " in [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "] looked for food \n";
             for (int i = 0; i < Farm.getFarm().ROW; i++) {
                 for (int j = 0; j < Farm.getFarm().COL; j++) {
@@ -121,8 +131,8 @@ public class Domestic extends Animal implements Sellable, Changeable {
                 xVelocity = 0;
             }
         } else setVelocity(1);
-        live -= 10;
-        if (live <= 0) {
+        addLive(-10);
+        if (live.get() <= 0) {
             destroying();
             s += NAME + " in [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "] died of malnutrition\n";
         }
@@ -131,7 +141,7 @@ public class Domestic extends Animal implements Sellable, Changeable {
 
     private void eat(int i, int j) {
         Farm.getFarm().remGrass(i,j);
-        live = 100;
+        live.set(100);
     }
 
     @Override

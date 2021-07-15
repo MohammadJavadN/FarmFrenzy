@@ -6,7 +6,7 @@ import javafx.scene.layout.Pane;
 
 public class Mill extends Workshop {
     static int price = 150;
-    static String imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\img\\mill2.png";
+    static String imagePath = "C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\mill2.png";
     static Button buy = new Button("Mill\n" + price);
 
     public Mill(Scene scene) {

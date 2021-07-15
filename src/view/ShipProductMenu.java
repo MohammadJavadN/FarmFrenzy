@@ -70,16 +70,16 @@ public class ShipProductMenu extends Menu {
         });
         okButton.setVisible(load);
         products.clear();
-        for (String s : warehouse.productCount.keySet()) {
+        for (String s : warehouse.productNum.keySet()) {
             products.add(warehouse.getProduct(s));
         }
         VBox vBox = new VBox(3.5);
         vBox.setLayoutX(0.16 * scene.getWidth());
         vBox.setLayoutY(0.18 * scene.getHeight());
-        Button[] addButton = new Button[warehouse.productCount.size()];
-        Label[] labels = new Label[warehouse.productCount.size()];
-        HBox[] hBox = new HBox[warehouse.productCount.size()];
-        ImageView[] imageView = new ImageView[warehouse.productCount.size()];
+        Button[] addButton = new Button[warehouse.productNum.size()];
+        Label[] labels = new Label[warehouse.productNum.size()];
+        HBox[] hBox = new HBox[warehouse.productNum.size()];
+        ImageView[] imageView = new ImageView[warehouse.productNum.size()];
         int i = 0;
         for (HBox box : hBox) {
             box = new HBox(15);
@@ -167,7 +167,7 @@ public class ShipProductMenu extends Menu {
         Product p = products.get(i);
         if (p == null)
             return;
-        label = new Label(" * " + warehouse.productCount.get(p.getName()) + "       " + p.getPrice() + "          ");
+        label = new Label(" * " + warehouse.productNum.get(p.getName()).get() + "       " + p.getPrice() + "          ");
         addButton = new Button("Load");
         addButton.setOnAction(e -> {
             manager.truckLoad(p.getName());

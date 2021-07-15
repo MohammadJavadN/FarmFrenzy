@@ -64,6 +64,7 @@ public class Truck implements Changeable {
         transportPrice = 0;
         present = true;
         load = 0;
+        productCount.clear();
         objects.clear();
         setImage();
     }
@@ -105,11 +106,11 @@ public class Truck implements Changeable {
     public boolean unload(Object object) {
         if (objects.contains(object)) {
             load -= ((Sellable) object).getSpace();
-            objects.remove(object);
             if (productCount.get(((Sellable) object).getName()) < 2)
                 productCount.remove(((Sellable) object).getName());
             else
                 productCount.replace(((Sellable) object).getName(), productCount.get(((Sellable) object).getName()) - 1);
+            objects.remove(object);
             Farm.getFarm().truckUnload(object);
             return true;
         }
@@ -159,7 +160,7 @@ public class Truck implements Changeable {
     private void creatImage() {
         Image image = null;
         try {
-            image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\HelloFX\\img\\truck1.gif"));
+            image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\truck1.gif"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

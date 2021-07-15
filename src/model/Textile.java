@@ -7,7 +7,7 @@ import javafx.scene.layout.Pane;
 
 public class Textile extends Workshop {
     static int price = 250;
-    static String imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\img\\featherF.png";
+    static String imagePath = "C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\featherF.png";
 
     public Textile(Scene scene) {
         super("Textile", ProductType.FEATHER, ProductType.CLOTH, 250, 4, scene, imagePath);

@@ -9,7 +9,7 @@ public class Dog extends Animal {
     Wild wild;
 
     private Dog(Scene scene, Pane root) {
-        super("hound", scene, root,"C:\\Users\\User\\Desktop\\HelloFX\\img\\hound.png");
+        super("hound", scene, root,"C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\hound.png");
         Farm.getFarm().addMoney(-price);
         Farm.getFarm().dogs.add(this);
     }

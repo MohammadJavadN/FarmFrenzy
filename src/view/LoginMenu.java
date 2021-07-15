@@ -9,10 +9,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.User;
-import sample.AlertBox;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -106,9 +104,7 @@ public class LoginMenu extends Menu {
                 AlertBox.display("Error","Invalid password");
             }
         } else {
-            // TODO: ۱۱/۰۷/۲۰۲۱
             AlertBox.display("Error","this username dose not exist!");
-            System.out.println("Invalid username");
             Logger.getLogger(user).log("Invalid username : <" + username + ">", Logger.LogType.Alarm);
         }
     }
@@ -148,7 +144,6 @@ public class LoginMenu extends Menu {
                     passwordS(pass);
                 } else {
                     AlertBox.display("Error","Please write in the form below :\ndfv@7d8");
-                    System.out.println("Please write in the form below :\ndfv@7d8\n");
                     Logger.getLogger(user).log("Invalid form password : <" + pass + ">", Logger.LogType.Alarm);
                 }
         } else {
@@ -162,7 +157,6 @@ public class LoginMenu extends Menu {
         Logger.getLogger(user).log("password : <" + pass + ">", Logger.LogType.Command);
         user.setPassword(matcher.group(1));
         Logger.getLogger(user).log("Signup successfully", Logger.LogType.Replay);
-        System.out.println("\nSignup successfully");
         Manager.getInstance().saveUsers();
         Logger.getLogger().log("save user file", Logger.LogType.Info);
         User.setCurrentUser(user);
@@ -188,11 +182,7 @@ public class LoginMenu extends Menu {
 
     enum Commands {
         USERNAME("\\s*(\\w+)\\s*$"),
-        PASSWORD("\\s*(\\S+)\\s*$"),
-        LOGIN("\\s*^log\\s*in\\s*$"),
-        SIGNUP("\\s*^signup\\s*$"),
-        EXIT("\\s*^exit\\s*$"),
-        Back("\\s*^back\\s*$");
+        PASSWORD("\\s*(\\S+)\\s*$");
         Pattern commandPattern;
 
         Commands(String s) {

@@ -6,7 +6,7 @@ import javafx.scene.layout.Pane;
 
 public class Bakery extends Workshop {
     static int price = 250;
-    static String imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\img\\bakery2.png";
+    static String imagePath = "C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\bakery2.png";
     static Button buy = new Button("Bakery\n" + price);
 
     public static void setBuy(Scene scene) {

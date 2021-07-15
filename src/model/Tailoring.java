@@ -7,7 +7,7 @@ import javafx.scene.layout.Pane;
 
 public class Tailoring extends Workshop {
     static int price = 400;
-    static String imagePath = "C:\\Users\\User\\Desktop\\HelloFX\\img\\tailoring.png";
+    static String imagePath = "C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\tailoring.png";
     static Button buy = new Button("Tailoring\n" + price);
 
     public Tailoring(Scene scene) {

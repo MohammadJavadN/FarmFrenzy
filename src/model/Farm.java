@@ -77,6 +77,8 @@ public class Farm {
         //money.set(0);
         addMoney(-money.get());
         Truck.truck = null;
+        if (!Well.isNull())
+            Well.getWell().restart();
     }
 
     public void setMoney(int money) {

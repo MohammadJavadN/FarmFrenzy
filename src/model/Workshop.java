@@ -23,7 +23,7 @@ public class Workshop implements Changeable {
     Random random = new Random();
     int x, y;
     Scene scene;
-    String imagePath;//= "C:\\Users\\User\\Desktop\\HelloFX\\dog.gif";
+    String imagePath;//= "C:\\Users\\User\\Desktop\\FarmFrenzy\\dog.gif";
     ImageView imageView;
     Label workingLabel = new Label();
 

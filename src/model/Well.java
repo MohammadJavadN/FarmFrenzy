@@ -28,14 +28,21 @@ public class Well implements Changeable {
         fillingLabel.setLayoutY(0.15 * FarmMenu.r.getScene().getHeight());
     }
 
+    void restart() {
+        isFilling = false;
+        remaining.set(0);
+        fillingLabel.setVisible(false);
+    }
+    static boolean isNull(){
+        return well == null;
+    }
     public boolean fill() {
         if (remaining.get() != 0 || isFilling)
             return false;
         isFilling = true;
-        if (FarmMenu.r.getChildren().contains(fillingLabel))
-            fillingLabel.setVisible(true);
-        else
+        if (!FarmMenu.r.getChildren().contains(fillingLabel))
             FarmMenu.r.getChildren().add(fillingLabel);
+        fillingLabel.setVisible(true);
         fillingDate = FILLING_TIME * 100000000L + LocalDate.getInstance().getCurrentTime();
         LocalDate.getInstance().event.put(fillingDate, this);
         return true;

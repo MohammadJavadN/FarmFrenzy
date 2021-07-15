@@ -61,7 +61,7 @@ public class Wild extends Animal implements Changeable {
     void cage() {
         Image image = null;
         try {
-            image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\HelloFX\\img\\cage.png"));
+            image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\cage.png"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

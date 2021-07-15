@@ -14,17 +14,18 @@ public class Warehouse {
     public IntegerProperty warehouseFillPercent = new SimpleIntegerProperty();
 
     public ArrayList<Product> products = new ArrayList<>();
-    public HashMap<String,Integer> productCount = new HashMap<>();
+   // public HashMap<String,Integer> productCount = new HashMap<>();
     static private Warehouse warehouse;
 
     public void clear(){
         emptySpace.set(CAPACITY);
         products.clear();
         productNum.clear();
+    //    productCount.clear();
     }
 
 
-    HashMap<String, IntegerProperty> productNum = new HashMap<>();
+    public HashMap<String, IntegerProperty> productNum = new HashMap<>();
     IntegerProperty getProductNum(String name){
         if (productNum.containsKey(name)) {
             return productNum.get(name);
@@ -48,9 +49,9 @@ public class Warehouse {
     public void addProduct(Product product) {
         products.add(product);
         emptySpace.set(emptySpace.get() - product.space);
-        if (!productCount.containsKey(product.name))
-            productCount.put(product.name,1);
-        else productCount.replace(product.name,productCount.get(product.name)+1);
+//        if (!productCount.containsKey(product.name))
+//            productCount.put(product.name,1);
+//        else productCount.replace(product.name,productCount.get(product.name)+1);
         if (productNum.containsKey(product.name)) {
             productNum.get(product.name).set(productNum.get(product.name).get() + 1);
         } else {
@@ -59,11 +60,11 @@ public class Warehouse {
     }
 
     public void removeProduct(Product product) {
+//        if (productCount.get(product.name)<2)
+//            productCount.remove(product.name);
+//        else
+//            productCount.replace(product.name,productCount.get(product.name)-1);
         products.remove(product);
-        if (productCount.get(product.name)<2)
-            productCount.remove(product.name);
-        else
-            productCount.replace(product.name,productCount.get(product.name)-1);
         emptySpace.set(emptySpace.get() + product.space);
         if (productNum.containsKey(product.name)) {
             productNum.get(product.name).set(productNum.get(product.name).get() - 1);

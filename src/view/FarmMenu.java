@@ -17,8 +17,6 @@ import javafx.scene.media.AudioClip;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.*;
-import sample.AlertBox;
-import sample.ConfirmBox;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -89,7 +87,7 @@ public class FarmMenu extends Menu {
                 audioClip.play();
                 Image image = null;
                 try {
-                    image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\HelloFX\\img\\grase.png"));
+                    image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\grass.png"));
                 } catch (FileNotFoundException event) {
                     event.printStackTrace();
                 }

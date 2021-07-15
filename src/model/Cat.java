@@ -11,7 +11,7 @@ public class Cat extends Animal {
     Product product;
 
     private Cat(Scene scene, Pane root) {
-        super("cat", scene, root,"C:\\Users\\User\\Desktop\\HelloFX\\img\\cat.png");
+        super("cat", scene, root,"C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\cat.png");
         Farm.getFarm().addMoney(-price);
         Farm.getFarm().cats.add(this);
     }
