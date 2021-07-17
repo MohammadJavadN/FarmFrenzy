@@ -131,7 +131,7 @@ public class Truck implements Changeable {
         LocalDate.getInstance().event.put(returningTime, this);
         present = false;
         setImage();
-        Sound.playSoundM("sounds/truck.mp3");
+        Sound.playSoundAC("sounds\\truck.wav");
         return "The truck started its journey";
     }
 

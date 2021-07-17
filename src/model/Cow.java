@@ -9,7 +9,7 @@ public class Cow extends Domestic {
 
     private Cow(Scene scene, Pane root) {
         super(ProductType.COW_MILK, 5, 400, 4, "cow", scene, root, "C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\cow1.png");
-        Sound.playSoundM("sounds/cow.mp3");
+        Sound.playSoundAC("sounds\\buf.wav");
     }
 
     public static boolean buy(Scene scene, Pane root) {

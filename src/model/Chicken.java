@@ -9,7 +9,7 @@ public class Chicken extends Domestic {
 
     Chicken(Scene scene, Pane root) {
         super(ProductType.EGG, 2, 100, 1, "chicken", scene, root, "C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\hen.png");
-        Sound.playSoundM("sounds/chicken.mp3");
+        Sound.playSoundAC("sounds\\chicken.wav");
     }
 
     public static boolean buy( Scene scene, Pane root) {

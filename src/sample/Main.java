@@ -9,6 +9,7 @@ import view.Sound;
 import java.io.File;
 
 public class Main extends Application {
+    public static AudioClip audioClip;
     public static void main(String[] args) {
         launch(args);
     }
@@ -18,8 +19,9 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         window = stage;
         window.setResizable(false);
-        AudioClip audioClip = new AudioClip(new File("sounds\\back sound.wav").toURI().toString());
+        audioClip = new AudioClip(new File("sounds\\back sound.wav").toURI().toString());
         audioClip.play(0.5);
+
         LoginMenu.getLoginMenu(window).run();
         
     }

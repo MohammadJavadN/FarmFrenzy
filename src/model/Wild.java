@@ -170,7 +170,7 @@ public class Wild extends Animal implements Changeable {
     public String checkAfterChangeDate() {
         Farm.getFarm().wilds.add(this);
         imageView.setVisible(true);
-        Sound.playSoundM("sounds/roar.mp3");
+        Sound.playSoundAC("sounds\\roar.wav");
         imageView.setOnMouseClicked(e->trap());
         long comingDate = 0;
         for (Long aLong : LocalDate.getInstance().event.keySet()) {

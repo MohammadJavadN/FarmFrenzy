@@ -17,6 +17,7 @@ import javafx.scene.media.AudioClip;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.*;
+import sample.Main;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -34,7 +35,7 @@ public class FarmMenu extends Menu {
         show();
         Truck.getTruck();
         mission();
-        Sound.playSoundM("sounds/start1.wav");
+        Sound.playSoundAC("sounds\\start1.wav");
         manager.setWildComing(scene, ((Pane) scene.getRoot()));
         Farm.getFarm().addMoney(0);
         scene.setOnMousePressed(this::handleMouseEvent);
@@ -47,6 +48,8 @@ public class FarmMenu extends Menu {
     }
 
     void handleMouseEvent(MouseEvent e) {
+        if (!Main.audioClip.isPlaying())
+            Main.audioClip.play();
         if (inBuy(e))
             buy(e);
         else if (inWell(e))

@@ -2247,3 +2247,354 @@ chicken eat grass in [5,4]
 [Alarm], [Sat Jul 17 20:30:46 IRDT 2021],  set Tiger coming 
 [Alarm], [Sat Jul 17 20:30:53 IRDT 2021], in check method 
 [Alarm], [Sat Jul 17 20:30:53 IRDT 2021], check result : false
+[Info], [Sat Jul 17 20:35:52 IRDT 2021], username accepted
+[Command], [Sat Jul 17 20:35:52 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 20:35:52 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 20:35:54 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 20:35:56 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 20:35:56 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 20:35:56 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 20:36:03 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:36:03 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:36:05 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:36:05 IRDT 2021], check result : false
+[Info], [Sat Jul 17 20:36:45 IRDT 2021], username accepted
+[Command], [Sat Jul 17 20:36:45 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 20:36:45 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 20:36:47 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 20:36:49 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 20:36:49 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 20:36:49 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 20:37:01 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:01 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:04 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:04 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:05 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:05 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:06 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:06 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:06 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:06 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:08 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:08 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:09 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:09 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:09 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:09 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:10 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:10 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:12 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], chicken move 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], chicken move 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], chicken move 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], chicken move 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], chicken move 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], cow move 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], cow move 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], cow move 
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], 
+[Alarm], [Sat Jul 17 20:37:12 IRDT 2021], checkAfterChangeDate tiger 4 [6,3]
+
+[Info], [Sat Jul 17 20:37:12 IRDT 2021], The TIGER entered the farm 
+[Alarm], [Sat Jul 17 20:37:12 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:12 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:15 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:15 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:15 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:15 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:15 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:15 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:15 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:15 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:16 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:16 IRDT 2021], check result : false
+[Command], [Sat Jul 17 20:37:17 IRDT 2021], well command
+[Replay], [Sat Jul 17 20:37:17 IRDT 2021], The well began to drain
+[Alarm], [Sat Jul 17 20:37:17 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:17 IRDT 2021], check result : false
+[Command], [Sat Jul 17 20:37:18 IRDT 2021], well command
+[Replay], [Sat Jul 17 20:37:18 IRDT 2021], The well does not need drainage at the moment
+[Alarm], [Sat Jul 17 20:37:18 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:18 IRDT 2021], check result : false
+[Command], [Sat Jul 17 20:37:18 IRDT 2021], well command
+[Replay], [Sat Jul 17 20:37:18 IRDT 2021], The well does not need drainage at the moment
+[Alarm], [Sat Jul 17 20:37:18 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:18 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:23 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:23 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:23 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:23 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:51 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:51 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:37:52 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:37:52 IRDT 2021], check result : false
+[Info], [Sat Jul 17 20:43:41 IRDT 2021], username accepted
+[Command], [Sat Jul 17 20:43:41 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 20:43:41 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 20:43:42 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 20:43:44 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 20:43:44 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 20:43:45 IRDT 2021],  set Lion coming 
+[Alarm], [Sat Jul 17 20:43:49 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:43:49 IRDT 2021], check result : false
+[Info], [Sat Jul 17 20:45:15 IRDT 2021], username accepted
+[Command], [Sat Jul 17 20:45:15 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 20:45:15 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 20:45:16 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 20:45:18 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 20:45:18 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 20:45:18 IRDT 2021],  set Lion coming 
+[Alarm], [Sat Jul 17 20:45:19 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:45:19 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:45:23 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:45:23 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:45:26 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:45:26 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:45:27 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:45:27 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:45:28 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:45:28 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:45:28 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:45:28 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:45:29 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:45:29 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:45:29 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:45:29 IRDT 2021], check result : false
+[Info], [Sat Jul 17 20:47:29 IRDT 2021], username accepted
+[Command], [Sat Jul 17 20:47:29 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 20:47:29 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 20:47:31 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 20:47:32 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 20:47:32 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 20:47:32 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 20:47:34 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:47:34 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:47:36 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:47:36 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:47:37 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:47:37 IRDT 2021], check result : false
+[Info], [Sat Jul 17 20:51:04 IRDT 2021], username accepted
+[Command], [Sat Jul 17 20:51:04 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 20:51:04 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 20:51:06 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 20:51:08 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 20:51:08 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 20:51:09 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 20:51:12 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:51:12 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:51:17 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:51:17 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:51:40 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:51:40 IRDT 2021], check result : false
+[Info], [Sat Jul 17 20:53:13 IRDT 2021], username accepted
+[Command], [Sat Jul 17 20:53:13 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 20:53:13 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 20:53:15 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 20:53:16 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 20:53:16 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 20:53:16 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 20:53:18 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:18 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:19 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:19 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:20 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:20 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:22 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:22 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:22 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:22 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:24 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:24 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:24 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:24 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:26 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:26 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:27 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:27 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:29 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:29 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:30 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:30 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:31 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:31 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:32 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:32 IRDT 2021], check result : false
+[Info], [Sat Jul 17 20:53:33 IRDT 2021], save user
+[Command], [Sat Jul 17 20:53:33 IRDT 2021], menu command
+[Alarm], [Sat Jul 17 20:53:35 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 20:53:36 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 20:53:36 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 20:53:36 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 20:53:37 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:37 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:39 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:39 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:41 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:41 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:42 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:42 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:53:49 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:53:49 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:54:20 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:54:20 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:54:27 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:54:27 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:54:29 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:54:29 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:54:31 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:54:31 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:54:33 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:54:33 IRDT 2021], check result : false
+[Info], [Sat Jul 17 20:55:50 IRDT 2021], username accepted
+[Command], [Sat Jul 17 20:55:50 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 20:55:50 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 20:55:51 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 20:55:52 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 20:55:52 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 20:55:53 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 20:55:55 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:55:55 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:56:28 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:56:28 IRDT 2021], check result : false
+[Info], [Sat Jul 17 20:56:52 IRDT 2021], username accepted
+[Command], [Sat Jul 17 20:56:52 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 20:56:52 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 20:56:54 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 20:56:56 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 20:56:56 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 20:56:56 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 20:56:57 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:56:57 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:56:58 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:56:58 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:57:00 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:57:00 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:57:01 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:57:01 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:57:02 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:57:02 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:57:04 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:57:04 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:57:05 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:57:05 IRDT 2021], check result : false
+[Info], [Sat Jul 17 20:59:33 IRDT 2021], username accepted
+[Command], [Sat Jul 17 20:59:33 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 20:59:33 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 20:59:34 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 20:59:36 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 20:59:36 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 20:59:36 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 20:59:50 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:59:50 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:59:53 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:59:53 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 20:59:55 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 20:59:55 IRDT 2021], check result : false
+[Info], [Sat Jul 17 21:01:38 IRDT 2021], username accepted
+[Command], [Sat Jul 17 21:01:38 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 21:01:38 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 21:01:40 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 21:01:42 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 21:01:42 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 21:01:42 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 21:01:45 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:01:45 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:01:46 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:01:46 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:01:47 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:01:47 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:01:48 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:01:48 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:01:49 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:01:49 IRDT 2021], check result : false
+[Info], [Sat Jul 17 21:03:04 IRDT 2021], username accepted
+[Command], [Sat Jul 17 21:03:04 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 21:03:04 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 21:03:06 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 21:03:07 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 21:03:07 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 21:03:08 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 21:03:10 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:10 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:12 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:12 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:13 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:13 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:14 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:14 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:15 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:15 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:16 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:16 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:17 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:17 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:17 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:17 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:17 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:17 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:17 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:17 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:18 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:18 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:18 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:18 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:18 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:18 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:18 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:18 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:18 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:18 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:19 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:19 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:19 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:19 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:19 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:19 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:03:19 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:03:19 IRDT 2021], check result : false
+[Info], [Sat Jul 17 21:04:57 IRDT 2021], username accepted
+[Command], [Sat Jul 17 21:04:57 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 21:04:57 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 21:04:58 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 21:05:00 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 21:05:00 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 21:05:00 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 21:05:02 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:05:02 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:05:04 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:05:04 IRDT 2021], check result : false
+[Info], [Sat Jul 17 21:05:34 IRDT 2021], username accepted
+[Command], [Sat Jul 17 21:05:34 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 21:05:34 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 21:05:36 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 21:05:37 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 21:05:37 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 21:05:37 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 21:05:39 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:05:39 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:06:23 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:06:23 IRDT 2021], check result : false
+[Info], [Sat Jul 17 21:07:07 IRDT 2021], username accepted
+[Command], [Sat Jul 17 21:07:07 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 21:07:07 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 21:07:08 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 21:07:10 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 21:07:10 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 21:07:10 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 21:07:14 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:07:14 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:07:15 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:07:15 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:08:02 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:08:02 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:08:12 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:08:12 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 21:08:13 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 21:08:13 IRDT 2021], check result : false
