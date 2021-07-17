@@ -33,6 +33,7 @@ public class ConfirmBox {
 
         Button okButton = new Button("OK");
         okButton.setOnAction(e -> {
+            Sound.playSound("sounds\\click.wav");
             window.close();
             answer = true;
         });
@@ -43,6 +44,7 @@ public class ConfirmBox {
 
         Button cancelButton = new Button("Cancel");
         cancelButton.setOnAction(e -> {
+            Sound.playSound("sounds\\click.wav");
             window.close();
             answer = false;
         });

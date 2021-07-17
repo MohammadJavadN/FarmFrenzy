@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import view.Sound;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -153,7 +154,12 @@ public class Product implements Sellable, Destroyable, Changeable {
         imageView.setX(scene.getWidth() * (x * (0.065) + 0.33));
         imageView.setY(scene.getHeight() * (y * 0.075 + 0.33));
         imageView.setPreserveRatio(true);
-        imageView.setOnMouseClicked(e -> collect());
+        imageView.setOnMouseClicked(e -> {
+            if (collect())
+                Sound.playSound("sounds\\add.wav");
+            else
+                Sound.playSound("sounds\\error.wav");
+        });
         ((Pane) scene.getRoot()).getChildren().add(imageView);
         imageView.setFitHeight(scene.getWidth() / 15);
         imageView.setFitWidth(scene.getHeight() / 15);

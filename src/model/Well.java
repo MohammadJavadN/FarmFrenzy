@@ -6,6 +6,7 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.scene.control.Label;
 import javafx.scene.media.AudioClip;
 import view.FarmMenu;
+import view.Sound;
 
 import java.io.File;
 
@@ -37,8 +38,12 @@ public class Well implements Changeable {
         return well == null;
     }
     public boolean fill() {
-        if (remaining.get() != 0 || isFilling)
+        if (remaining.get() != 0 || isFilling) {
+            Sound.playSound("sounds\\error.wav");
             return false;
+        }
+        String well = "sounds\\well.wav";
+        Sound.playSound(well);
         isFilling = true;
         if (!FarmMenu.r.getChildren().contains(fillingLabel))
             FarmMenu.r.getChildren().add(fillingLabel);
@@ -57,9 +62,7 @@ public class Well implements Changeable {
     }
 
     public String checkAfterChangeDate() {
-        String menuS = "sounds\\well.wav";     // For example
-        AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
-        audioClip.play();
+        Sound.playSound("sounds\\well.wav");
         remaining.set(CAPACITY.get());
         isFilling = false;
         fillingLabel.setVisible(false);

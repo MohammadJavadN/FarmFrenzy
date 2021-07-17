@@ -8,6 +8,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import view.FarmMenu;
 import view.ShipProductMenu;
+import view.Sound;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -130,6 +131,7 @@ public class Truck implements Changeable {
         LocalDate.getInstance().event.put(returningTime, this);
         present = false;
         setImage();
+        Sound.playSoundM("sounds/truck.mp3");
         return "The truck started its journey";
     }
 

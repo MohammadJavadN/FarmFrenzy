@@ -58,6 +58,7 @@ public class ShipProductMenu extends Menu {
         cancelButton.getStyleClass().add("button-blue");
         cancelButton.setOnAction(e -> {
             truck.unload();
+            Sound.playSound("sounds\\click.wav");
             window.close();// TODO: ۱۴/۰۷/۲۰۲۱
         });
 
@@ -66,6 +67,7 @@ public class ShipProductMenu extends Menu {
         okButton.setOnAction(e -> {
             manager.truckGo();
             okButton.setVisible(false);
+            Sound.playSound("sounds\\click.wav");
             window.close();
         });
         okButton.setVisible(load);
@@ -146,6 +148,7 @@ public class ShipProductMenu extends Menu {
         addButton = new Button("Load");
         addButton.setOnAction(e -> {
             manager.truckLoad(d.getName());
+            Sound.playSound("sounds\\add.wav");
             load = true;
             show();
         });// TODO: ۱۴/۰۷/۲۰۲۱
@@ -171,6 +174,7 @@ public class ShipProductMenu extends Menu {
         addButton = new Button("Load");
         addButton.setOnAction(e -> {
             manager.truckLoad(p.getName());
+            Sound.playSound("sounds\\add.wav");
             load = true;
             show();
         });// TODO: ۱۴/۰۷/۲۰۲۱
@@ -196,6 +200,7 @@ public class ShipProductMenu extends Menu {
         addButton = new Button("Unload");
         addButton.setOnAction(e -> {
             manager.truckUnload(((Sellable)p).getName());
+            Sound.playSound("sounds\\addp2.wav");
             if (truck.getLoad() < 1) load = false;
             show();
         });// TODO: ۱۴/۰۷/۲۰۲۱

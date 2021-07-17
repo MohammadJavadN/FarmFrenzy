@@ -27,7 +27,6 @@ public class FarmMenu extends Menu {
     Farm farm = Farm.getFarm();
     public static String rootId = "farm0";
     String menuS = "sounds\\menu1.wav";
-    AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
 
     @Override
     public void run() {
@@ -35,6 +34,7 @@ public class FarmMenu extends Menu {
         show();
         Truck.getTruck();
         mission();
+        Sound.playSoundM("sounds/start1.wav");
         manager.setWildComing(scene, ((Pane) scene.getRoot()));
         Farm.getFarm().addMoney(0);
         scene.setOnMousePressed(this::handleMouseEvent);
@@ -56,7 +56,8 @@ public class FarmMenu extends Menu {
         if (manager.giveAward(manager.check())) {
             if (Mission.getMission().getLevels() != User.getCurrentUser().getOpenedLevel())
                 User.getCurrentUser().setOpenedLevel(User.getCurrentUser().getOpenedLevel() + 1);
-            AlertBox.display("Victory", "Victory!!!\n Your Star = " + manager.getStar() + "\n" + "Your Award = "+
+            Sound.playSound("sounds\\victory3.wav");
+            AlertBox.display("Victory", "Victory!!!\nYour Star = " + manager.getStar() + "\n" + "Your Award = "+
                     User.getCurrentUser().savedCoin+ "coin.");
             menu();
         }
@@ -82,9 +83,10 @@ public class FarmMenu extends Menu {
         int x = (int) ((e.getY() - 195 * scene.getHeight()/600) / (44 * scene.getHeight() / 600)) + 1;
         if (farm.insidePage(x, y))
             if (manager.plant(x, y)) {
-                String menuS = "sounds\\plant.wav";
-                AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
-                audioClip.play();
+                String plant = "sounds\\plant.wav";
+//                AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
+//                audioClip.play();
+                Sound.playSound(plant);
                 Image image = null;
                 try {
                     image = new Image(new FileInputStream("C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\grass.png"));
@@ -129,7 +131,8 @@ public class FarmMenu extends Menu {
 
         Button menu = new Button("menu");
         menu.setOnAction(e ->{
-            audioClip.play();
+//            audioClip.play();
+            Sound.playSound(menuS);
             menu();
         });// TODO: ۱۱/۰۷/۲۰۲۱
         menu.getStyleClass().add("button-blue");
@@ -140,6 +143,7 @@ public class FarmMenu extends Menu {
 
         Button turn = new Button("turn");
         turn.setOnAction(e -> {
+            Sound.playSound("sounds\\click.wav");
             LocalDate.getInstance().turn(1);
             if (manager.giveAward(manager.check())) {
                 if (Mission.getMission().getLevels() != User.getCurrentUser().getOpenedLevel())
@@ -147,7 +151,7 @@ public class FarmMenu extends Menu {
                 AlertBox.display("Victory", "Victory!!!\n your Award = " + manager.getStar() + "coin.");
                 menu();
             }
-            System.out.println(Farm.getFarm().toString());
+            //System.out.println(Farm.getFarm().toString());
         });// TODO: ۱۱/۰۷/۲۰۲۱
         turn.getStyleClass().add("button-blue");
         turn.setLayoutX(0.47 * window.getWidth());
@@ -236,7 +240,10 @@ public class FarmMenu extends Menu {
 
         Button closeButton = new Button("OK");
         closeButton.getStyleClass().add("button-blue");
-        closeButton.setOnAction(e -> window1.close());
+        closeButton.setOnAction(e -> {
+            Sound.playSound("sounds\\click.wav");
+            window1.close();
+        });
 
         Mission m = Mission.getMission();
         //Name Label - constrains use (child, column, row)
@@ -303,9 +310,8 @@ public class FarmMenu extends Menu {
     private void well() {
         Logger.getLogger(user).log("well command", Logger.LogType.Command);
         if (manager.well()) {
-            String menuS = "sounds\\well.wav";
-            AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
-            audioClip.play();
+//            AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
+//            audioClip.play();
             System.out.println("The well began to drain");
             Logger.getLogger(user).log("The well began to drain", Logger.LogType.Replay);
         } else {

@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import view.Sound;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -169,6 +170,7 @@ public class Wild extends Animal implements Changeable {
     public String checkAfterChangeDate() {
         Farm.getFarm().wilds.add(this);
         imageView.setVisible(true);
+        Sound.playSoundM("sounds/roar.mp3");
         imageView.setOnMouseClicked(e->trap());
         long comingDate = 0;
         for (Long aLong : LocalDate.getInstance().event.keySet()) {

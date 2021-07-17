@@ -3,6 +3,7 @@ package model;
 import controller.Logger;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import view.Sound;
 
 public class Dog extends Animal {
     final static int price = 100;
@@ -12,6 +13,7 @@ public class Dog extends Animal {
         super("hound", scene, root,"C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\hound.png");
         Farm.getFarm().addMoney(-price);
         Farm.getFarm().dogs.add(this);
+        Sound.playSound("sounds\\dog.wav");
     }
 
     public static boolean buy(Scene scene, Pane root) {

@@ -70,7 +70,10 @@ public class MainMenu extends Menu {
         for (int i = 0; i < user.openedLevel; i++) {
             level[i] = new Button(String.valueOf(i + 1));
             int finalI = i;
-            level[i].setOnAction(e -> start(finalI + 1));
+            level[i].setOnAction(e -> {
+                Sound.playSound("sounds\\click.wav");
+                start(finalI + 1);
+            });
             level[i].getStyleClass().add("button-greenLevel");
         }
         for (int i = user.openedLevel; i < levelsCount; i++) {
@@ -83,7 +86,10 @@ public class MainMenu extends Menu {
             root.getChildren().add(level[i]);
         }
         Button logout = new Button("Logout");
-        logout.setOnAction(e -> parentMenu.run());
+        logout.setOnAction(e -> {
+            Sound.playSound("sounds\\click.wav");
+            parentMenu.run();
+        });
         logout.getStyleClass().add("button-blue");
         logout.setLayoutX(0.8 * window.getWidth());
         logout.setLayoutY(0.88 * window.getHeight());
@@ -92,6 +98,7 @@ public class MainMenu extends Menu {
 
         Button exit = new Button("exit");
         exit.setOnAction(e -> {
+            Sound.playSound("sounds\\click.wav");
             if (ConfirmBox.display("Alarm", "Are you sure you want to exit?"))
                 System.exit(-1);
         });
@@ -119,22 +126,5 @@ public class MainMenu extends Menu {
 
     private void setParentMenu() {
         parentMenu = LoginMenu.getLoginMenu(window);
-    }
-
-    enum Commands {
-        START("\\s*^start\\s+(\\d+)\\s*$"),
-        LOGOUT("\\s*^log\\s*out\\s*$"),
-        SETTINGS("\\s*^setting\\s*$"),
-        EXIT("\\s*^exit\\s*$");
-
-        Pattern commandPattern;
-
-        Commands(String s) {
-            this.commandPattern = java.util.regex.Pattern.compile(s);
-        }
-
-        public Matcher getMatcher(String input) {
-            return this.commandPattern.matcher(input);
-        }
     }
 }

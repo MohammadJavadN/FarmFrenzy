@@ -7,6 +7,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import view.FarmMenu;
+import view.Sound;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -46,7 +47,7 @@ public class Workshop implements Changeable {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
+        Sound.playSound("sounds\\build.wav");
         imageView = new ImageView(image);
 
         imageView.setPreserveRatio(true);
@@ -75,8 +76,10 @@ public class Workshop implements Changeable {
             LocalDate.getInstance().event.put(processDate, this);
             isWorking = true;
             Warehouse.getWarehouse().removeProduct(Warehouse.getWarehouse().getProduct(input));
+            Sound.playSound("sounds\\work.wav");
             return true;
         }
+        Sound.playSound("sounds\\error.wav");
         return false;
     }
 /*

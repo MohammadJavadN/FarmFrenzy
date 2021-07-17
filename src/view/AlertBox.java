@@ -29,7 +29,10 @@ public class AlertBox {
         label.setMaxWidth(scene.getWidth()*0.8);
 
         Button closeButton = new Button("OK");
-        closeButton.setOnAction(e -> window.close());
+        closeButton.setOnAction(e ->{
+            Sound.playSound("sounds\\click.wav");
+            window.close();
+        });
         closeButton.setLayoutX(scene.getWidth()*0.45);
         closeButton.setLayoutY(0.8*scene.getHeight());;
         closeButton.getStyleClass().add("button-green");

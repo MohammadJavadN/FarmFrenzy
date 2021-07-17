@@ -3,6 +3,7 @@ package model;
 import controller.Logger;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import view.Sound;
 
 import java.util.ArrayList;
 
@@ -14,6 +15,7 @@ public class Cat extends Animal {
         super("cat", scene, root,"C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\cat.png");
         Farm.getFarm().addMoney(-price);
         Farm.getFarm().cats.add(this);
+        Sound.playSound("sounds\\cat.wav");
     }
 
     public static boolean buy(Scene scene, Pane root) {

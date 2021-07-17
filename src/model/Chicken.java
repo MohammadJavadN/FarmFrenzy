@@ -2,12 +2,14 @@ package model;
 
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import view.Sound;
 
 public class Chicken extends Domestic {
     static int price = 100;
 
     Chicken(Scene scene, Pane root) {
         super(ProductType.EGG, 2, 100, 1, "chicken", scene, root, "C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\hen.png");
+        Sound.playSoundM("sounds/chicken.mp3");
     }
 
     public static boolean buy( Scene scene, Pane root) {

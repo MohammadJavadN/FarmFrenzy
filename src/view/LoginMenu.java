@@ -62,13 +62,19 @@ public class LoginMenu extends Menu {
 
         //Login
         Button loginButton = new Button("Log In");
-        loginButton.setOnAction(e -> login(nameInput.getText(), passInput.getText()));
+        loginButton.setOnAction(e ->{
+            Sound.playSound("sounds\\click.wav");
+            login(nameInput.getText(), passInput.getText());
+        });
         GridPane.setConstraints(loginButton, c + 1, r + 2);
 
         //Sign up
         Button signUpButton = new Button("Sign Up");
         signUpButton.getStyleClass().add("button-blue");
-        signUpButton.setOnAction(e -> signup(nameInput.getText(), passInput.getText()));
+        signUpButton.setOnAction(e -> {
+            Sound.playSound("sounds\\click.wav");
+            signup(nameInput.getText(), passInput.getText());
+        });
         GridPane.setConstraints(signUpButton, c + 1, r + 3);
 
         //Add everything to grid
