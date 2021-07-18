@@ -31,7 +31,7 @@ public class Truck implements Changeable {
     Scene scene;
 
     private Truck() {
-        transportPrice = 0;//
+        transportPrice = 0;
         capacity = 15;
         present = true;
         scene = FarmMenu.r.getScene();
@@ -47,10 +47,6 @@ public class Truck implements Changeable {
         return c;
     }
 
-    public ArrayList<Object> getObjects() {
-        return objects;
-    }
-
     public Object getObject(String name) {
         for (Object o : objects) {
             if (((Sellable) o).getName().equalsIgnoreCase(name))
@@ -60,7 +56,6 @@ public class Truck implements Changeable {
     }
 
     void backHome() {
-        //Farm.getFarm().money.set(Farm.getFarm().money.get()+transportPrice);
         Farm.getFarm().addMoney(transportPrice);
         transportPrice = 0;
         present = true;
@@ -85,14 +80,14 @@ public class Truck implements Changeable {
         return true;
     }
 
-    public boolean unload(String name) {
+    public void unload(String name) {
         for (Object o : objects) {
             if (((Sellable) o).getName().equalsIgnoreCase(name)) {
-                return unload(o);
+                unload(o);
+                return;
 
             }
         }
-        return false;
     }
 
     public HashMap<String, Integer> getProductCount() {
@@ -104,7 +99,7 @@ public class Truck implements Changeable {
             unload(objects.get(0));
     }
 
-    public boolean unload(Object object) {
+    public void unload(Object object) {
         if (objects.contains(object)) {
             load -= ((Sellable) object).getSpace();
             if (productCount.get(((Sellable) object).getName()) < 2)
@@ -113,16 +108,14 @@ public class Truck implements Changeable {
                 productCount.replace(((Sellable) object).getName(), productCount.get(((Sellable) object).getName()) - 1);
             objects.remove(object);
             Farm.getFarm().truckUnload(object);
-            return true;
         }
-        return false;
     }
 
-    public String transport() {
+    public void transport() {
         if (!present)
-            return "The truck has not yet returned from the previous trip";
+            return;
         if (objects.isEmpty())
-            return "You must first load the truck";
+            return;
         transportPrice = 0;
         for (Object object : objects) {
             transportPrice += ((Sellable) object).sell();
@@ -133,7 +126,6 @@ public class Truck implements Changeable {
         setImage();
         Warehouse.getWarehouse().resetProductsImage();
         Sound.playSoundAC("sounds\\truck.wav");
-        return "The truck started its journey";
     }
 
     static Truck truck;
@@ -185,14 +177,11 @@ public class Truck implements Changeable {
     }
 
     @Override
-    public String checkAfterChangeDate() {
+    public void checkAfterChangeDate() {
         String s = "truck back home with $ " + transportPrice + "\n";
         LocalDate.getInstance().event.remove(returningTime, this);
         backHome();
         Logger.getLogger(User.getCurrentUser()).log(s, Logger.LogType.Info);
-        System.out.println(s);
-        return "";
-        //return s;
     }
 
     @Override

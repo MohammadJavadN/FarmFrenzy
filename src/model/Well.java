@@ -12,9 +12,7 @@ import java.io.File;
 
 public class Well implements Changeable {
     Label fillingLabel = new Label("filling...");
-    //    final int CAPACITY = 5;
     IntegerProperty CAPACITY = new SimpleIntegerProperty(3);
-    //int remaining = 0;
     public IntegerProperty remaining = new SimpleIntegerProperty(0);
     public IntegerProperty wellFillPercent = new SimpleIntegerProperty();
 
@@ -61,16 +59,13 @@ public class Well implements Changeable {
         return true;
     }
 
-    public String checkAfterChangeDate() {
+    public void checkAfterChangeDate() {
         Sound.playSound("sounds\\well.wav");
         remaining.set(CAPACITY.get());
         isFilling = false;
         fillingLabel.setVisible(false);
         LocalDate.getInstance().event.remove(fillingDate, this);
         Logger.getLogger(User.getCurrentUser()).log("The Well is filled", Logger.LogType.Info);
-        System.out.println("The Well is filled");
-        return "";
-        //return "The Well is filled\n";
     }
 
     static private Well well;

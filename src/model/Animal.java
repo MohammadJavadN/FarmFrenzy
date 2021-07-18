@@ -12,13 +12,12 @@ import java.io.FileNotFoundException;
 import java.util.Random;
 
 abstract class Animal implements Destroyable {
-    //    int xPosition, yPosition;
     IntegerProperty xPosition = new SimpleIntegerProperty();
     IntegerProperty yPosition = new SimpleIntegerProperty();
     int xVelocity, yVelocity;
     Random random = new Random();
     final String NAME;
-    String imagePath;//= "C:\\Users\\User\\Desktop\\FarmFrenzy\\dog.gif";
+    String imagePath;
     ImageView imageView;
     Scene scene;
     public Animal(String name, Scene scene, Pane root,String imagePath) {
@@ -53,7 +52,7 @@ abstract class Animal implements Destroyable {
         yPosition.set(yPosition.get()+count);
     }
 
-    abstract String move();
+    abstract void move();
     void setVelocity(int velocity) {
         if (random.nextBoolean()) {
             yVelocity = 0;

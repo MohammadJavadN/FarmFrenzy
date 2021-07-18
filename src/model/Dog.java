@@ -24,17 +24,12 @@ public class Dog extends Animal {
         return false;
     }
 
-    String move() {
+    void move() {
         setVelocity();
         addXP(xVelocity);
         addYP(yVelocity);
         Logger.getLogger(User.getCurrentUser()).log("hound move ", Logger.LogType.Info);
 
-        if (wild == null)
-            return "";
-        System.out.println("The hound followed the wild animal in [" + (wild.xPosition.get() + 1) + "," + (wild.yPosition.get() + 1) + "] \n");
-        return "";
-        //return "The hound followed the wild animal in [" + (wild.xPosition + 1) + "," + (wild.yPosition + 1) + "] \n";
     }
 
     void setVelocity() {

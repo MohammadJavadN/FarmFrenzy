@@ -13,13 +13,10 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-import javafx.scene.media.AudioClip;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.*;
 import sample.Main;
-
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
@@ -87,8 +84,6 @@ public class FarmMenu extends Menu {
         if (farm.insidePage(x, y))
             if (manager.plant(x, y)) {
                 String plant = "sounds\\plant.wav";
-//                AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
-//                audioClip.play();
                 Sound.playSound(plant);
                 Image image = null;
                 try {
@@ -134,10 +129,10 @@ public class FarmMenu extends Menu {
 
         Button menu = new Button("menu");
         menu.setOnAction(e ->{
-//            audioClip.play();
+
             Sound.playSound(menuS);
             menu();
-        });// TODO: ۱۱/۰۷/۲۰۲۱
+        });
         menu.getStyleClass().add("button-blue");
         menu.setLayoutX(0.14 * window.getWidth());
         menu.setLayoutY(0.88 * window.getHeight());
@@ -154,8 +149,7 @@ public class FarmMenu extends Menu {
                 AlertBox.display("Victory", "Victory!!!\n your Award = " + manager.getStar() + "coin.");
                 menu();
             }
-            //System.out.println(Farm.getFarm().toString());
-        });// TODO: ۱۱/۰۷/۲۰۲۱
+        });
         turn.getStyleClass().add("button-blue");
         turn.setLayoutX(0.47 * window.getWidth());
         turn.setLayoutY(0.01 * window.getHeight());
@@ -191,7 +185,6 @@ public class FarmMenu extends Menu {
             root.getChildren().add(label);
         }
         root.getChildren().addAll(wellFillPercent, warehouseCap, coin, time);
-      //  addAnimal(root);
         window.show();
     }
 
@@ -236,7 +229,6 @@ public class FarmMenu extends Menu {
         Scene scene1 = new Scene(root1, 500, 500);
         scene1.getStylesheets().add("Viper.css");
 
-        //Block events to other windows
         window1.initModality(Modality.APPLICATION_MODAL);
         window1.setTitle("mission");
         window1.setMinWidth(500);
@@ -249,7 +241,7 @@ public class FarmMenu extends Menu {
         });
 
         Mission m = Mission.getMission();
-        //Name Label - constrains use (child, column, row)
+
         int i = 0;
         int pT = 210, pR1 = 40, vGap1 = 56, pR2 = 293, vGap2 = 72, hGap = 105;
         Label[] collect = new Label[2 * m.getTasks().get(m.getCurrentLevel() - 1).size()];
@@ -313,12 +305,8 @@ public class FarmMenu extends Menu {
     private void well() {
         Logger.getLogger(user).log("well command", Logger.LogType.Command);
         if (manager.well()) {
-//            AudioClip audioClip = new AudioClip(new File(menuS).toURI().toString());
-//            audioClip.play();
-            System.out.println("The well began to drain");
             Logger.getLogger(user).log("The well began to drain", Logger.LogType.Replay);
         } else {
-            System.out.println("The well does not need drainage at the moment");
             Logger.getLogger(user).log("The well does not need drainage at the moment", Logger.LogType.Replay);
         }
     }
@@ -330,7 +318,6 @@ public class FarmMenu extends Menu {
         manager.saveUsers();
         Logger.getLogger(user).log("save user", Logger.LogType.Info);
         Logger.getLogger(user).log("menu command", Logger.LogType.Command);
-        // TODO: ۰۴/۰۶/۲۰۲۱ check tasks
         parentMenu.run();
     }
 

@@ -36,31 +36,26 @@ public class LoginMenu extends Menu {
         int c = 0;
         int r = 25;
 
-        //GridPane with 10px padding around edge
         root.setPadding(new Insets(10, 10, 10, 10));
         root.setAlignment(Pos.CENTER);
         root.setVgap(8);
         root.setHgap(10);
-        //Name Label - constrains use (child, column, row)
+
         Label nameLabel = new Label("Username:");
         nameLabel.setId("bold-label");
         GridPane.setConstraints(nameLabel, c , r);
 
-        //Name Input
         TextField nameInput = new TextField();
         nameInput.setPromptText("username");
         GridPane.setConstraints(nameInput, c + 1, r );
 
-        //Password Label
         Label passLabel = new Label("Password:");
         GridPane.setConstraints(passLabel, c , r + 1);
 
-        //Password Input
         TextField passInput = new TextField();
         passInput.setPromptText("password");
         GridPane.setConstraints(passInput, c + 1, r + 1);
 
-        //Login
         Button loginButton = new Button("Log In");
         loginButton.setOnAction(e ->{
             Sound.playSound("sounds\\click.wav");
@@ -68,7 +63,6 @@ public class LoginMenu extends Menu {
         });
         GridPane.setConstraints(loginButton, c + 1, r + 2);
 
-        //Sign up
         Button signUpButton = new Button("Sign Up");
         signUpButton.getStyleClass().add("button-blue");
         signUpButton.setOnAction(e -> {
@@ -77,7 +71,6 @@ public class LoginMenu extends Menu {
         });
         GridPane.setConstraints(signUpButton, c + 1, r + 3);
 
-        //Add everything to grid
         root.getChildren().addAll(nameLabel, nameInput, passLabel, passInput, loginButton, signUpButton);
 
         scene.getStylesheets().add("Viper.css");
@@ -91,8 +84,6 @@ public class LoginMenu extends Menu {
         if ((matcher = Commands.USERNAME.getMatcher(username.toLowerCase())).matches()) {
             usernameL(username, pass);
         } else {
-            // TODO: ۱۱/۰۷/۲۰۲۱
-            System.out.println("Please write in the form below :\njavad\n");
             Logger.getLogger(user).log("Invalid form username : <" + username + ">", Logger.LogType.Alarm);
             AlertBox.display("Error","Invalid form username : < " + username + " >");
         }
@@ -119,16 +110,9 @@ public class LoginMenu extends Menu {
         Logger.getLogger(user).log("password : <" + pass + ">", Logger.LogType.Command);
         if (user.correctPass(matcher.group(1))) {
             Logger.getLogger(user).log("Login successfully", Logger.LogType.Replay);
-            // TODO: ۱۱/۰۷/۲۰۲۱
-          //  AlertBox.display("Welcome","Welcome!!!");
-            System.out.println("\nLogin successfully");
-            User.setCurrentUser(user);
-            // TODO: ۱۱/۰۷/۲۰۲۱
               subMenu.setUser(user);
-            // TODO: ۱۱/۰۷/۲۰۲۱
               subMenu.run();
         } else {
-            // TODO: ۱۱/۰۷/۲۰۲۱   System.out.println("Invalid password!");
             Logger.getLogger(user).log("Wrong password : <" + pass + ">", Logger.LogType.Error);
             AlertBox.display("Error","Wrong password!");
         }
@@ -154,7 +138,6 @@ public class LoginMenu extends Menu {
                 }
         } else {
             AlertBox.display("Error","This username is already registered");
-            System.out.println("This username is already registered");
             Logger.getLogger(user).log("username is already registered : <" + pass + ">", Logger.LogType.Replay);
         }
     }

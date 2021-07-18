@@ -8,7 +8,6 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 
 public class Domestic extends Animal implements Sellable, Changeable {
-    // Farm farm;
     ProductType productType;
     IntegerProperty live = new SimpleIntegerProperty(100);
     Label liveL = new Label();
@@ -40,10 +39,8 @@ public class Domestic extends Animal implements Sellable, Changeable {
         live.set(100);
         produceDate = LocalDate.getInstance().getCurrentTime() + processTime * 100000000L;
         LocalDate.getInstance().event.put(produceDate, this);
-        //Farm.getFarm().money.set(Farm.getFarm().money.get()-price);
         Farm.getFarm().addMoney(-price);
         Farm.getFarm().addDomestic(this);
-        //Farm.getFarm().domestics.add(this);
         this.imagePath = path;
         liveL.textProperty().bind(live.asString());
         liveL.layoutXProperty().bind(imageView.xProperty().add(10));
@@ -59,7 +56,6 @@ public class Domestic extends Animal implements Sellable, Changeable {
         Farm.getFarm().remDomestics(this);
         imageView.setVisible(false);
         liveL.setVisible(false);
-//        Farm.getFarm().domestics.remove(this);
     }
 
     public int sell() {
@@ -78,16 +74,12 @@ public class Domestic extends Animal implements Sellable, Changeable {
         return space;
     }
 
-    String move() {
+    void move() {
         String s = setVelocity();
         addXP(xVelocity);
         addYP(yVelocity);
         Logger.getLogger(User.getCurrentUser()).log(NAME + " move ", Logger.LogType.Info);
         Logger.getLogger(User.getCurrentUser()).log(s, Logger.LogType.Info);
-        System.out.println(s);
-        System.out.println("65 domestic "+ xPosition.get() + " " + yPosition.get());
-        return "";
-        //return s;
     }
 
     public void produce() {
@@ -145,15 +137,12 @@ public class Domestic extends Animal implements Sellable, Changeable {
     }
 
     @Override
-    public String checkAfterChangeDate() {
+    public void checkAfterChangeDate() {
         LocalDate.getInstance().event.remove(produceDate, this);
         produce();
         produceDate += processTime * 100000000L;
         LocalDate.getInstance().event.put(produceDate, this);
         Logger.getLogger(User.getCurrentUser()).log(NAME + " in [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "] produce " + productType.name(), Logger.LogType.Info);
-        System.out.println(NAME + " in [" + (xPosition.get() + 1) + "," + (yPosition.get() + 1) + "] produce " + productType.name());
-        return "";
-        //return NAME + " in [" + (xPosition + 1) + "," + (yPosition + 1) + "] produce " + productType.name() + "\n";
     }
 
     public String toString() {

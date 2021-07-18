@@ -31,7 +31,6 @@ public class Farm {
         grass[i][j]--;
     }
     Warehouse warehouse;
-    //int money;
     public IntegerProperty money = new SimpleIntegerProperty();
 
     public void addMoney(int count) {
@@ -74,7 +73,6 @@ public class Farm {
         }
         workshops.clear();
         Warehouse.getWarehouse().clear();
-        //money.set(0);
         addMoney(-money.get());
         Truck.truck = null;
         if (!Well.isNull())
@@ -162,7 +160,6 @@ public class Farm {
         }
         if (o != null) {
             warehouse.removeProduct((Product) o);
-//            warehouse.products.remove(o);
             return;
         }
         for (Domestic domestic : domestics) {
@@ -173,16 +170,13 @@ public class Farm {
         }
         if (o != null)
             remDomestics((Domestic) o);
-            //domestics.remove(o);
     }
 
     public void truckUnload(Object o) {
         if ("cow buffalo chicken ostrich".contains(((Sellable) o).getName())) {
             addDomestic((Domestic) o);
-            //domestics.add((Domestic) o);
         } else
             warehouse.addProduct((Product) o);
-//            warehouse.products.add((Product) o);
     }
 
     public ArrayList<Wild> getWilds() {
@@ -235,7 +229,6 @@ public class Farm {
         warehouse = Warehouse.getWarehouse();
         money.set(1000);
         addMoney(0);
-        // TODO: ۲۹/۰۵/۲۰۲۱
     }
 
     public static Farm getFarm() {

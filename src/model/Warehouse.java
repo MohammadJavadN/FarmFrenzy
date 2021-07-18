@@ -9,7 +9,6 @@ import java.util.HashMap;
 
 public class Warehouse {
     final int CAPACITY;
-    // public HashMap<String,Integer> productCount = new HashMap<>();
     static private Warehouse warehouse;
     IntegerProperty emptySpace;
     public IntegerProperty warehouseFillPercent = new SimpleIntegerProperty();

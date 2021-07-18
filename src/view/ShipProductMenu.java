@@ -1,8 +1,6 @@
 package view;
 
 import controller.Manager;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -52,14 +50,12 @@ public class ShipProductMenu extends Menu {
         scene = new Scene(root, 1000, 600);
         scene.getStylesheets().add("Viper.css");
 
-        //Block events to other windows
-
         Button cancelButton = new Button("Cancel");
         cancelButton.getStyleClass().add("button-blue");
         cancelButton.setOnAction(e -> {
             truck.unload();
             Sound.playSound("sounds\\click.wav");
-            window.close();// TODO: ۱۴/۰۷/۲۰۲۱
+            window.close();
         });
 
         Button okButton = new Button("OK");
@@ -78,14 +74,11 @@ public class ShipProductMenu extends Menu {
         VBox vBox = new VBox(3.5);
         vBox.setLayoutX(0.16 * scene.getWidth());
         vBox.setLayoutY(0.18 * scene.getHeight());
-        Button[] addButton = new Button[warehouse.productNum.size()];
-        Label[] labels = new Label[warehouse.productNum.size()];
         HBox[] hBox = new HBox[warehouse.productNum.size()];
-        ImageView[] imageView = new ImageView[warehouse.productNum.size()];
         int i = 0;
         for (HBox box : hBox) {
             box = new HBox(15);
-            addToHBoxGL(box, i, labels[i], addButton[i], imageView[i]);
+            addToHBoxGL(box, i);
             vBox.getChildren().add(box);
             i++;
         }
@@ -94,14 +87,11 @@ public class ShipProductMenu extends Menu {
             domestics.add((Domestic) farm.getObject(s));
         }
         i =0;
-        Button[] addButtonA = new Button[farm.getDomesticsNum().size()];
-        Label[] labelsA = new Label[farm.getDomesticsNum().size()];
         HBox[] hBoxA = new HBox[farm.getDomesticsNum().size()];
-        ImageView[] imageViewA = new ImageView[farm.getDomesticsNum().size()];
         if (farm.getDomesticsNum().size()>0)
         for (HBox box : hBoxA) {
             box = new HBox(15);
-            addToHBoxAL(box, i, labelsA[i], addButtonA[i], imageViewA[i]);
+            addToHBoxAL(box, i);
             vBox.getChildren().add(box);
             i++;
         }
@@ -140,18 +130,18 @@ public class ShipProductMenu extends Menu {
         window.show();
 
     }
-    void addToHBoxAL(HBox box, int i, Label label, Button addButton, ImageView imageView) {
+    void addToHBoxAL(HBox box, int i) {
         Domestic d = domestics.get(i);
         if (d == null)
             return;
-        label = new Label(" * " + farm.getNumberOfDomestics(d.getName()) + "       " + d.getPrice() + "          ");
-        addButton = new Button("Load");
+        Label label = new Label(" * " + farm.getNumberOfDomestics(d.getName()) + "       " + d.getPrice() + "          ");
+        Button addButton = new Button("Load");
         addButton.setOnAction(e -> {
             manager.truckLoad(d.getName());
             Sound.playSound("sounds\\add.wav");
             load = true;
             show();
-        });// TODO: ۱۴/۰۷/۲۰۲۱
+        });
 
         Image image = null;
         try {
@@ -159,25 +149,25 @@ public class ShipProductMenu extends Menu {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        imageView = new ImageView(image);
+        ImageView imageView = new ImageView(image);
         imageView.setFitHeight(scene.getWidth() / 45);
         imageView.setFitWidth(scene.getHeight() / 30);
 
         box.getChildren().addAll(imageView, label, addButton);
     }
 
-    void addToHBoxGL(HBox box, int i, Label label, Button addButton, ImageView imageView) {
+    void addToHBoxGL(HBox box, int i) {
         Product p = products.get(i);
         if (p == null)
             return;
-        label = new Label(" * " + warehouse.productNum.get(p.getName()).get() + "       " + p.getPrice() + "          ");
-        addButton = new Button("Load");
+        Label label = new Label(" * " + warehouse.productNum.get(p.getName()).get() + "       " + p.getPrice() + "          ");
+        Button addButton = new Button("Load");
         addButton.setOnAction(e -> {
             manager.truckLoad(p.getName());
             Sound.playSound("sounds\\add.wav");
             load = true;
             show();
-        });// TODO: ۱۴/۰۷/۲۰۲۱
+        });
 
         Image image = null;
         try {
@@ -185,7 +175,7 @@ public class ShipProductMenu extends Menu {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        imageView = new ImageView(image);
+        ImageView imageView = new ImageView(image);
         imageView.setFitHeight(scene.getWidth() / 45);
         imageView.setFitWidth(scene.getHeight() / 30);
 
@@ -203,7 +193,7 @@ public class ShipProductMenu extends Menu {
             Sound.playSound("sounds\\addp2.wav");
             if (truck.getLoad() < 1) load = false;
             show();
-        });// TODO: ۱۴/۰۷/۲۰۲۱
+        });
 
         Image image = null;
         try {

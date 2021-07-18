@@ -21,7 +21,6 @@ public class Wild extends Animal implements Changeable {
     long lastTrapTime;
     ImageView[] cage;
 
-    //    int sellPrice;
     public Wild(ProductType wildType, Scene scene, Pane root, String path) {
         super(wildType.name().toLowerCase(Locale.ROOT), scene, root, path);
         imageView.setVisible(false);
@@ -29,26 +28,14 @@ public class Wild extends Animal implements Changeable {
         cage = new ImageView[5];
     }
 
-    public boolean checkCoordinates(int x, int y) {//1-6
-        return x - 1 == this.xPosition.get() && y - 1 == this.yPosition.get();
-    }
-
-    public boolean trap() {
-        /*if (freedom != strength) {
-            if ((LocalDate.getInstance().getCurrentTime() - lastTrapTime) / 100000000L - 1 > 0) {
-                freedom += (LocalDate.getInstance().getCurrentTime() - lastTrapTime) / 100000000L - 1;
-            }
-            freedom = Math.min(freedom, strength);
-        }*/
+    public void trap() {
         cage();
         freedom--;
         lastTrapTime = LocalDate.getInstance().getCurrentTime();
         if (freedom == 0) {
             new Product(wildType, xPosition.get(), yPosition.get(), scene);
             destroying();
-            return true;
         }
-        return false;
     }
 
     void unCage() {
@@ -140,7 +127,7 @@ public class Wild extends Animal implements Changeable {
         return s;
     }
 
-    String move() {//this method must call after check [if (free)]
+    void move() {//this method must call after check [if (free)]
         String s = "";
         setVelocity(velocity);
         s += kill();
@@ -148,9 +135,6 @@ public class Wild extends Animal implements Changeable {
         addYP(yVelocity);
         Logger.getLogger(User.getCurrentUser()).log(wildType.name() + " move ", Logger.LogType.Info);
         Logger.getLogger(User.getCurrentUser()).log(s, Logger.LogType.Info);
-        System.out.println(s);
-        return "";
-        // return s;
     }
 
     @Override
@@ -167,7 +151,7 @@ public class Wild extends Animal implements Changeable {
     }
 
     @Override
-    public String checkAfterChangeDate() {
+    public void checkAfterChangeDate() {
         Farm.getFarm().wilds.add(this);
         imageView.setVisible(true);
         Sound.playSoundAC("sounds\\roar.wav");
@@ -179,7 +163,5 @@ public class Wild extends Animal implements Changeable {
         }
         LocalDate.getInstance().event.remove(comingDate);
         Logger.getLogger(User.getCurrentUser()).log("The "+wildType.name() +" entered the farm ", Logger.LogType.Info);
-        System.out.println("The "+wildType.name() +" entered the farm ");
-        return null;
     }
 }

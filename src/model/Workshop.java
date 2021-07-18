@@ -11,7 +11,6 @@ import view.Sound;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.Random;
 
 public class Workshop implements Changeable {
     String name;
@@ -21,10 +20,9 @@ public class Workshop implements Changeable {
     int processTime;
     long processDate;
     boolean isWorking = false;
-    Random random = new Random();
     int x, y;
     Scene scene;
-    String imagePath;//= "C:\\Users\\User\\Desktop\\FarmFrenzy\\dog.gif";
+    String imagePath;
     ImageView imageView;
     Label workingLabel = new Label();
 
@@ -84,7 +82,7 @@ public class Workshop implements Changeable {
         return this.name.equalsIgnoreCase(name);
     }
 
-    public String checkAfterChangeDate() {
+    public void checkAfterChangeDate() {
         new Product(output, x, y, scene);
         isWorking = false;
         workingLabel.setVisible(false);
@@ -95,8 +93,6 @@ public class Workshop implements Changeable {
         }
         LocalDate.getInstance().event.remove(produceDate);
         Logger.getLogger(User.getCurrentUser()).log(output.name() + " in [" + (x + 1) + "," + (y + 1) + "]" + "from " + name + "is produced", Logger.LogType.Info);
-        System.out.println(output.name() + " in [" + (x + 1) + "," + (y + 1) + "]" + "from " + name + "is produced");
-        return "";
     }
 
     @Override

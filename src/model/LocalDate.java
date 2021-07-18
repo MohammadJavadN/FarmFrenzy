@@ -34,21 +34,16 @@ public class LocalDate {
         }
     }
 
-    public String turn(int n) {
-        String s ="";
+    public void turn(int n) {
         for (int i = 0; i < n; i++) {
-            s+=turn();
+            turn();
         }
-        return s;
     }
-    //Date date;
-    //private long currentTime;
     public LongProperty currentTime = new SimpleLongProperty();
     public LongProperty currentUnitTime = new SimpleLongProperty();
 
     private LocalDate() {
-        //date = new Date();
-        currentTime.set((new Date()).getTime());//date.getTime();
+        currentTime.set((new Date()).getTime());
         currentUnitTime.bind(currentTime.divide(100000000L).add(-(new Date()).getTime() / 100000000L));
     }
 
@@ -56,10 +51,9 @@ public class LocalDate {
         getInstance().currentTime.set((new Date()).getTime());
     }
 
-    private String turn() {
+    private void turn() {
         Logger.getLogger(User.getCurrentUser()).log("in turn method ", Logger.LogType.Alarm);
-        String s;
-        s = move();
+        move();
         sortEvent();
         currentTime.set(currentTime.get() / (100000000L));
         currentTime.set(currentTime.get() * 100000000L + (new Date()).getTime() % 100000000L + 100000000L);
@@ -69,28 +63,21 @@ public class LocalDate {
         while (eventsArrangement.size() > 0) {
             if (eventsArrangement.get(0) <= currentTime.get()) {
                 Logger.getLogger(User.getCurrentUser()).log("checkAfterChangeDate " + event.get(eventsArrangement.get(0)), Logger.LogType.Alarm);
-                s += ((Changeable) event.get(eventsArrangement.get(0))).checkAfterChangeDate();
+                ((Changeable) event.get(eventsArrangement.get(0))).checkAfterChangeDate();
                 sortEvent();
             } else break;
         }
-        return s;
     }
 
-    public String move() {
+    public void move() {
         ArrayList<Animal> animals = new ArrayList<>();
         animals.addAll(Farm.getFarm().wilds);
         animals.addAll(Farm.getFarm().dogs);
         animals.addAll(Farm.getFarm().domestics);
         animals.addAll(Farm.getFarm().cats);
-        String s = "";
         for (Animal animal : animals) {
-            s += animal.move();
+            animal.move();
         }
-        return s;
-    }
-
-    public long getCurrentUnitTime() {
-        return currentTime.get() / (100000000L) - ((new Date()).getTime() / 100000000L);
     }
 
     public long getCurrentTime() {

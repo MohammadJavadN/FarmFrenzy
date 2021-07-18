@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 public class ConfirmBox {
 
-    //Create variable
+
     static boolean answer;
 
     public static boolean display(String title, String message) {
@@ -19,7 +19,7 @@ public class ConfirmBox {
         Scene scene = new Scene(root, 500, 300);
         scene.getStylesheets().add("Viper.css");
 
-        //Block events to other windows
+
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle(title);
         window.setMinWidth(400);
@@ -53,12 +53,12 @@ public class ConfirmBox {
         cancelButton.getStyleClass().add("button-blue");
         cancelButton.setMinWidth(0.1 * scene.getWidth());
         root.getChildren().addAll(label, okButton, cancelButton);
-        //Display window and wait for it to be closed before returning
+
         window.setScene(scene);
         window.setResizable(false);
         window.showAndWait();
 
-        //Make sure to return answer
+
         return answer;
     }
 }

@@ -16,7 +16,6 @@ public class AlertBox {
         Scene scene = new Scene(root, 500,350);
         scene.getStylesheets().add("Viper.css");
 
-            //Block events to other windows
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle(title);
         window.setMinWidth(400);
@@ -39,7 +38,7 @@ public class AlertBox {
         closeButton.setMinWidth(0.1*scene.getWidth());
 
         root.getChildren().addAll(label, closeButton);
-        //Display window and wait for it to be closed before returning
+
         window.setScene(scene);
         window.setResizable(false);
         window.showAndWait();

@@ -55,19 +55,13 @@ public class Cat extends Animal {
         imageView.setVisible(false);
     }
 
-    String move() {
+    void move() {
         String s = "";
         setVelocity();
         if (product != null) s += collectProduct();
         addXP(xVelocity);
         addYP(yVelocity);
         Logger.getLogger(User.getCurrentUser()).log("Cat move ", Logger.LogType.Info);
-        if (s.length() > 0) {
-            s = s.substring(0, s.length() - 2);
-            System.out.println("cat collect this product : [" + s + "]\n");
-            //return "cat collect this product : [" + s + "]\n";
-        }
-        return "";
     }
 
     void setVelocity() {

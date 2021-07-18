@@ -1,5 +1,5 @@
 package model;
 
 public interface Changeable {
-    public String checkAfterChangeDate();
+    void checkAfterChangeDate();
 }
