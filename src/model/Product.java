@@ -181,6 +181,7 @@ public class Product implements Sellable, Destroyable, Changeable {
     @Override
     public int sell() {
        // Warehouse.getWarehouse().removeProduct(this);
+        imageView.setVisible(false);
         return price;
     }
 
@@ -207,7 +208,7 @@ public class Product implements Sellable, Destroyable, Changeable {
     public void destroying() {
         LocalDate.getInstance().event.remove(expirationDate, this);
         Farm.getFarm().products.remove(this);
-        imageView.setVisible(false);
+        //imageView.setVisible(false);
     }
 
     public boolean equal(String name) {
@@ -217,6 +218,7 @@ public class Product implements Sellable, Destroyable, Changeable {
     @Override
     public String checkAfterChangeDate() {
         destroying();
+        imageView.setVisible(false);
         Logger.getLogger(User.getCurrentUser()).log(name + " in [" + (x + 1) + "," + (y + 1) + "] was destroyed", Logger.LogType.Info );
         System.out.println( name + " in [" + (x + 1) + "," + (y + 1) + "] was destroyed");
         return "";

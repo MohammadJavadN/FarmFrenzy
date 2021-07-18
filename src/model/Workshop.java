@@ -36,8 +36,6 @@ public class Workshop implements Changeable {
         this.output = output;
         this.cost = cost;
         this.processTime = processTime;
-        //processDate = LocalDate.getInstance().getCurrentTime() + this.processTime*100000000L;
-        //Farm.getFarm().money.set(Farm.getFarm().money.get()-cost);
         Farm.getFarm().addMoney(-cost);
         Farm.getFarm().workshops.add(this);
         this.imagePath = imagePath;
@@ -82,28 +80,11 @@ public class Workshop implements Changeable {
         Sound.playSound("sounds\\error.wav");
         return false;
     }
-/*
-    private void setPosition() {
-        boolean isExistWild = true;
-        while (isExistWild) {
-            x = random.nextInt(6);
-            y = random.nextInt(6);
-            isExistWild = false;
-            for (Wild wild : Farm.getFarm().wilds) {
-                if (wild.xPosition.get() == x && wild.yPosition.get() == y) {
-                    isExistWild = true;
-                    break;
-                }
-            }
-        }
-    }
-*/
     public boolean equal(String name) {
         return this.name.equalsIgnoreCase(name);
     }
 
     public String checkAfterChangeDate() {
-//        setPosition();
         new Product(output, x, y, scene);
         isWorking = false;
         workingLabel.setVisible(false);
@@ -116,7 +97,6 @@ public class Workshop implements Changeable {
         Logger.getLogger(User.getCurrentUser()).log(output.name() + " in [" + (x + 1) + "," + (y + 1) + "]" + "from " + name + "is produced", Logger.LogType.Info);
         System.out.println(output.name() + " in [" + (x + 1) + "," + (y + 1) + "]" + "from " + name + "is produced");
         return "";
-        //return output.name() + " in [" + (x+1) + "," + (y+1) + "]" + "from " + name + "is produced\n";
     }
 
     @Override

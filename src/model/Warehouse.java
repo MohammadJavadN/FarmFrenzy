@@ -2,28 +2,47 @@ package model;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import view.FarmMenu;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Warehouse {
     final int CAPACITY;
-    //int emptySpace;
-    IntegerProperty emptySpace ;
-
+    // public HashMap<String,Integer> productCount = new HashMap<>();
+    static private Warehouse warehouse;
+    IntegerProperty emptySpace;
     public IntegerProperty warehouseFillPercent = new SimpleIntegerProperty();
 
     public ArrayList<Product> products = new ArrayList<>();
-   // public HashMap<String,Integer> productCount = new HashMap<>();
-    static private Warehouse warehouse;
 
-    public void clear(){
+    public void clear() {
         emptySpace.set(CAPACITY);
+        for (Product product : products) {
+            product.imageView.setVisible(false);
+        }
         products.clear();
         productNum.clear();
-    //    productCount.clear();
+        //    productCount.clear();
     }
 
+    public void resetProductsImage(){
+        int i = 0;
+        for (Product product : products) {
+            setProductImage(product , (i++));
+        }
+    }
+
+    void setProductImage(Product product , int s){
+        double startY = 0.92 * FarmMenu.r.getScene().getHeight();
+        double startX = 0.40 * FarmMenu.r.getScene().getWidth();
+        double productWidth = FarmMenu.r.getScene().getHeight() / 35;
+        double productHeight = FarmMenu.r.getScene().getWidth() / 50;
+        product.imageView.setFitHeight(productHeight);
+        product.imageView.setFitWidth(productHeight);
+        product.imageView.setX(startX + (s % 7) * productWidth);
+        product.imageView.setY(startY - (s / 7) * productWidth);
+    }
 
     public HashMap<String, IntegerProperty> productNum = new HashMap<>();
     IntegerProperty getProductNum(String name){
@@ -35,8 +54,6 @@ public class Warehouse {
         }
     }
 
-
-
     public int getNumberOfProducts(String productName) {
         int cnt = 0;
         for (Product product : products) {
@@ -47,11 +64,9 @@ public class Warehouse {
     }
 
     public void addProduct(Product product) {
+        setProductImage(product, products.size());
         products.add(product);
         emptySpace.set(emptySpace.get() - product.space);
-//        if (!productCount.containsKey(product.name))
-//            productCount.put(product.name,1);
-//        else productCount.replace(product.name,productCount.get(product.name)+1);
         if (productNum.containsKey(product.name)) {
             productNum.get(product.name).set(productNum.get(product.name).get() + 1);
         } else {
@@ -60,11 +75,9 @@ public class Warehouse {
     }
 
     public void removeProduct(Product product) {
-//        if (productCount.get(product.name)<2)
-//            productCount.remove(product.name);
-//        else
-//            productCount.replace(product.name,productCount.get(product.name)-1);
         products.remove(product);
+        resetProductsImage();
+        product.imageView.setVisible(false);
         emptySpace.set(emptySpace.get() + product.space);
         if (productNum.containsKey(product.name)) {
             productNum.get(product.name).set(productNum.get(product.name).get() - 1);
