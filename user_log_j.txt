@@ -304,3 +304,1282 @@ chicken in [2,3] died of malnutrition
 
 [Alarm], [Sat Jul 17 21:57:46 IRDT 2021], in check method 
 [Alarm], [Sat Jul 17 21:57:46 IRDT 2021], check result : false
+[Info], [Sat Jul 17 23:19:30 IRDT 2021], username accepted
+[Command], [Sat Jul 17 23:19:30 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 23:19:30 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 23:19:34 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 23:19:38 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 23:19:38 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 23:19:38 IRDT 2021],  set Tiger coming 
+[Info], [Sat Jul 17 23:30:42 IRDT 2021], username accepted
+[Command], [Sat Jul 17 23:30:42 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 23:30:42 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 23:30:46 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 23:30:48 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 23:30:48 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 23:30:48 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 23:30:56 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 23:30:56 IRDT 2021], check result : false
+[Info], [Sat Jul 17 23:31:44 IRDT 2021], username accepted
+[Command], [Sat Jul 17 23:31:44 IRDT 2021], password : <j>
+[Replay], [Sat Jul 17 23:31:44 IRDT 2021], Login successfully
+[Alarm], [Sat Jul 17 23:31:47 IRDT 2021], start game 
+[Alarm], [Sat Jul 17 23:31:48 IRDT 2021], in setWildComing method 
+[Alarm], [Sat Jul 17 23:31:48 IRDT 2021],  set Bear coming 
+[Alarm], [Sat Jul 17 23:31:48 IRDT 2021],  set Tiger coming 
+[Alarm], [Sat Jul 17 23:31:49 IRDT 2021], in turn method 
+[Alarm], [Sat Jul 17 23:31:49 IRDT 2021], checkAfterChangeDate tiger 4 [6,4]
+
+[Info], [Sat Jul 17 23:31:49 IRDT 2021], The TIGER entered the farm 
+[Alarm], [Sat Jul 17 23:31:50 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:31:50 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:31:50 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:31:50 IRDT 2021], checkAfterChangeDate bear 4 [2,1]
+
+[Info], [Sat Jul 17 23:31:50 IRDT 2021], The BEAR entered the farm 
+[Alarm], [Sat Jul 17 23:31:51 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:31:51 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:31:51 IRDT 2021], 
+[Info], [Sat Jul 17 23:31:51 IRDT 2021], BEAR move 
+[Info], [Sat Jul 17 23:31:51 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:31:52 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:31:52 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:31:52 IRDT 2021], 
+[Info], [Sat Jul 17 23:31:52 IRDT 2021], BEAR move 
+[Info], [Sat Jul 17 23:31:52 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:31:53 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:31:53 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:31:53 IRDT 2021], 
+[Info], [Sat Jul 17 23:31:53 IRDT 2021], BEAR move 
+[Info], [Sat Jul 17 23:31:53 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:31:54 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:31:54 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:31:54 IRDT 2021], 
+[Info], [Sat Jul 17 23:31:54 IRDT 2021], BEAR move 
+[Info], [Sat Jul 17 23:31:54 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:31:55 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:31:55 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:31:55 IRDT 2021], 
+[Info], [Sat Jul 17 23:31:55 IRDT 2021], BEAR move 
+[Info], [Sat Jul 17 23:31:55 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:31:56 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:31:56 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:31:56 IRDT 2021], 
+[Info], [Sat Jul 17 23:31:56 IRDT 2021], BEAR move 
+[Info], [Sat Jul 17 23:31:56 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:31:57 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:31:57 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:31:57 IRDT 2021], 
+[Info], [Sat Jul 17 23:31:57 IRDT 2021], BEAR move 
+[Info], [Sat Jul 17 23:31:57 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:31:58 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:31:58 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:31:58 IRDT 2021], 
+[Info], [Sat Jul 17 23:31:58 IRDT 2021], BEAR move 
+[Info], [Sat Jul 17 23:31:58 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:31:59 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:31:59 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:31:59 IRDT 2021], 
+[Info], [Sat Jul 17 23:31:59 IRDT 2021], BEAR move 
+[Info], [Sat Jul 17 23:31:59 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:31:59 IRDT 2021], in check method 
+[Alarm], [Sat Jul 17 23:31:59 IRDT 2021], check result : false
+[Alarm], [Sat Jul 17 23:32:00 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:32:00 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:32:00 IRDT 2021], 
+[Info], [Sat Jul 17 23:32:00 IRDT 2021], BEAR move 
+[Info], [Sat Jul 17 23:32:00 IRDT 2021], 
+[Info], [Sat Jul 17 23:32:00 IRDT 2021], chicken move 
+[Info], [Sat Jul 17 23:32:00 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:32:01 IRDT 2021], in turn method 
+[Info], [Sat Jul 17 23:32:01 IRDT 2021], TIGER move 
+[Info], [Sat Jul 17 23:32:01 IRDT 2021], 
+[Info], [Sat Jul 17 23:32:01 IRDT 2021], BEAR move 
+[Info], [Sat Jul 17 23:32:01 IRDT 2021], 
+[Info], [Sat Jul 17 23:32:01 IRDT 2021], chicken move 
+[Info], [Sat Jul 17 23:32:01 IRDT 2021], 
+[Alarm], [Sat Jul 17 23:32:01 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 80]% [2,3]
+
+[Info], [Sun Jul 18 15:03:34 IRDT 2021], username accepted
+[Command], [Sun Jul 18 15:03:34 IRDT 2021], password : <j>
+[Replay], [Sun Jul 18 15:03:34 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 18 15:03:36 IRDT 2021], start game 
+[Alarm], [Sun Jul 18 15:03:38 IRDT 2021], in setWildComing method 
+[Alarm], [Sun Jul 18 15:03:38 IRDT 2021],  set Bear coming 
+[Alarm], [Sun Jul 18 15:03:38 IRDT 2021],  set Tiger coming 
+[Info], [Sun Jul 18 15:04:14 IRDT 2021], username accepted
+[Command], [Sun Jul 18 15:04:14 IRDT 2021], password : <j>
+[Replay], [Sun Jul 18 15:04:14 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 18 15:04:16 IRDT 2021], start game 
+[Alarm], [Sun Jul 18 15:04:18 IRDT 2021], in setWildComing method 
+[Alarm], [Sun Jul 18 15:04:18 IRDT 2021],  set Bear coming 
+[Alarm], [Sun Jul 18 15:04:18 IRDT 2021],  set Tiger coming 
+[Info], [Sun Jul 18 15:18:01 IRDT 2021], username accepted
+[Command], [Sun Jul 18 15:18:01 IRDT 2021], password : <j>
+[Replay], [Sun Jul 18 15:18:01 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 18 15:18:03 IRDT 2021], start game 
+[Alarm], [Sun Jul 18 15:18:05 IRDT 2021], in setWildComing method 
+[Alarm], [Sun Jul 18 15:18:05 IRDT 2021],  set Bear coming 
+[Alarm], [Sun Jul 18 15:18:05 IRDT 2021],  set Tiger coming 
+[Alarm], [Sun Jul 18 15:18:10 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:10 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:11 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:11 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:13 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:13 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:15 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:15 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:17 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:17 IRDT 2021], check result : false
+[Command], [Sun Jul 18 15:18:21 IRDT 2021], well command
+[Replay], [Sun Jul 18 15:18:21 IRDT 2021], The well began to drain
+[Alarm], [Sun Jul 18 15:18:21 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:21 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:23 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:18:23 IRDT 2021], hound move 
+[Info], [Sun Jul 18 15:18:23 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:18:23 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:23 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:18:23 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:23 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:18:23 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:23 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:18:23 IRDT 2021], checkAfterChangeDate tiger 4 [5,5]
+
+[Info], [Sun Jul 18 15:18:23 IRDT 2021], The TIGER entered the farm 
+[Alarm], [Sun Jul 18 15:18:23 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:23 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:28 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:28 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:30 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], TIGER move 
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], hound move 
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:18:30 IRDT 2021], checkAfterChangeDate bear 4 [2,5]
+
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], The BEAR entered the farm 
+[Alarm], [Sun Jul 18 15:18:30 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 80]% [2,4]
+
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], chicken in [2,4] produce EGG
+[Alarm], [Sun Jul 18 15:18:30 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 80]% [5,2]
+
+[Info], [Sun Jul 18 15:18:30 IRDT 2021], chicken in [5,2] produce EGG
+[Alarm], [Sun Jul 18 15:18:30 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:30 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:35 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:35 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:35 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:35 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:36 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:36 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:36 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:36 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:36 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:36 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:36 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:36 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:38 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:18:38 IRDT 2021], TIGER move 
+[Info], [Sun Jul 18 15:18:38 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:38 IRDT 2021], hound move 
+[Info], [Sun Jul 18 15:18:38 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:18:38 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:38 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:18:38 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:38 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:18:38 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:38 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:18:38 IRDT 2021], checkAfterChangeDate model.Well@475c7830
+[Info], [Sun Jul 18 15:18:38 IRDT 2021], The Well is filled
+[Alarm], [Sun Jul 18 15:18:38 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:38 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:43 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:43 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:43 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:43 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:44 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:44 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:47 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:47 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:49 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:49 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:51 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], TIGER move 
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], hound move 
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:18:51 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 60]% [3,5]
+
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], chicken in [3,5] produce EGG
+[Alarm], [Sun Jul 18 15:18:51 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 60]% [6,1]
+
+[Info], [Sun Jul 18 15:18:51 IRDT 2021], chicken in [6,1] produce EGG
+[Alarm], [Sun Jul 18 15:18:51 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:51 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:53 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:18:53 IRDT 2021], TIGER move 
+[Info], [Sun Jul 18 15:18:53 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:53 IRDT 2021], hound move 
+[Info], [Sun Jul 18 15:18:53 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:18:53 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:53 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:18:53 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:53 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:18:53 IRDT 2021], 
+[Info], [Sun Jul 18 15:18:53 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:18:53 IRDT 2021], checkAfterChangeDate cow IntegerProperty [value: 50]% [6,5]
+
+[Info], [Sun Jul 18 15:18:53 IRDT 2021], cow in [6,5] produce COW_MILK
+[Alarm], [Sun Jul 18 15:18:53 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:53 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:56 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:56 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:57 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:57 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:18:59 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:18:59 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:00 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], TIGER move 
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], The wild animal got involved with a hound in [3,3] 
+
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], hound move 
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:00 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 40]% [2,4]
+
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], chicken in [2,4] produce EGG
+[Alarm], [Sun Jul 18 15:19:00 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 40]% [6,3]
+
+[Info], [Sun Jul 18 15:19:00 IRDT 2021], chicken in [6,3] produce EGG
+[Alarm], [Sun Jul 18 15:19:00 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:00 IRDT 2021], check result : false
+[Command], [Sun Jul 18 15:19:05 IRDT 2021], well command
+[Replay], [Sun Jul 18 15:19:05 IRDT 2021], The well began to drain
+[Alarm], [Sun Jul 18 15:19:05 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:05 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:09 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:09 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:09 IRDT 2021], chicken in [2,4] looked for food 
+
+[Info], [Sun Jul 18 15:19:09 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:09 IRDT 2021], chicken in [6,3] looked for food 
+
+[Info], [Sun Jul 18 15:19:09 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:19:09 IRDT 2021], cow in [6,4] looked for food 
+
+[Info], [Sun Jul 18 15:19:09 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:09 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:09 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:10 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:10 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:10 IRDT 2021], chicken in [2,5] looked for food 
+
+[Info], [Sun Jul 18 15:19:10 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:10 IRDT 2021], chicken in [6,5] looked for food 
+
+[Info], [Sun Jul 18 15:19:10 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:19:10 IRDT 2021], cow in [6,5] looked for food 
+
+[Info], [Sun Jul 18 15:19:10 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:10 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 20]% [1,5]
+
+[Info], [Sun Jul 18 15:19:10 IRDT 2021], chicken in [1,5] produce EGG
+[Alarm], [Sun Jul 18 15:19:10 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 20]% [6,6]
+
+[Info], [Sun Jul 18 15:19:10 IRDT 2021], chicken in [6,6] produce EGG
+[Alarm], [Sun Jul 18 15:19:10 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:10 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:12 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:12 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:12 IRDT 2021], chicken in [1,5] looked for food 
+chicken eat grass in [5,1]
+
+[Info], [Sun Jul 18 15:19:12 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:12 IRDT 2021], chicken in [6,6] looked for food 
+
+[Info], [Sun Jul 18 15:19:12 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:19:12 IRDT 2021], cow in [6,6] looked for food 
+
+[Info], [Sun Jul 18 15:19:12 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:12 IRDT 2021], checkAfterChangeDate model.Well@475c7830
+[Info], [Sun Jul 18 15:19:12 IRDT 2021], The Well is filled
+[Alarm], [Sun Jul 18 15:19:12 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:12 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:13 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:13 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:13 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:13 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:13 IRDT 2021], chicken in [5,6] looked for food 
+chicken eat grass in [6,5]
+
+[Info], [Sun Jul 18 15:19:13 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:19:13 IRDT 2021], cow in [5,6] looked for food 
+cow in [5,6] died of malnutrition
+
+[Info], [Sun Jul 18 15:19:13 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:13 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 90]% [0,6]
+
+[Info], [Sun Jul 18 15:19:13 IRDT 2021], chicken in [0,6] produce EGG
+[Alarm], [Sun Jul 18 15:19:13 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 100]% [4,6]
+
+[Info], [Sun Jul 18 15:19:13 IRDT 2021], chicken in [4,6] produce EGG
+[Alarm], [Sun Jul 18 15:19:13 IRDT 2021], checkAfterChangeDate EGG [2,4]
+
+[Info], [Sun Jul 18 15:19:13 IRDT 2021], EGG in [2,4] was destroyed
+[Alarm], [Sun Jul 18 15:19:13 IRDT 2021], checkAfterChangeDate EGG [6,3]
+
+[Info], [Sun Jul 18 15:19:13 IRDT 2021], EGG in [6,3] was destroyed
+[Alarm], [Sun Jul 18 15:19:13 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:13 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:15 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:15 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:16 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:16 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:16 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:16 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:17 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:17 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:17 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:17 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:17 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:17 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:17 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:17 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:18 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:18 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:18 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:18 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:18 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:18 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:18 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 70]% [0,4]
+
+[Info], [Sun Jul 18 15:19:18 IRDT 2021], chicken in [0,4] produce EGG
+[Alarm], [Sun Jul 18 15:19:18 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 80]% [3,5]
+
+[Info], [Sun Jul 18 15:19:18 IRDT 2021], chicken in [3,5] produce EGG
+[Alarm], [Sun Jul 18 15:19:18 IRDT 2021], checkAfterChangeDate EGG [1,5]
+
+[Info], [Sun Jul 18 15:19:18 IRDT 2021], EGG in [1,5] was destroyed
+[Alarm], [Sun Jul 18 15:19:18 IRDT 2021], checkAfterChangeDate EGG [6,6]
+
+[Info], [Sun Jul 18 15:19:18 IRDT 2021], EGG in [6,6] was destroyed
+[Alarm], [Sun Jul 18 15:19:18 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:18 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:19 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:19 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:19 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:19 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:19 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:19 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:19 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:19 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:20 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:20 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:20 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:20 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:20 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:20 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:20 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 50]% [1,3]
+
+[Info], [Sun Jul 18 15:19:20 IRDT 2021], chicken in [1,3] produce EGG
+[Alarm], [Sun Jul 18 15:19:20 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 60]% [4,4]
+
+[Info], [Sun Jul 18 15:19:20 IRDT 2021], chicken in [4,4] produce EGG
+[Alarm], [Sun Jul 18 15:19:20 IRDT 2021], checkAfterChangeDate EGG [0,6]
+
+[Info], [Sun Jul 18 15:19:20 IRDT 2021], EGG in [0,6] was destroyed
+[Alarm], [Sun Jul 18 15:19:20 IRDT 2021], checkAfterChangeDate EGG [4,6]
+
+[Info], [Sun Jul 18 15:19:20 IRDT 2021], EGG in [4,6] was destroyed
+[Alarm], [Sun Jul 18 15:19:20 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:20 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:21 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:21 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:21 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:21 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:21 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:21 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:21 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:21 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:22 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], chicken in [2,3] looked for food 
+chicken eat grass in [3,2]
+
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:22 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 100]% [3,3]
+
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], chicken in [3,3] produce EGG
+[Alarm], [Sun Jul 18 15:19:22 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 40]% [4,4]
+
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], chicken in [4,4] produce EGG
+[Alarm], [Sun Jul 18 15:19:22 IRDT 2021], checkAfterChangeDate EGG [3,5]
+
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], EGG in [3,5] was destroyed
+[Alarm], [Sun Jul 18 15:19:22 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:22 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:22 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], chicken in [4,4] looked for food 
+
+[Info], [Sun Jul 18 15:19:22 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:22 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:22 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:23 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:23 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:23 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:23 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:23 IRDT 2021], chicken in [4,5] looked for food 
+
+[Info], [Sun Jul 18 15:19:23 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:23 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 80]% [3,3]
+
+[Info], [Sun Jul 18 15:19:23 IRDT 2021], chicken in [3,3] produce EGG
+[Alarm], [Sun Jul 18 15:19:23 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 20]% [4,6]
+
+[Info], [Sun Jul 18 15:19:23 IRDT 2021], chicken in [4,6] produce EGG
+[Alarm], [Sun Jul 18 15:19:23 IRDT 2021], checkAfterChangeDate EGG [4,4]
+
+[Info], [Sun Jul 18 15:19:23 IRDT 2021], EGG in [4,4] was destroyed
+[Alarm], [Sun Jul 18 15:19:23 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:23 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:24 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:24 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:24 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:24 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:24 IRDT 2021], chicken in [4,6] looked for food 
+chicken eat grass in [6,4]
+
+[Info], [Sun Jul 18 15:19:24 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:24 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:24 IRDT 2021], check result : false
+[Command], [Sun Jul 18 15:19:25 IRDT 2021], well command
+[Replay], [Sun Jul 18 15:19:25 IRDT 2021], The well began to drain
+[Alarm], [Sun Jul 18 15:19:25 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:25 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:27 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:27 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 60]% [3,3]
+
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], chicken in [3,3] produce EGG
+[Alarm], [Sun Jul 18 15:19:27 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 90]% [3,7]
+
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], chicken in [3,7] produce EGG
+[Alarm], [Sun Jul 18 15:19:27 IRDT 2021], checkAfterChangeDate EGG [4,4]
+
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], EGG in [4,4] was destroyed
+[Alarm], [Sun Jul 18 15:19:27 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:27 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:27 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:27 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:27 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:27 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:28 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:28 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:28 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:28 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:28 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:28 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:28 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 40]% [3,3]
+
+[Info], [Sun Jul 18 15:19:28 IRDT 2021], chicken in [3,3] produce EGG
+[Alarm], [Sun Jul 18 15:19:28 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 70]% [4,6]
+
+[Info], [Sun Jul 18 15:19:28 IRDT 2021], chicken in [4,6] produce EGG
+[Alarm], [Sun Jul 18 15:19:28 IRDT 2021], checkAfterChangeDate EGG [4,6]
+
+[Info], [Sun Jul 18 15:19:28 IRDT 2021], EGG in [4,6] was destroyed
+[Alarm], [Sun Jul 18 15:19:28 IRDT 2021], checkAfterChangeDate model.Well@475c7830
+[Info], [Sun Jul 18 15:19:28 IRDT 2021], The Well is filled
+[Alarm], [Sun Jul 18 15:19:28 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:28 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:29 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:29 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:29 IRDT 2021], chicken in [3,3] looked for food 
+
+[Info], [Sun Jul 18 15:19:29 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:29 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:29 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:29 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:29 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:30 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:30 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:31 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:31 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:31 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:31 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:32 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:32 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:32 IRDT 2021], chicken in [3,4] looked for food 
+
+[Info], [Sun Jul 18 15:19:32 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:32 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:32 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:32 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 20]% [3,5]
+
+[Info], [Sun Jul 18 15:19:32 IRDT 2021], chicken in [3,5] produce EGG
+[Alarm], [Sun Jul 18 15:19:32 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 50]% [4,6]
+
+[Info], [Sun Jul 18 15:19:32 IRDT 2021], chicken in [4,6] produce EGG
+[Alarm], [Sun Jul 18 15:19:32 IRDT 2021], checkAfterChangeDate EGG [3,3]
+
+[Info], [Sun Jul 18 15:19:32 IRDT 2021], EGG in [3,3] was destroyed
+[Alarm], [Sun Jul 18 15:19:32 IRDT 2021], checkAfterChangeDate EGG [3,7]
+
+[Info], [Sun Jul 18 15:19:32 IRDT 2021], EGG in [3,7] was destroyed
+[Alarm], [Sun Jul 18 15:19:32 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:32 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:33 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:33 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:33 IRDT 2021], chicken in [3,5] looked for food 
+
+[Info], [Sun Jul 18 15:19:33 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:33 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:33 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:33 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:33 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:34 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], chicken in [2,5] looked for food 
+chicken eat grass in [5,2]
+
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], chicken in [4,5] looked for food 
+
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:34 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 100]% [1,5]
+
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], chicken in [1,5] produce EGG
+[Alarm], [Sun Jul 18 15:19:34 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 30]% [4,4]
+
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], chicken in [4,4] produce EGG
+[Alarm], [Sun Jul 18 15:19:34 IRDT 2021], checkAfterChangeDate EGG [3,3]
+
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], EGG in [3,3] was destroyed
+[Alarm], [Sun Jul 18 15:19:34 IRDT 2021], checkAfterChangeDate EGG [4,6]
+
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], EGG in [4,6] was destroyed
+[Alarm], [Sun Jul 18 15:19:34 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:34 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:34 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], chicken in [4,4] looked for food 
+
+[Info], [Sun Jul 18 15:19:34 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:34 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:34 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:35 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:35 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:35 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:35 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:35 IRDT 2021], chicken in [4,3] looked for food 
+
+[Info], [Sun Jul 18 15:19:35 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:35 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 80]% [1,5]
+
+[Info], [Sun Jul 18 15:19:35 IRDT 2021], chicken in [1,5] produce EGG
+[Alarm], [Sun Jul 18 15:19:35 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 10]% [4,2]
+
+[Info], [Sun Jul 18 15:19:35 IRDT 2021], chicken in [4,2] produce EGG
+[Alarm], [Sun Jul 18 15:19:35 IRDT 2021], checkAfterChangeDate EGG [3,5]
+
+[Info], [Sun Jul 18 15:19:35 IRDT 2021], EGG in [3,5] was destroyed
+[Alarm], [Sun Jul 18 15:19:35 IRDT 2021], checkAfterChangeDate EGG [4,6]
+
+[Info], [Sun Jul 18 15:19:35 IRDT 2021], EGG in [4,6] was destroyed
+[Alarm], [Sun Jul 18 15:19:35 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:35 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:36 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:36 IRDT 2021], check result : false
+[Command], [Sun Jul 18 15:19:43 IRDT 2021], well command
+[Replay], [Sun Jul 18 15:19:43 IRDT 2021], The well began to drain
+[Alarm], [Sun Jul 18 15:19:43 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:43 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:45 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:45 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:45 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:45 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:45 IRDT 2021], chicken in [4,2] looked for food 
+chicken eat grass in [2,4]
+
+[Info], [Sun Jul 18 15:19:45 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:45 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:45 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:46 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:46 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:46 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:46 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:46 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:46 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:46 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 60]% [1,5]
+
+[Info], [Sun Jul 18 15:19:46 IRDT 2021], chicken in [1,5] produce EGG
+[Alarm], [Sun Jul 18 15:19:46 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 90]% [3,1]
+
+[Info], [Sun Jul 18 15:19:46 IRDT 2021], chicken in [3,1] produce EGG
+[Alarm], [Sun Jul 18 15:19:46 IRDT 2021], checkAfterChangeDate EGG [1,5]
+
+[Info], [Sun Jul 18 15:19:46 IRDT 2021], EGG in [1,5] was destroyed
+[Alarm], [Sun Jul 18 15:19:46 IRDT 2021], checkAfterChangeDate EGG [4,4]
+
+[Info], [Sun Jul 18 15:19:46 IRDT 2021], EGG in [4,4] was destroyed
+[Alarm], [Sun Jul 18 15:19:46 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:46 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:47 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:47 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:47 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:47 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:47 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:47 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:47 IRDT 2021], checkAfterChangeDate model.Well@475c7830
+[Info], [Sun Jul 18 15:19:47 IRDT 2021], The Well is filled
+[Alarm], [Sun Jul 18 15:19:47 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:47 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:48 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:48 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:48 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:48 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:48 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:48 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:48 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 40]% [1,3]
+
+[Info], [Sun Jul 18 15:19:48 IRDT 2021], chicken in [1,3] produce EGG
+[Alarm], [Sun Jul 18 15:19:48 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 70]% [4,2]
+
+[Info], [Sun Jul 18 15:19:48 IRDT 2021], chicken in [4,2] produce EGG
+[Alarm], [Sun Jul 18 15:19:48 IRDT 2021], checkAfterChangeDate EGG [1,5]
+
+[Info], [Sun Jul 18 15:19:48 IRDT 2021], EGG in [1,5] was destroyed
+[Alarm], [Sun Jul 18 15:19:48 IRDT 2021], checkAfterChangeDate EGG [4,2]
+
+[Info], [Sun Jul 18 15:19:48 IRDT 2021], EGG in [4,2] was destroyed
+[Alarm], [Sun Jul 18 15:19:48 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:48 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:49 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:49 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:49 IRDT 2021], chicken in [1,3] looked for food 
+chicken eat grass in [3,1]
+
+[Info], [Sun Jul 18 15:19:49 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:49 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:49 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:49 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:49 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:50 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:50 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:50 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:50 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:50 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:50 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:50 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 90]% [2,2]
+
+[Info], [Sun Jul 18 15:19:50 IRDT 2021], chicken in [2,2] produce EGG
+[Alarm], [Sun Jul 18 15:19:50 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 50]% [3,3]
+
+[Info], [Sun Jul 18 15:19:50 IRDT 2021], chicken in [3,3] produce EGG
+[Alarm], [Sun Jul 18 15:19:50 IRDT 2021], checkAfterChangeDate EGG [1,5]
+
+[Info], [Sun Jul 18 15:19:50 IRDT 2021], EGG in [1,5] was destroyed
+[Alarm], [Sun Jul 18 15:19:50 IRDT 2021], checkAfterChangeDate EGG [3,1]
+
+[Info], [Sun Jul 18 15:19:50 IRDT 2021], EGG in [3,1] was destroyed
+[Alarm], [Sun Jul 18 15:19:50 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:50 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:51 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:51 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:51 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:51 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:51 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:51 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:51 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:51 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:52 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:52 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:52 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:52 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:54 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:54 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:54 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:54 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:54 IRDT 2021], chicken in [4,3] looked for food 
+
+[Info], [Sun Jul 18 15:19:54 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:19:54 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:19:54 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:54 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 70]% [2,4]
+
+[Info], [Sun Jul 18 15:19:54 IRDT 2021], chicken in [2,4] produce EGG
+[Alarm], [Sun Jul 18 15:19:54 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 30]% [4,2]
+
+[Info], [Sun Jul 18 15:19:54 IRDT 2021], chicken in [4,2] produce EGG
+[Alarm], [Sun Jul 18 15:19:54 IRDT 2021], checkAfterChangeDate EGG [4,2]
+
+[Info], [Sun Jul 18 15:19:54 IRDT 2021], EGG in [4,2] was destroyed
+[Alarm], [Sun Jul 18 15:19:54 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:54 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:55 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], chicken in [4,2] looked for food 
+
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:55 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:55 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:55 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], chicken in [4,1] looked for food 
+chicken eat grass in [1,4]
+
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:19:55 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:55 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 50]% [3,3]
+
+[Info], [Sun Jul 18 15:19:56 IRDT 2021], chicken in [3,3] produce EGG
+[Alarm], [Sun Jul 18 15:19:56 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 100]% [4,0]
+
+[Info], [Sun Jul 18 15:19:56 IRDT 2021], chicken in [4,0] produce EGG
+[Alarm], [Sun Jul 18 15:19:56 IRDT 2021], checkAfterChangeDate 
+truck status :in trip with $ 400.
+
+[Info], [Sun Jul 18 15:19:56 IRDT 2021], truck back home with $ 400
+
+[Alarm], [Sun Jul 18 15:19:56 IRDT 2021], checkAfterChangeDate EGG [3,3]
+
+[Info], [Sun Jul 18 15:19:56 IRDT 2021], EGG in [3,3] was destroyed
+[Alarm], [Sun Jul 18 15:19:56 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:56 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:56 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:19:56 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:56 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:56 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:19:56 IRDT 2021], 
+[Info], [Sun Jul 18 15:19:56 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:19:56 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:19:56 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:19:56 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:56 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:58 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:58 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:58 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:58 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:19:59 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:19:59 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:00 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:00 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:00 IRDT 2021], chicken in [3,2] looked for food 
+
+[Info], [Sun Jul 18 15:20:00 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:00 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:00 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:00 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:00 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:00 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 30]% [2,2]
+
+[Info], [Sun Jul 18 15:20:00 IRDT 2021], chicken in [2,2] produce EGG
+[Alarm], [Sun Jul 18 15:20:00 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 80]% [5,1]
+
+[Info], [Sun Jul 18 15:20:00 IRDT 2021], chicken in [5,1] produce EGG
+[Alarm], [Sun Jul 18 15:20:00 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:00 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:02 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:02 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:02 IRDT 2021], chicken in [2,2] looked for food 
+chicken eat grass in [2,2]
+
+[Info], [Sun Jul 18 15:20:02 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:02 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:02 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:02 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:02 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:02 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:02 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:04 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:04 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:04 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:04 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:04 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:04 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:04 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:04 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:04 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 90]% [2,2]
+
+[Info], [Sun Jul 18 15:20:04 IRDT 2021], chicken in [2,2] produce EGG
+[Alarm], [Sun Jul 18 15:20:04 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 60]% [5,3]
+
+[Info], [Sun Jul 18 15:20:04 IRDT 2021], chicken in [5,3] produce EGG
+[Alarm], [Sun Jul 18 15:20:04 IRDT 2021], checkAfterChangeDate EGG [4,0]
+
+[Info], [Sun Jul 18 15:20:04 IRDT 2021], EGG in [4,0] was destroyed
+[Alarm], [Sun Jul 18 15:20:04 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:04 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:05 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:05 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:05 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:05 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:05 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:05 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:05 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:05 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:05 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:05 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:06 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:06 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 70]% [2,4]
+
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], chicken in [2,4] produce EGG
+[Alarm], [Sun Jul 18 15:20:06 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 40]% [6,4]
+
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], chicken in [6,4] produce EGG
+[Alarm], [Sun Jul 18 15:20:06 IRDT 2021], checkAfterChangeDate EGG [5,1]
+
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], EGG in [5,1] was destroyed
+[Alarm], [Sun Jul 18 15:20:06 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:06 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:06 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], chicken in [6,4] looked for food 
+
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:06 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:06 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:06 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:07 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:07 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:07 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:07 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:07 IRDT 2021], chicken in [5,4] looked for food 
+
+[Info], [Sun Jul 18 15:20:07 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:07 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:07 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:07 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 50]% [3,5]
+
+[Info], [Sun Jul 18 15:20:07 IRDT 2021], chicken in [3,5] produce EGG
+[Alarm], [Sun Jul 18 15:20:07 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 20]% [5,3]
+
+[Info], [Sun Jul 18 15:20:07 IRDT 2021], chicken in [5,3] produce EGG
+[Alarm], [Sun Jul 18 15:20:07 IRDT 2021], checkAfterChangeDate EGG [5,3]
+
+[Info], [Sun Jul 18 15:20:07 IRDT 2021], EGG in [5,3] was destroyed
+[Alarm], [Sun Jul 18 15:20:07 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:07 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:08 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:08 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:08 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:08 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:08 IRDT 2021], chicken in [5,3] looked for food 
+
+[Info], [Sun Jul 18 15:20:08 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:08 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:08 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:08 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:08 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:09 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], chicken in [3,6] looked for food 
+
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], chicken in [4,3] looked for food 
+chicken eat grass in [3,4]
+
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:09 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 30]% [2,6]
+
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], chicken in [2,6] produce EGG
+[Alarm], [Sun Jul 18 15:20:09 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 100]% [3,3]
+
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], chicken in [3,3] produce EGG
+[Alarm], [Sun Jul 18 15:20:09 IRDT 2021], checkAfterChangeDate EGG [6,4]
+
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], EGG in [6,4] was destroyed
+[Alarm], [Sun Jul 18 15:20:09 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:09 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:09 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], chicken in [2,6] looked for food 
+chicken eat grass in [6,2]
+
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:09 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:09 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:09 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:10 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:10 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:10 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:10 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:10 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:10 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:10 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:10 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:10 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 90]% [2,6]
+
+[Info], [Sun Jul 18 15:20:10 IRDT 2021], chicken in [2,6] produce EGG
+[Alarm], [Sun Jul 18 15:20:10 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 80]% [2,4]
+
+[Info], [Sun Jul 18 15:20:10 IRDT 2021], chicken in [2,4] produce EGG
+[Alarm], [Sun Jul 18 15:20:10 IRDT 2021], checkAfterChangeDate EGG [5,3]
+
+[Info], [Sun Jul 18 15:20:10 IRDT 2021], EGG in [5,3] was destroyed
+[Alarm], [Sun Jul 18 15:20:10 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:10 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:11 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:11 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:11 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:11 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:11 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:11 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:11 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:11 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:11 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:11 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:12 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:12 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 70]% [2,6]
+
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], chicken in [2,6] produce EGG
+[Alarm], [Sun Jul 18 15:20:12 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 60]% [2,6]
+
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], chicken in [2,6] produce EGG
+[Alarm], [Sun Jul 18 15:20:12 IRDT 2021], checkAfterChangeDate EGG [3,3]
+
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], EGG in [3,3] was destroyed
+[Alarm], [Sun Jul 18 15:20:12 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:12 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:12 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:12 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:12 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:12 IRDT 2021], check result : false
+[Command], [Sun Jul 18 15:20:14 IRDT 2021], well command
+[Replay], [Sun Jul 18 15:20:14 IRDT 2021], The well began to drain
+[Alarm], [Sun Jul 18 15:20:14 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:14 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:15 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:15 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 50]% [2,6]
+
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], chicken in [2,6] produce EGG
+[Alarm], [Sun Jul 18 15:20:15 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 40]% [2,4]
+
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], chicken in [2,4] produce EGG
+[Alarm], [Sun Jul 18 15:20:15 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:15 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:15 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], chicken in [2,4] looked for food 
+
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:15 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:15 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:15 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:16 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:16 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:16 IRDT 2021], chicken in [2,5] looked for food 
+
+[Info], [Sun Jul 18 15:20:16 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:16 IRDT 2021], chicken in [2,2] looked for food 
+
+[Info], [Sun Jul 18 15:20:16 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:16 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:16 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:16 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 30]% [2,3]
+
+[Info], [Sun Jul 18 15:20:16 IRDT 2021], chicken in [2,3] produce EGG
+[Alarm], [Sun Jul 18 15:20:16 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 20]% [3,2]
+
+[Info], [Sun Jul 18 15:20:16 IRDT 2021], chicken in [3,2] produce EGG
+[Alarm], [Sun Jul 18 15:20:16 IRDT 2021], checkAfterChangeDate model.Well@475c7830
+[Info], [Sun Jul 18 15:20:16 IRDT 2021], The Well is filled
+[Alarm], [Sun Jul 18 15:20:16 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:16 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:18 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:18 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:18 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:18 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:19 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:19 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:20 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:20 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:20 IRDT 2021], chicken in [2,3] looked for food 
+
+[Info], [Sun Jul 18 15:20:20 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:20 IRDT 2021], chicken in [3,2] looked for food 
+
+[Info], [Sun Jul 18 15:20:20 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:20 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:20 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:20 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:20 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:21 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:21 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:21 IRDT 2021], chicken in [2,2] looked for food 
+chicken eat grass in [2,2]
+
+[Info], [Sun Jul 18 15:20:21 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:21 IRDT 2021], chicken in [2,2] looked for food 
+chicken in [2,2] died of malnutrition
+
+[Info], [Sun Jul 18 15:20:21 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:21 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:21 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:21 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 100]% [2,1]
+
+[Info], [Sun Jul 18 15:20:21 IRDT 2021], chicken in [2,1] produce EGG
+[Alarm], [Sun Jul 18 15:20:21 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:21 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:22 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:22 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:22 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:22 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:22 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:22 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:22 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:22 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:23 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:23 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:23 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:23 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:23 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:23 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:23 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 80]% [1,2]
+
+[Info], [Sun Jul 18 15:20:23 IRDT 2021], chicken in [1,2] produce EGG
+[Alarm], [Sun Jul 18 15:20:23 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:23 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:23 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:23 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:23 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:23 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:24 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:24 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:24 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:24 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:24 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:24 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:24 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:24 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:24 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:24 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:24 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 60]% [1,2]
+
+[Info], [Sun Jul 18 15:20:24 IRDT 2021], chicken in [1,2] produce EGG
+[Alarm], [Sun Jul 18 15:20:24 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:24 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:25 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:25 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:25 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:25 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:25 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 40]% [1,4]
+
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], chicken in [1,4] produce EGG
+[Alarm], [Sun Jul 18 15:20:25 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:25 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:25 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], chicken in [1,4] looked for food 
+
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:25 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:25 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:25 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:26 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:26 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:26 IRDT 2021], chicken in [2,4] looked for food 
+
+[Info], [Sun Jul 18 15:20:26 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:26 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:26 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:26 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 20]% [3,4]
+
+[Info], [Sun Jul 18 15:20:26 IRDT 2021], chicken in [3,4] produce EGG
+[Alarm], [Sun Jul 18 15:20:26 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:26 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:26 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:26 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:26 IRDT 2021], chicken in [3,4] looked for food 
+chicken eat grass in [4,3]
+
+[Info], [Sun Jul 18 15:20:26 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:26 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:26 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:26 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:26 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:27 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:27 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:28 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:28 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:43 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:43 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:44 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:44 IRDT 2021], check result : false
+[Command], [Sun Jul 18 15:20:45 IRDT 2021], well command
+[Replay], [Sun Jul 18 15:20:45 IRDT 2021], The well began to drain
+[Alarm], [Sun Jul 18 15:20:45 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:45 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:46 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:46 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:46 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:46 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:46 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:46 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:46 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 90]% [5,4]
+
+[Info], [Sun Jul 18 15:20:46 IRDT 2021], chicken in [5,4] produce EGG
+[Alarm], [Sun Jul 18 15:20:46 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:46 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:47 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:47 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:49 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:49 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:49 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:49 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:49 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:49 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:49 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:49 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:50 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:50 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:51 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:51 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:20:53 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:20:53 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:20:53 IRDT 2021], 
+[Info], [Sun Jul 18 15:20:53 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:53 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:20:53 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:20:53 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 70]% [6,3]
+
+[Info], [Sun Jul 18 15:20:53 IRDT 2021], chicken in [6,3] produce EGG
+[Alarm], [Sun Jul 18 15:20:53 IRDT 2021], checkAfterChangeDate model.Well@475c7830
+[Info], [Sun Jul 18 15:20:53 IRDT 2021], The Well is filled
+[Alarm], [Sun Jul 18 15:20:53 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:20:53 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:21:00 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:21:00 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:21:01 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:21:01 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:21:02 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:21:02 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:21:04 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:21:04 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:21:06 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:21:06 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:21:07 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:21:07 IRDT 2021], hound move 
+[Info], [Sun Jul 18 15:21:07 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:21:07 IRDT 2021], 
+[Info], [Sun Jul 18 15:21:07 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:21:07 IRDT 2021], 
+[Info], [Sun Jul 18 15:21:07 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:21:07 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:21:07 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:21:07 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:21:07 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:21:08 IRDT 2021], in turn method 
+[Info], [Sun Jul 18 15:21:08 IRDT 2021], hound move 
+[Info], [Sun Jul 18 15:21:08 IRDT 2021], chicken move 
+[Info], [Sun Jul 18 15:21:08 IRDT 2021], 
+[Info], [Sun Jul 18 15:21:08 IRDT 2021], cow move 
+[Info], [Sun Jul 18 15:21:08 IRDT 2021], 
+[Info], [Sun Jul 18 15:21:08 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:21:08 IRDT 2021], Cat move 
+[Info], [Sun Jul 18 15:21:08 IRDT 2021], Cat move 
+[Alarm], [Sun Jul 18 15:21:08 IRDT 2021], checkAfterChangeDate chicken IntegerProperty [value: 50]% [5,4]
+
+[Info], [Sun Jul 18 15:21:08 IRDT 2021], chicken in [5,4] produce EGG
+[Alarm], [Sun Jul 18 15:21:08 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:21:08 IRDT 2021], check result : false
+[Info], [Sun Jul 18 15:21:45 IRDT 2021], username accepted
+[Command], [Sun Jul 18 15:21:45 IRDT 2021], password : <j>
+[Replay], [Sun Jul 18 15:21:45 IRDT 2021], Login successfully
+[Alarm], [Sun Jul 18 15:21:46 IRDT 2021], start game 
+[Alarm], [Sun Jul 18 15:21:49 IRDT 2021], in setWildComing method 
+[Alarm], [Sun Jul 18 15:21:49 IRDT 2021],  set Bear coming 
+[Alarm], [Sun Jul 18 15:21:49 IRDT 2021],  set Tiger coming 
+[Alarm], [Sun Jul 18 15:24:36 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:24:36 IRDT 2021], check result : false
+[Alarm], [Sun Jul 18 15:24:39 IRDT 2021], in check method 
+[Alarm], [Sun Jul 18 15:24:39 IRDT 2021], check result : false

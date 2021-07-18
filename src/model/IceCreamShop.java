@@ -6,7 +6,7 @@ import javafx.scene.layout.Pane;
 
 public class IceCreamShop extends Workshop {
     static int price = 550;
-    static String imagePath = "C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\featherF.png";
+    static String imagePath = "C:\\Users\\User\\Desktop\\FarmFrenzy\\img\\iceCreamW.png";
     static Button buy = new Button("IceCreamShop\n" + price);
 
     public IceCreamShop(Scene scene) {
