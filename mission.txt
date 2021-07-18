@@ -1,4 +1,6 @@
-3
+5
 Level1,500,egg 1.chicken 3,lion 2.bear 4,1 5.2 10.3 15
 level2,1000,cow_milk 4.cow 3,tiger 1.bear 2,1 11.2 16.3 21
-level3,800,flour 1.ostrich 1,bear 2.tiger 3,1 20.2 25.3 35
+level3,800,flour 1.ostrich 1.coin 2000,bear 2.tiger 3,1 20.2 25.3 35
+level4,700,bread 2.chicken 5,lion 3.tiger 4,1 24.2 30,3 40
+level5,1000,shirt 5,ostrich 7,tiger 2.lion 5.bear 7,1 60.2 70.3 80
